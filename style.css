@@ -1,9 +1,10 @@
 * {word-wrap: break-word; box-sizing: border-box; margin: 0; padding: 0;}
 body {overflow-x: hidden; font-size: 1.25rem; font-family: 'Alegreya Sans',Helvetica,'Trebuchet MS',sans-serif; line-height: 125%; color: #232323; background: #d7ecf3;}
 ::selection {color: #fff; background: rgba(0,104,139,.75);}
+.sc, figcaption, nav, footer span:nth-child(2) {font-family: 'Alegreya Sans SC','Alegreya Sans',Helvetica,'Trebuchet MS',sans-serif; text-transform: lowercase;}
 header, section, footer, aside, nav, main, article, figure {display: block;}
 
-a {color: #00688b; text-decoration: none;} #content a:hover {background: #d7ecf3;} header a:hover, footer a:hover {opacity: .75;}
+a {color: #00688b; text-decoration: none;} a:hover, nav label:hover {opacity: .75;}
 p, blockquote, ul, ol, figure {margin: .5em 0;}
 blockquote {font-size: 0.889em; padding-left: 1em;}
 h1, h2, h3 {font-size: 100%; padding: 1rem 0 .25rem 0;}
@@ -12,22 +13,31 @@ h2 {font-size: 1.167em;}
 h3 {font-size: 0.889em;}
 ol, ul {margin-left: 1.15em;}
 li {margin-bottom: .5em;} li:last-child {margin-bottom: 0;}
-#content figure {display: inline-block; margin: .5em auto;}
-figcaption {font-family: 'Alegreya Sans SC','Alegreya Sans',Helvetica,'Trebuchet MS',sans-serif; color: #5a5a5a;}
+#content figure {display: inline-block; margin: .5em auto;} figcaption {color: #5a5a5a;}
 img {max-width: 100%; height: auto;}
+hr {margin-top: .75em; height: 2px; border: 0; background: #d7ecf3;}
 
 header {padding: .5rem 1rem; overflow: auto;}
-#logo {font-weight: 800; width: 75%;}
-#logo, header ul {float: left;}
-header ul {list-style-type: none; margin: 0; text-align: right; font-family: 'Alegreya Sans SC','Alegreya Sans',Helvetica,'Trebuchet MS',sans-serif; width: 25%;} header li {margin: 0;}
+#logo {font-weight: 800; width: 30%;}
+#logo, nav label {float: left;}
+nav ul {list-style-type: none; margin: 0; text-align: right;} nav li {margin: 0; display: inline-block; margin-left: 1em;}
+nav label {width: 70%; text-align: right;} nav span {cursor: pointer; color: #00688b;}
+/* //codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390?gi=9333c8a1d6c3*/ nav input {display: none;} nav ul {display: none;} nav input:checked ~ ul {display: block;}
+@media only screen and (min-width: 350px) {
+	nav input, nav label {display: none;}
+	nav ul {display: block; float: left; width: 70%;}
+}
 
-main {background: #fff; padding-bottom: 5rem;}
+main {background: #fff; padding-bottom: 10rem;}
 #banner img {width: 100%;} #banner {max-height: 250px; overflow: hidden;}
 #content {padding: 0 1rem;}
-#meta {color: #5a5a5a; display: block; margin-bottom: 1em;}
+.meta {color: #5a5a5a; display: block; margin: 0 0 1em; font-style: italic;}
+article {margin-bottom: 1em;} article h2 {margin-top: 0;} article .meta {margin: 0 0 1em;}
+section {margin: .5em 0;}
+.excerpt p {display: inline;} .readmore {font-weight: 700;}
 
 footer {font-size: 0.7em; padding: 0.5rem 1rem;}
-footer span {display: block;} footer span:nth-child(2) {font-family: 'Alegreya Sans SC','Alegreya Sans',Helvetica,'Trebuchet MS',sans-serif;}
+footer span {display: block; width: 50%; float: left;} footer span:nth-child(2) {text-align: right;}
 
 @media only screen and (min-width:575px) {
   header, #content, footer {padding: 1rem 2rem;}
@@ -39,7 +49,7 @@ footer span {display: block;} footer span:nth-child(2) {font-family: 'Alegreya S
 @media only screen and (min-width: 800px) {
   #content {font-size: 1.2em; max-width: 800px; line-height: 135%;}
   #meta {margin-top: -1rem;}
-  h1, h2, h3 {margin: 2rem 0 1rem 0;}
+  h1, h2, h3 {margin: 2rem 0 1rem 0;} article h2 {margin: 0;}
   .wrap {max-width: 1000px; margin: 0 auto;}
   footer {font-size: 0.8em;}
 }

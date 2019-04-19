@@ -1,0 +1,7 @@
+- name: About
+  link: /about
+- name: Blog
+  link: /blog
+  class: blog
+- name: Contact
+  link: /contact
