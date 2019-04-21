@@ -31,12 +31,12 @@ nav label {width: 70%; text-align: right;} nav span {cursor: pointer; color: #00
 main {background: #fff; padding-bottom: 10rem;}
 #banner img {width: 100%;} #banner {max-height: 250px; overflow: hidden;}
 #content {padding: 0 1rem;}
-.meta {color: #5a5a5a; display: block; margin: -.75em 0 1em; font-style: italic;}
+.meta {color: #5a5a5a; display: block; margin: 0 0 1em; font-style: italic;}
 article {margin-bottom: 1em;} article .meta {margin: 0 0 .5em;}
 section {margin: .5em 0;}
 .excerpt p {display: inline;} .readmore {font-weight: 700;}
 
-footer {font-size: 0.7em; padding: 0.5rem 1rem;}
+footer {font-size: 0.7em; padding: 0.5rem 1rem; overflow: auto;}
 footer span {display: block; width: 50%; float: left;} footer span:nth-child(2) {text-align: right;}
 
 @media only screen and (min-width:575px) {
@@ -48,7 +48,7 @@ footer span {display: block; width: 50%; float: left;} footer span:nth-child(2) 
 
 @media only screen and (min-width: 800px) {
   #content {font-size: 1.2em; max-width: 800px; line-height: 135%;}
-  #meta {margin-top: -1rem;}
+  .meta {margin-top: -.75em;}
   h1, h2, h3 {margin: 2rem 0 1rem 0;} article h2 {margin: 0;}
   .wrap {max-width: 1000px; margin: 0 auto;}
   footer {font-size: 0.8em;}
