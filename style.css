@@ -1,5 +1,3 @@
-/*dummy*/
-
 * {word-wrap: break-word; box-sizing: border-box; margin: 0; padding: 0;}
 body {overflow-x: hidden; font-size: 1.25rem; font-family: 'Alegreya Sans',Helvetica,'Trebuchet MS',sans-serif; line-height: 125%; color: #232323; background: #d7ecf3;}
 ::selection {color: #fff; background: rgba(0,104,139,.75);}
@@ -23,9 +21,8 @@ header {padding: .5rem 1rem; overflow: auto;}
 #logo {font-weight: 800; width: 30%;}
 #logo, nav label {float: left;}
 nav ul {list-style-type: none; margin: 0; text-align: right;} nav li {margin: 0; display: inline-block; margin-left: 1em;}
-nav label {width: 70%; text-align: right; nav span {cursor: pointer; color: #00688b;}
-/* //codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390?gi=9333c8a1d6c3*/ nav input {display: none;} nav ul {display: none;}
-nav input:checked ~ ul {display: block;}
+nav label {width: 70%; text-align: right;} nav span {cursor: pointer; color: #00688b;}
+/* //codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390?gi=9333c8a1d6c3*/ nav input {display: none;} nav ul {display: none;} nav input:checked ~ ul {display: block;}
 @media only screen and (min-width: 350px) {
 	nav input, nav label {display: none;}
 	nav ul {display: block; float: left; width: 70%;}
