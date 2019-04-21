@@ -22,6 +22,6 @@ edit 4/21: It is also worth noting that doing everything by hand means, if somet
 
 Although I made a bulk of recent edits on the 18th, when this post was written, none of them went live. But because I made several significant changes at once, the error was vague and unhelpful, and so I force-reset everything to the last working commit. Minor update by update, the perpetrator finally made itself clear: incorrect blog date formatting.
 
-And it only took three days and an absolute mess of commits! The master branch commit history is a mess. It was even more of a mess before the forced reversion. Having said that, everything finally works as it should, hopefully future commits will be less haphazard.
+And it only took three days and an absolute mess of commits! The master branch commit history is a mess. It was even more of a mess before the forced reversion. Having said that, now that everything finally works as it should, future commits should be less haphazard.
 
 It’s a learning experience.
