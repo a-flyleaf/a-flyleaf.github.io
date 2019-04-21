@@ -1,4 +1,4 @@
 name: a-flyleaf
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /blog/:title
 excerpt_separator: <!--more-->

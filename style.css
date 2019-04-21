@@ -31,8 +31,8 @@ nav label {width: 70%; text-align: right;} nav span {cursor: pointer; color: #00
 main {background: #fff; padding-bottom: 10rem;}
 #banner img {width: 100%;} #banner {max-height: 250px; overflow: hidden;}
 #content {padding: 0 1rem;}
-.meta {color: #5a5a5a; display: block; margin: 0 0 1em; font-style: italic;}
-article {margin-bottom: 1em;} article h2 {margin-top: 0;} article .meta {margin: 0 0 1em;}
+.meta {color: #5a5a5a; display: block; margin: -.75em 0 1em; font-style: italic;}
+article {margin-bottom: 1em;} article .meta {margin: 0 0 .5em;}
 section {margin: .5em 0;}
 .excerpt p {display: inline;} .readmore {font-weight: 700;}
 
