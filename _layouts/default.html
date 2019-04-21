@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{ page.title }} | a-flyleaf</title>
+    <title>{{page.title}} | a-flyleaf</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{site.baseurl}}/style.css" type="text/css" rel="stylesheet"/>
-  	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Alegreya+Sans:400,400i,700,800" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,700|Alegreya+Sans:400,400i,700,800" rel="stylesheet">
   </head>
   
   <body>
     <header><div class="wrap">
-      <div id="logo"><a href="/">a-flyleaf@github</a></div>
-      {% include nav.html %}
+      <div id="logo"><a href="/">a-flyleaf</a></div>
+      {%include nav.html%}
     </div></header>
     
     <main><div id="content">{{content}}</div></main>
     
     <footer><div class="wrap">
-      <span>content © <a href="/">a-flyleaf</a> unless otherwise noted</span>
-      <span><a href="/links">links</a> | <a href="/colophon">colophon</a> </span>
+      <span>© <a href="/">a-flyleaf</a> 2019</span>
+      <span><a href="/colophon">colophon</a> </span>
     </div></footer>
+	</body>
+</html>
