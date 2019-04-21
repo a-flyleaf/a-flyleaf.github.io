@@ -6,7 +6,7 @@ title: Blog
 <section>
 	{%for post in site.posts%}<hr/><article>
 		<a href="{{post.url}}"><h2>{{post.title}}</h2></a>
-		<div class="meta">{{post.date|date_to_long_string:"ordinal","US"}}</div>
+		<div class="meta">{{post.date|date_to_string}}</div>
 		<span class="excerpt">{{post.excerpt}}<a href="{{post.url}}" class="readmore">&#8230;</a></span>
 	</article>{%endfor%}
 </section>
