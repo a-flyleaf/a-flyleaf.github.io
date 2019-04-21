@@ -1,3 +1,4 @@
 name: a-flyleaf
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+encoding: utf-8
