@@ -15,3 +15,13 @@ As for what those website needs *are*, exactly, here’s the current plan:
 - Right now the blog has a whole two entries, an [initial test post](/blog/here-goes-nothin) and this one, but sooner or later I’ll need to figure out categories, tags, featured images, pagination, RSS, all that jazz. [Staticman](//staticman.net) looks like a good option for comments if for whatever reason I *want* comments.
 
 I have no idea how professionally I want to present myself here, but the tone of this post seems about right. In any case, one thing is certain: I would like to *never touch any social media ever again thank you and good bye*
+
+&nbsp;
+
+edit 4/21: It is also worth noting that doing everything by hand means, if something goes horrifically wrong, I have only myself to blame.
+
+Although I made a bulk of recent edits on the 18th, when this post was written, none of them went live. But because I made several significant changes at once, the error was vague and unhelpful, and so I force-reset everything to the last working commit. Minor update by update, the perpetrator finally made itself clear: incorrect blog date formatting.
+
+And it only took three days and an absolute mess of commits! The master branch commit history is a mess. It was even more of a mess before the forced reversion. Having said that, everything finally works as it should, hopefully future commits will be less haphazard.
+
+It’s a learning experience.
