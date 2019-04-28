@@ -22,22 +22,26 @@ header {padding: .5rem 1rem; overflow: auto;}
 #logo, nav label {float: left;}
 nav ul {list-style-type: none; margin: 0; text-align: right;} nav li {margin: 0; display: inline-block; margin-left: 1em;}
 nav label {width: 70%; text-align: right;} nav span {cursor: pointer; color: #00688b;}
-/* //codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390?gi=9333c8a1d6c3*/ nav input {display: none;} nav ul {display: none;} nav input:checked ~ ul {display: block;}
-@media only screen and (min-width: 350px) {
-	nav input, nav label {display: none;}
-	nav ul {display: block; float: left; width: 70%;}
+#fullnav {display: none;}
+@media only screen and (min-width:375px) {
+	#fullnav {display: block;}
+	#sitemap {display: none;}
 }
+.current {font-weight: bold;}
 
 main {background: #fff; padding-bottom: 10rem;}
 #banner img {width: 100%;} #banner {max-height: 250px; overflow: hidden;}
 #content {padding: 0 1rem;}
+
 .meta {color: #5a5a5a; display: block; margin: 0 0 1em; font-style: italic;}
 article {margin-bottom: 1em;} article .meta {margin: 0 0 .5em;}
 section {margin: .5em 0;}
 .excerpt p {display: inline;} .readmore {font-weight: 700;}
 
+#sm {overflow: auto; list-style-type: none;} .sm-half {width: 50%; float: left;}
+
 footer {font-size: 0.7em; padding: 0.5rem 1rem; overflow: auto;}
-footer span {display: block; width: 50%; float: left;} footer span:nth-child(2) {text-align: right;}
+footer span {display: block; width: 50%; float: left;} .footerlinks {text-align: right;} .footerlinks a {margin-left: 1em; display: inline-block;}
 
 @media only screen and (min-width:575px) {
   header, #content, footer {padding: 1rem 2rem;}

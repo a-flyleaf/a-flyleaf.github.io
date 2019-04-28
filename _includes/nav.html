@@ -1,1 +1,1 @@
-<nav><input type="checkbox" id="links"><label for="links"><span>links</span></label><!--//codeburst.io/how-to-make-a-collapsible-menu-using-only-css-a1cd805b1390?gi=9333c8a1d6c3--><ul>{%for item in site.data.links%}<a href="{{item.link}}"{%if page.url==item.link%} class="current"{%endif%}><li>{{item.name}}</li></a>{%endfor%}</ul></nav>
+{%for item in site.data.links%}<a href="{{item.link}}"{%if page.url==item.link%} class="current"{%endif%}><li>{{item.name}}</li></a>{%endfor%}

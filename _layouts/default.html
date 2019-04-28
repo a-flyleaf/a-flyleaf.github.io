@@ -12,14 +12,14 @@
   <body>
     <header><div class="wrap">
       <div id="logo"><a href="/">a-flyleaf</a></div>
-      {%include nav.html%}
+			<nav><ul><a href="/sitemap"><li id="sitemap">links</li></a><span id="fullnav">{%include nav.html%}</span></ul></nav>
     </div></header>
     
     <main><div id="content">{{content}}</div></main>
     
     <footer><div class="wrap">
       <span>© <a href="/">a-flyleaf</a> 2019</span>
-      <span><a href="/colophon">colophon</a> </span>
+      <span class="footerlinks"><a href="/privacy-policy">privacy</a><a href="/colophon">colophon</a><a href="/sitemap">sitemap</a></span>
     </div></footer>
 	</body>
 </html>
