@@ -1,0 +1,34 @@
+/*partially copied from default.css*/
+*{word-wrap: break-word; box-sizing: border-box; margin: 0; padding: 0;}
+body{overflow-x: hidden; font-size: 1.25rem; font-family: 'alegreya sans',georgia,serif; line-height:135%; color:#c3c6c7; background:#0d0d0f;}
+::selection{color:#0069ff; background:#0d0d11;}
+header, section, footer, aside, nav, main, article, figure {display: block;}
+
+a{color:#fff; text-decoration:none; border-bottom:1px dashed rgba(255,255,255,.5); transition:.15s color;} a:hover,a:focus{color:#ff9600;}
+blockquote,p{margin:.5em 0;}
+blockquote{background:#212226; padding:.25em 1em; margin:1em 0; color:#e3e6e7; border-radius:.075em;} blockquote>p:first-child::first-line{font-family:'alegreya sans sc',georgia,serif;}
+hr{border:0; margin:2.5em 0;}
+main>.wrap>p{padding:0 1em;}
+
+.wrap{max-width:1000px; margin:0 auto;}
+header{padding: .5rem 0; background:#fff; color:#fff; text-align:center; background:url(header.png) center; background-size:cover; background-color:#fff; margin-bottom:1.5em;}
+h1{font-weight:700; padding:1em 0 0 0; margin-bottom:-.4em; font-size:2.5em; font-style:italic; line-height:1em;}
+#gradient{background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1) 6.8em); padding-top:2em;}
+
+main{padding:0 1rem 10rem;}
+section{margin:1.5em 0; text-align:center; line-height:0;} section a{border:0; background:0;}
+figure{display:inline-block; margin:.5em .25em;}
+a>img{opacity:.5; transition:.3s;} img:hover,img:focus{opacity:1;}
+
+footer{font-size: 0.7em; padding:1em; text-align:center;} footer a{border:0;}
+
+.fancybox-bg{opacity:1 !important; background:#000;}
+.fancybox-infobar{display:none;}
+
+@media only screen and (min-width:700px){
+	body{font-size:1.5rem;}
+	.wrap{padding:0 1em; max-width:800px; margin:0 auto;}
+	blockquote{border-radius:.2em;}
+}
+
+@media only screen and (min-width:1000px){header{background-size:auto; background-repeat:no-repeat;}}
