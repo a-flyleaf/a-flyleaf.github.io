@@ -22,7 +22,7 @@ a>img{opacity:.5; transition:.3s;} img:hover,img:focus{opacity:1;}
 
 footer{font-size: 0.7em; padding:1em; text-align:center;} footer a{border:0;}
 
-.fancybox-bg{opacity:1 !important; background:#000;}
+.fancybox-bg{background:#000;}
 .fancybox-infobar{display:none;}
 
 @media only screen and (min-width:700px){
