@@ -1,12 +1,12 @@
 /*partially copied from default.css*/
 *{word-wrap: break-word; box-sizing: border-box; margin: 0; padding: 0;}
-body{overflow-x: hidden; font-size: 1.25rem; font-family: 'alegreya sans',georgia,serif; line-height:135%; color:#c3c6c7; background:#0d0d0f;}
+body{overflow-x: hidden; font-size: 1.25rem; font-family: 'alegreya sans',calibri,sans-seirf; line-height:135%; color:#c3c6c7; background:#0d0d0f;}
 ::selection{color:#0069ff; background:#0d0d11;}
 header, section, footer, aside, nav, main, article, figure {display: block;}
 
 a{color:#fff; text-decoration:none; border-bottom:1px dashed rgba(255,255,255,.5); transition:.15s color;} a:hover,a:focus{color:#ff9600;}
 blockquote,p{margin:.5em 0;}
-blockquote{background:#212226; padding:.25em 1em; margin:1em 0; color:#e3e6e7; border-radius:.075em;} blockquote>p:first-child::first-line{font-family:'alegreya sans sc',georgia,serif;}
+blockquote{background:#212226; padding:.25em 1em; margin:1em 0; color:#e3e6e7; border-radius:.075em;} blockquote>p:first-child::first-line{font-family:'alegreya sans sc',calibri,sans-serif;}
 hr{border:0; margin:2.5em 0;}
 main>.wrap>p{padding:0 1em;}
 
@@ -23,7 +23,10 @@ a>img{opacity:.5; transition:.3s;} img:hover,img:focus{opacity:1;}
 footer{font-size: 0.7em; padding:1em; text-align:center;} footer a{border:0;}
 
 .fancybox-bg{background:#000;}
-.fancybox-infobar{display:none;}
+.fancybox-infobar,.fancybox-button--play{display:none;}
+.fancybox-caption{font-size:1.25rem; line-height:135%; color:#c3c6c7; max-width:25em; margin:0 auto;}
+.fancybox-caption a:hover,.fancybox-caption a:focus{text-decoration:none; border-bottom:1px sdashed rgba(255,255,255.5); color:#ff9600;}
+.fancybox-thumbs a{border:0;} .fancybox-thumbs{background:#000;} .fancybox-thumbs__list a::before{border:3px solid #ff9600;}
 
 @media only screen and (min-width:700px){
 	body{font-size:1.5rem;}
