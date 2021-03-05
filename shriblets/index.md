@@ -37,4 +37,3 @@ Random little pages.
 	
 - <span style="font-family:monospace;font-weight:bold;">2020-06-07 [art]({{site.url}}/shriblets/2020-06-07-art)</span>  
 	Something of a portfolio page.
-
