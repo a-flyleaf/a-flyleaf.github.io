@@ -8,4 +8,4 @@ title: About
 
 Hi there~ You've reached a corner of the internet occupied by some nerd, who really likes (in no particular order) digital art, storytelling, HTML/CSS coding, and gratuitous run-ons. The nerd lives under a rock, but can occasionally be spotted around the local library or graphic design school.
 
-[I do things](/projects); sometimes for me, sometimes for other people. One of those things is this website! It was originally going to be a Formal Portfolio™, but then I said *nah* and now it's whatever the heck I want. Feel free to poke around~
+I do things; sometimes for me, sometimes for other people. One of those things is this website! It's home to my [big projects](/projects) and [random little experiments](/shriblets). Feel free to poke around~
