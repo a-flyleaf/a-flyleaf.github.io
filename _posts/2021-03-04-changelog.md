@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "changelog March 3, 2021"
+title: "changelog March 4, 2021"
 date: 2021-03-04
 slug: march-2021-update
 ---
