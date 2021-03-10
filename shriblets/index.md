@@ -15,7 +15,7 @@ Random little pages.
 	Assorted characters and an overview of their stories. <!--update tumblr links, replace imgur images. change tmov to local images while you're at it-->
 	
 - <span style="font-family:monospace;font-weight:bold;">2019-03-06 [songwall]({{site.url}}/shriblets/2019-03-06-songwall)</span>  
-	Character song page.
+	Character song page; unfinished.
 	
 - <span style="font-family:monospace;font-weight:bold;">2019-04-21 [styleguide]({{site.url}}/shriblets/2019-04-21-styleguide)</span>  
 	Style guide for what later became the first layout of this website.
