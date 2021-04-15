@@ -9,7 +9,7 @@ title: Shriblets
 Random little pages.
 
 - <span style="font-family:monospace;font-weight:bold;">2018-08 [heighthell]({{site.url}}/shriblets/2018-08-heighthell)</span>  
-	Interactive character height chart, heavily inspired by [a version with Pokémon protagonists](http://mxedk.com/pokechamp/), and one of my first experiments with Javascript. Could not figure out how to make the characters stand separately on pageload without altering the draggable area, and the toggles are buggy; never got around to figuring those out.
+	Interactive character height chart, heavily inspired by [a version with Pokémon protagonists](http://mxedk.com/pokechamp/), and one of my first experiments with Javascript. (Could not figure out how to make the characters stand separately on pageload without altering the draggable area, and the toggles are buggy.)
 	
 - <span style="font-family:monospace;font-weight:bold;">2018-12-14 [headshots]({{site.url}}/shriblets/2018-12-14-headshots)</span>  
 	Assorted characters and an overview of their stories. <!--update tumblr links, replace imgur images. change tmov to local images while you're at it-->
