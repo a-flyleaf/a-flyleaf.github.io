@@ -43,3 +43,6 @@ Random little pages.
 
 - <span style="font-family:monospace;font-weight:bold;">2021-04-29 [split]({{site.url}}/shriblets/2021-04-29-split)</span>  
 	An exploration of parallel dysfunction, in the format of divided HTML frames. Based on <i>[My Boyfriend Came Back from the War](https://anthology.rhizome.org/my-boyfriend-came-back-from-the-war)</i>.
+
+- <span style="font-family:monospace;font-weight:bold;">2021-05-13 [shriblets2]({{site.url}}/shriblets/2021-05-13-shriblets2)</span>  
+	A recode of this page, since I thought it deserved its own thing. Implemented on the same day.
