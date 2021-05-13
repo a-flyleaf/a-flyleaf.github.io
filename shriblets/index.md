@@ -17,6 +17,9 @@ Random little pages.
 - <span style="font-family:monospace;font-weight:bold;">2019-03-06 [songwall]({{site.url}}/shriblets/2019-03-06-songwall)</span>  
 	Character song page; unfinished.
 	
+- <span style="font-family:monospace;font-weight:bold;">2019 [index]({{site.url}}/shriblets/2019-index)</span>  
+	The original homepage for this site, used from initial commit to May 2021. Forgot exactly when I coded it, but presumably at some point in conjunction with (if not before) the style guide below.
+	
 - <span style="font-family:monospace;font-weight:bold;">2019-04-21 [styleguide]({{site.url}}/shriblets/2019-04-21-styleguide)</span>  
 	Style guide for what later became the first layout of this website.
 	
