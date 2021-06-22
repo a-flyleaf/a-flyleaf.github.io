@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>today i finally learned about the detail/summary tags</title>
+	<!--<link rel="stylesheet" type="text/css" href="main-min.css" />-->
+	<style>
+		*{margin:0; padding:0; box-sizing:border-box; font-size:100%;}
+		
+		section{background:#efefef; border:1px solid #808080; max-width:100%; overflow-x:auto;}
+		figure{display:inline-block; vertical-align:top; margin:0 .5em;}
+	</style>
+</head>
+
+<body>
+	<!--idea from a few days ago
+		random idea: "cast" page but for like, all my characters (or at least the major ones). based on a HORIZONTAL scroll(ing div, not the whole page; unless the top and bottom are fixed or something); all the portraits are side by side, with div bgs differentiating which story they're from (or in rows?), and clicking reveals more info (like a paragraph, and/or meta shit) in a side box.
+		basically it's like a webcomic cast page but none of the text shows by default, so on pageload it's just a nice gallery
+		
+		notes while coding: ALRIGHT already ran into an issue: the html hierarchy means the description and name can't really go off to the side, unless they are by default which just makes the name float awkwardly without the content dropped down. might use fancybox for this instead with the hidden html content thing (https://fancyapps.com/fancybox/3/docs/#inline), or see if I can finangle the accessible "dropdown" (https://accessibility.huit.harvard.edu/technique-expandable-sections) positioning. having it all on one page was kinda The Point....
+		also, need to figure out how to make the figures actually scroll instead of dropping to a new line. might need a div inside a div...
+	-->
+	
+	<header>
+		<h1>misadventures in character design</h1>
+		<nav>does this page Need a navbar?</nav>
+	</header>
+	
+	<main>
+		<section>
+			<h2>title</h2>
+			<figure>
+				<img src="https://via.placeholder.com/200x200.png" alt="name"/>
+				<figcaption><details>
+					<summary>name</summary>
+					<div class="detail-content"><p>Lorem ipsum</p></div>
+				</details></figcaption>
+			</figure>
+			<figure>
+				<img src="https://via.placeholder.com/200x200.png" alt="name"/>
+				<figcaption><details>
+					<summary>name</summary>
+					<div class="detail-content"><p>Lorem ipsum</p></div>
+				</details></figcaption>
+			</figure>
+			<figure>
+				<img src="https://via.placeholder.com/200x200.png" alt="name"/>
+				<figcaption><details>
+					<summary>name</summary>
+					<div class="detail-content"><p>Lorem ipsum</p></div>
+				</details></figcaption>
+			</figure>
+			<figure>
+				<img src="https://via.placeholder.com/200x200.png" alt="name"/>
+				<figcaption><details>
+					<summary>name</summary>
+					<div class="detail-content"><p>Lorem ipsum</p></div>
+				</details></figcaption>
+			</figure>
+			<figure>
+				<img src="https://via.placeholder.com/200x200.png" alt="name"/>
+				<figcaption><details>
+					<summary>name</summary>
+					<div class="detail-content"><p>Lorem ipsum</p></div>
+				</details></figcaption>
+			</figure>
+			<figure>
+				<img src="https://via.placeholder.com/200x200.png" alt="name"/>
+				<figcaption><details>
+					<summary>name</summary>
+					<div class="detail-content"><p>Lorem ipsum</p></div>
+				</details></figcaption>
+			</figure>
+			<figure>
+				<img src="https://via.placeholder.com/200x200.png" alt="name"/>
+				<figcaption><details>
+					<summary>name</summary>
+					<div class="detail-content"><p>Lorem ipsum</p></div>
+				</details></figcaption>
+			</figure>
+			<figure>
+				<img src="https://via.placeholder.com/200x200.png" alt="name"/>
+				<figcaption><details>
+					<summary>name</summary>
+					<div class="detail-content"><p>Lorem ipsum</p></div>
+				</details></figcaption>
+			</figure>
+		</section>
+	</main>
+	
+	<footer>original content do not steal</footer>
+</body>
+</html>
