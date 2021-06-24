@@ -9,53 +9,7 @@
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.4/dist/jquery.fancybox.min.css" />
-	<!--<link rel="stylesheet" type="text/css" href="main-min.css" />
-	custom code has to come AFTER the fancybox one to override properly-->
-	<style>
-		*{margin:0; padding:0; box-sizing:border-box; font-size:100%;}
-		body{max-width:1280px; margin:0 auto; overflow-x:hidden; font-family:'Noto Sans',helvetica,calibri,arial,sans-serif; font-size:1.15em; line-height:150%; color:#212529;}
-		.x {position:absolute; left:-999px; width:1px; height:1px; top:auto; overflow:hidden;}
-		.wrap{padding:0 2rem;}
-		::selection{background:#5acae9; color:#fff;}
-		
-		img{max-width:100%; height:auto;}
-		.fancybox-button--play{display:none !important;} /*might not need the important if css is in a separate sheet*/
-		
-		a{color:inherit; text-decoration:underline dashed;} a:hover,a:active,a:focus{text-decoration:underline; color:#78797d;}
-		a.af{color:#3b7e90;} a.af:hover,a.af:active,a.af:focus{color:#5acae9;}
-		p{margin:.5em 0;}
-		ul{margin-left:1em;} li{padding: .075em 0 .075em .25em;}
-		
-		h2{font-size:1.25em; line-height:135%; margin-top:1em;}
-		h3{font-size:1.25em; font-weight:normal;} h3 a{text-decoration:none;}
-		h4{font-size:1.15em; font-weight:bold; margin-top:1.15em;}
-		.smol{font-size:.85em;} ul.smol{line-height:165%;}
-		
-		header{position:-webkit-sticky; position:sticky; top:0; background:rgba(255,255,255,.85); text-align:center; padding:1rem; border-bottom:1px solid #a3a3a3; margin-bottom:1.5rem;}
-		header a{text-decoration:none;}
-		nav{text-transform:uppercase;}
-		nav ul{list-style-type:none; margin:0;} nav li{padding:0;}
-		nav a{padding:0 .5em;} nav a span{display:none;}
-		
-		.hewwo{display:block; margin:0 auto; width:10em;}
-		details{background:#f2f2f2; padding:.5rem 0; margin:1rem 0;}
-		summary{padding-left:.5rem; cursor:pointer;} summary h3{display:inline;} summary:hover,summary:active{font-weight:bold; color:#78797d;}
-		details h4{text-align:center;} #usage{margin-top:.5em;} details #perms{margin-top:1.5em;}
-		details p,details ul{padding:0 1rem;}
-		#tldr{font-size:1.15em;}
-		table{text-align:left; line-height:150%; border-collapse:collapse;} table a{text-decoration:none;}
-		th{color:#a3a3a3;} th,td{padding:.5em 0 .5em .75em;} th:first-child,td:first-child{font-weight:bold;} td{vertical-align:top;}
-		tbody tr:nth-of-type(odd){background:rgba(0,0,0,.05);}
-		th:nth-of-type(2),td:nth-of-type(2){color:#376b54;}  th:nth-of-type(3),td:nth-of-type(3){color:#a92123; padding-right:.75em;} /*colors picked from https://www.deviantart.com/artyfight/art/Team-Zombies-2014-844491549 & https://www.deviantart.com/artyfight/art/Team-Hunters-2014-844491323*/
-		
-		article{padding:2rem 0;}
-		.profile{text-align:center; margin:0 auto;} .profile h3{margin-bottom:.5em; font-size:1.5em;} .profile a img{border:2px dashed #3b7e90;} .profile img:hover,.profile img:focus,.profile img:active{border-color:#5acae9;}
-		.gallery h4{text-align:center; margin-bottom:1rem;}
-		.gallery figure{display:inline-block; width:49%;} .gallery figure:nth-of-type(odd){margin-right:.5%;} /*horizontal 3x2 on references, vertical 2x3 on attacks? later tho*/
-		
-		footer{color:#a3a3a3; font-size:.75em; line-height:150%; padding-bottom:1.5rem !important; margin-top:3rem;}
-		footer p{display:inline;} footer p:first-child{margin-right:.5rem;} footer p:first-child::after{content:"·"; font-weight:bold; margin-left:.5rem;}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css.css" />
 </head>
 
 <body>
@@ -69,7 +23,7 @@
 	
 	<main class="wrap">
 		<section id="intro">
-			<img src="https://via.placeholder.com/500x500.png" alt="" class="hewwo"><!--logo doodle or smthn. maybe team icon but idc about that tbh-->
+			<img src="https://via.placeholder.com/200x200.png" alt="" id="hewwo"><!--logo doodle or smthn. maybe team icon but idc about that tbh-->
 			<h2>If you’re here from the actual event…</h2>
 			<p>Nyello 👋 I’m NightAuctor onsite, AKA a-flyleaf <a href="https://a-flyleaf.github.io/">here on GitHub</a> and <a href="https://www.deviantart.com/a-flyleaf">over on deviantArt</a>, and this is my first year doing ArtFight; might not attack often but here for a good time B) My main goal is to draw for people; <strong>no obligation to attack back</strong>!</p>
 			<p>…buuut if you <em>do</em>, I wanna see <strong>how <em>you</em> interpret the designs</strong>, and do NOT care about accuracy to the reference. Some are even vague/variable on purpose ;V</p>
@@ -111,37 +65,39 @@
 		<section id="characters">
 			<h2>Characters</h2>
 			<article id="zero">
-				<figure class="profile">
-					<figcaption><h3><a href="#zero">Zero</a></h3></figcaption>
+				<h3><a href="#zero">Zero</a></h3>
+				
+				<div><figure class="profile">
 					<a href="https://artfight.net/character/1439410.zero" target="_blank"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a>
 				</figure>
 				
 				<section class="desc">
-					<p>A technicolor lizardy-friemd that I’ve had since 2012, and his design has never ever ever been perfectly consistent but I have fun with it—and so have other people, with things like <a href="https://cdn.discordapp.com/attachments/350353682489147393/521831635738558467/IMG_20181210_233027.jpg">making his dot markings look like <b>extra eyes</b></a> (by the lovely <a href="https://www.deviantart.com/starmoths">starmoths</a>!) and <a href="https://www.deviantart.com/serosthedragon/art/Gift-for-A-FlyLeaf-878643581">adding <b>glowy effects</b></a>. And now I invite y’all to do the same &gt;;3</p>
+					<p>A technicolor lizardy-friemd that I’ve had since 2012, and his design has never ever ever been perfectly consistent but I have fun with it—and so have other people, with things like <a href="https://cdn.discordapp.com/attachments/350353682489147393/521831635738558467/IMG_20181210_233027.jpg" target="_blank">making his dot markings look like <b>extra eyes</b></a> (by the lovely <a href="https://www.deviantart.com/starmoths" target="_blank">starmoths</a>!) and <a href="https://www.deviantart.com/serosthedragon/art/Gift-for-A-FlyLeaf-878643581" target="_blank">adding <b>glowy effects</b></a>. And now I invite y’all to do the same &gt;;3</p>
 					<p>Images are in roughly chronological order (minus main image, which is from 2021) to show how his design’s shifted over the years. Doesn’t have much lore but I roleplayed him briefly, and here’s the gist:</p>
 					<ul class="smol"><li>created in some sort of laboratory for unknown reasons; wholly organic, with no supernatural powers</li>
 					<li>naturally curious, playful, and trusting; skittish in threatening situations</li>
 					<li>basically just wanders around exploring the world, sticking his snout where it doesn’t belong</li>
 					<li>would probably love to meet you(r character/s)!</li>
 					<li>no seriously he’s like horse-sized or bigger he will give rides to the little ones</li></ul>
-				</section>
+				</section></div>
 				
 				<section class="gallery">
 					<h4>References</h4>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
+					<div><figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption2"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption3"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption4"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption5"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure></div>
 				</section>
 				
 				<p class="smol">Original design by <a href="https://www.deviantart.com/glitchedbat/">GlitchedBat</a>, but has changed significantly from its first version (which is no longer online); recycled with permission.</p>
 			</article>
 			
 			<article id="cringetober">
-				<figure class="profile">
-					<figcaption><h3><a href="#cringetober">#cringetober duo</a></h3></figcaption>
+				<h3><a href="#cringetober">#cringetober duo</a></h3>
+			
+				<div><figure class="profile">
 					<img src="https://via.placeholder.com/200x200.png" alt="zero"/>
 				</figure>
 				
@@ -149,38 +105,39 @@
 					<p>two designs that kinda just Spawned in the <a href="https://www.deviantart.com/a-flyleaf/gallery/75431402/cringetober">2020 cringetober challenge</a>; <a href="https://artfight.net/character/1415042.toolbelt-kid" class="af">listed</a> separately <a href="https://artfight.net/character/1416706.the-entity" class="af">onsite</a> but related enough to be grouped on this page. feel free to take extensive artistic liberty—just have fun with ’em~</p>
 					<ul class="smol"><li>literally made up toolbelt kid’s palette from the waist down on the spot, so go ham on that</li>
 					<li>genuinely have no idea what demon-entity-thing is, but the ears are based on the <a href="https://animals.sandiegozoo.org/animals/bat-eared-fox">bat-eared fox</a>. different interpretations welcome; you may draw them as traffic cones if you wish</li></ul>
-				</section>
+				</section></div>
 				
 				<section class="gallery">
 					<h4>References</h4>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
+					<div><figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption2"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption3"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption4"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption5"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure></div>
 				</section>
 			</article>
 			
 			<article id="sawface">
-				<figure class="profile">
-					<figcaption><h3><a href="#sawface">“sawface”</a></h3></figcaption>
+				<h3><a href="#sawface">“sawface”</a></h3>
+			
+				<div><figure class="profile">
 					<a href="https://artfight.net/character/1416800.sawface" target="_blank"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a>
 				</figure>
 				
 				<section class="desc">
 					<p>A weird monster with an inconsistent number of eyes, limbs, and teeth. Very pointy, very long; <em>go nuts</em> :V.V:</p>
 					<p>Sometimes appears with a human “host.” What’s their deal? Your guess is good as mine!</p>
-				</section>
+				</section></div>
 				
 				<section class="gallery">
 					<h4>References</h4>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
+					<div><figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption2"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption3"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption4"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
 					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption5"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure></div>
 				</section>
 			</article>
 		</section>
