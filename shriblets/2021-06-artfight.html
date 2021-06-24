@@ -6,149 +6,181 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>NightAuctor @ArtFight 2021</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.4/dist/jquery.fancybox.min.css" />
 	<!--<link rel="stylesheet" type="text/css" href="main-min.css" />
 	custom code has to come AFTER the fancybox one to override properly-->
 	<style>
-		/* *{margin:0; padding:0; box-sizing:border-box; font-size:100%;} */
+		*{margin:0; padding:0; box-sizing:border-box; font-size:100%;}
+		body{max-width:1280px; margin:0 auto; overflow-x:hidden; font-family:'Noto Sans',helvetica,calibri,arial,sans-serif; font-size:1.15em; line-height:150%; color:#212529;}
+		.x {position:absolute; left:-999px; width:1px; height:1px; top:auto; overflow:hidden;}
+		.wrap{padding:0 2rem;}
+		::selection{background:#5acae9; color:#fff;}
 		
-		body{font-size:1.15em; max-width:1280px; margin:0 auto;}
-		table{text-align:left;}
-		figure{display:inline-block;}
+		img{max-width:100%; height:auto;}
+		.fancybox-button--play{display:none !important;} /*might not need the important if css is in a separate sheet*/
+		
+		a{color:inherit; text-decoration:underline dashed;} a:hover,a:active,a:focus{text-decoration:underline; color:#78797d;}
+		a.af{color:#3b7e90;} a.af:hover,a.af:active,a.af:focus{color:#5acae9;}
+		p{margin:.5em 0;}
+		ul{margin-left:1em;} li{padding: .075em 0 .075em .25em;}
+		
+		h2{font-size:1.25em; line-height:135%; margin-top:1em;}
+		h3{font-size:1.25em; font-weight:normal;} h3 a{text-decoration:none;}
+		h4{font-size:1.15em; font-weight:bold; margin-top:1.15em;}
+		.smol{font-size:.85em;} ul.smol{line-height:165%;}
+		
+		header{position:-webkit-sticky; position:sticky; top:0; background:rgba(255,255,255,.85); text-align:center; padding:1rem; border-bottom:1px solid #a3a3a3; margin-bottom:1.5rem;}
+		header a{text-decoration:none;}
+		nav{text-transform:uppercase;}
+		nav ul{list-style-type:none; margin:0;} nav li{padding:0;}
+		nav a{padding:0 .5em;} nav a span{display:none;}
+		
+		.hewwo{display:block; margin:0 auto; width:10em;}
+		details{background:#f2f2f2; padding:.5rem 0; margin:1rem 0;}
+		summary{padding-left:.5rem; cursor:pointer;} summary h3{display:inline;} summary:hover,summary:active{font-weight:bold; color:#78797d;}
+		details h4{text-align:center;} #usage{margin-top:.5em;} details #perms{margin-top:1.5em;}
+		details p,details ul{padding:0 1rem;}
+		#tldr{font-size:1.15em;}
+		table{text-align:left; line-height:150%; border-collapse:collapse;} table a{text-decoration:none;}
+		th{color:#a3a3a3;} th,td{padding:.5em 0 .5em .75em;} th:first-child,td:first-child{font-weight:bold;} td{vertical-align:top;}
+		tbody tr:nth-of-type(odd){background:rgba(0,0,0,.05);}
+		th:nth-of-type(2),td:nth-of-type(2){color:#376b54;}  th:nth-of-type(3),td:nth-of-type(3){color:#a92123; padding-right:.75em;} /*colors picked from https://www.deviantart.com/artyfight/art/Team-Zombies-2014-844491549 & https://www.deviantart.com/artyfight/art/Team-Hunters-2014-844491323*/
+		
+		article{padding:2rem 0;}
+		.profile{text-align:center; margin:0 auto;} .profile h3{margin-bottom:.5em; font-size:1.5em;} .profile a img{border:2px dashed #3b7e90;} .profile img:hover,.profile img:focus,.profile img:active{border-color:#5acae9;}
+		.gallery h4{text-align:center; margin-bottom:1rem;}
+		.gallery figure{display:inline-block; width:49%;} .gallery figure:nth-of-type(odd){margin-right:.5%;} /*horizontal 3x2 on references, vertical 2x3 on attacks? later tho*/
+		
+		footer{color:#a3a3a3; font-size:.75em; line-height:150%; padding-bottom:1.5rem !important; margin-top:3rem;}
+		footer p{display:inline;} footer p:first-child{margin-right:.5rem;} footer p:first-child::after{content:"·"; font-weight:bold; margin-left:.5rem;}
 	</style>
 </head>
 
 <body>
-	<!--idea from a few days ago
-		random idea: "cast" page but for like, all my characters (or at least the major ones). based on a HORIZONTAL scroll(ing div, not the whole page; unless the top and bottom are fixed or something); all the portraits are side by side, with div bgs differentiating which story they're from (or in rows?), and clicking reveals more info (like a paragraph, and/or meta shit) in a side box.
-		basically it's like a webcomic cast page but none of the text shows by default, so on pageload it's just a nice gallery
-		
-		notes while coding: ALRIGHT already ran into an issue: the html hierarchy means the description and name can't really go off to the side, unless they are by default which just makes the name float awkwardly without the content dropped down. might use fancybox for this instead with the hidden html content thing (https://fancyapps.com/fancybox/3/docs/#inline), or see if I can finangle the accessible "dropdown" (https://accessibility.huit.harvard.edu/technique-expandable-sections) positioning. having it all on one page was kinda The Point....
-		also, need to figure out how to make the figures actually scroll instead of dropping to a new line. might need a div inside a div...
-		
-		
-		6/23: alright y'know what let's just turn this into an artfight page. coincidentally the 200x200 placeholder image size is 👌 already perfect
-		- intro: about & permissions given when the event went down
-			- actually I don't like the artfight layout (dull surprise), maybe all the info can just go right here
-		- 6 squares of the characters at a glance, doubles as the nav bar; maybe there's an element of it (the names?) that sticks to the page
-		- actual character info: main thumbnail+description, plus additional images. we are once again abusing fancybox
-		- art by other people could be worked into this eventually
-	-->
-	
-	<header>
-		<h1><a href="https://artfight.net/~NightAuctor">NightAuctor @ArtFight</a></h1>
-		<p>yeah sure what the heck let’s stick it all on one page</p>
+	<header class="smol">
+		<h1>NightAuctor <a href="https://artfight.net/~NightAuctor" class="af">@ArtFight</a></h1>
+		<nav><ul>
+			<li><a href="#intro">Intro & Info</a></li>
+			<li><span class="x">skip to character: </span><a href="#zero">Zero</a> · <a href="#cringetober">cringe<span>tober</span> duo</a> · <a href="#sawface">sawface</a></li>
+		</ul></nav>
 	</header>
 	
-	<nav><ul>
-		<li><a href="#intro">Intro & Info</a></li>
-		<li><a href="#characters">Characters</a></li>
-	</ul></nav>
-	
-	<main>
+	<main class="wrap">
 		<section id="intro">
+			<img src="https://via.placeholder.com/500x500.png" alt="" class="hewwo"><!--logo doodle or smthn. maybe team icon but idc about that tbh-->
 			<h2>If you’re here from the actual event…</h2>
-			<p>Nyello! I’m NightAuctor onsite, aka a-flyleaf <a href="https://a-flyleaf.github.io/">here on GitHub</a> and <a href="https://www.deviantart.com/a-flyleaf">over on deviantArt</a>, and this is my first year doing ArtFight. Might not attack often but here for a good time B) Mostly here to draw for people; <strong>no obligation to attack back</strong>!</p>
+			<p>Nyello 👋 I’m NightAuctor onsite, AKA a-flyleaf <a href="https://a-flyleaf.github.io/">here on GitHub</a> and <a href="https://www.deviantart.com/a-flyleaf">over on deviantArt</a>, and this is my first year doing ArtFight; might not attack often but here for a good time B) My main goal is to draw for people; <strong>no obligation to attack back</strong>!</p>
 			<p>…buuut if you <em>do</em>, I wanna see <strong>how <em>you</em> interpret the designs</strong>, and do NOT care about accuracy to the reference. Some are even vague/variable on purpose ;V</p>
 			
-			<details>
+			<details class="smol">
 				<summary><h3>art usage & character permissions</h3></summary>
 				
-				<section><h4>art usage</h4>
+				<section><h4 id="usage">Art Usage</h4>
+				<p id="tldr"><b>TL;DR</b> Do what you want with my attacks, just link back! I’d like to share yours here too, but will ask first.</p>
 				<ul><li>Feel free to do <strong>whatever you want</strong> with my attacks for you, including edits and/or reuploads to compilation galleries like Toyhou.se! Just credit me as the original artist, preferably through <a href="https://www.deviantart.com/nightauctor">deviantART</a>.</li>
 				<li>Likewise, I reserve the right to post attacks on my own platforms (currently only dA and here, my website).</li>
 				<li>I’d also like to display art <em>for</em> me on this page, when the event’s done! If you haven’t indicated permissions on your profile, expect me to ask in a comment or message. I credit and link back to the original whenever possible, with a preference for public profiles; if you have multiple links, I’ll credit them all unless you indicate otherwise.</li>
 				<li>Alternatively, if you <em>don’t</em> want a piece reposted for any reason (no need to disclose why), please <strong>let me know</strong>! I’ll make sure I have explicit confirmation to rehost anything here before actually doing so, and link to actual onsite ArtFight pages so people can still see art that isn’t displayed here.</li></ul></section>
 				
-				<h4>character permissions</h4>
-				<table>
+				<section><h4 id="perms">Character “Permissions”</h4>
+				<table class="smol">
 					<thead><tr><th>topic</th><th>heck yeah</th><th>heck nah</th></tr></thead>
 				<tbody>
 					<tr><td>multiple characters</td><td>drawn with <u>your own</u> characters</td><td>drawn with <u>other peoples’</u> characters</td></tr>
 					<tr><td>design modifications</td><td>not using the eyedropper (pls no whitewashing tho*), outfit changes, and basically any other vatiation</td><td>pretty much* nothing, go nuts</td></tr>
-					<tr><td><a href="https://artfight.net/info/bodyhorror">body horror</a>/<a href="https://artfight.net/info/gore">gore</a></td><td>anything besides →</td><td>guts/innards (gory or not), nail trauma, anything <u>realistically-rendered</u></td></tr>
-					<tr><td><a href="https://artfight.net/info/nudity">nudity & sexual themes</a></td><td>eh nah not with these guys</td><td>basically anything on the linked page</td></tr>
-					<tr><td><a href="https://artfight.net/info/epilepsy">eyestrain</a></td><td>bright colors, optical illusions, chromatic aberration, and animation thereof unless →</td><td>rapid flashing and/or strobe effects</td></tr>
-					<tr><td><a href="https://artfight.net/info/otherfilters">other filters</a></td><td>drug use/references, themes of self-harm/suicide**, common phobias</td><td>open self-harm injuries**, bodily waste</td></tr>
+					<tr><td><a href="https://artfight.net/info/bodyhorror" class="af">body horror</a>/<a href="https://artfight.net/info/gore" class="af">gore</a></td><td>anything besides →</td><td>guts/innards (gory or not), nail trauma, anything <u>realistically-rendered</u></td></tr>
+					<tr><td><a href="https://artfight.net/info/nudity" class="af">nudity & sexual themes</a></td><td>eh nah not with these guys</td><td>basically anything on the linked page</td></tr>
+					<tr><td><a href="https://artfight.net/info/epilepsy" class="af">eyestrain</a></td><td>bright colors, optical illusions, chromatic aberration, and animation thereof unless →</td><td>rapid flashing and/or strobe effects</td></tr>
+					<tr><td><a href="https://artfight.net/info/otherfilters" class="af">other filters</a></td><td>drug use/references, themes of self-harm/suicide**, common phobias</td><td>open self-harm injuries**, bodily waste</td></tr>
 				</tbody></table>
-				<p>*I assume good faith here, dw if you’re not experienced with darker skintones or there’s funky colors/lighting; I just don’t want a tan character with dark hair colored as a #FFFFFF-skinned blonde, y’feel?</p>
-				<p>**ArtFight uses the following examples (artist credits not given): <a href="https://rainy.s-ul.eu/E7leugEL.png">open self-harm wounds</a> and <a href="https://rainy.s-ul.eu/WMXNUV8V.png">suicidal imagery (specifically a noose, but nothing graphic)</a>. Would prefer not to see the former, but the latter is alright with me 👍</p>
-				<p>Also, as a general disclaimer, <strong>I don’t care how my characters are drawn</strong>. This is more a list of things, based on ArtFight’s rating system, that I don’t want <em>shown directly to me</em>. Like, if you wanna draw something in the “heck nah” box then go for it, I don’t judge; I just don’t want to <em>receive</em> it :V</p>
+				<p class="smol">*I assume good faith here, dw if you’re not experienced with darker skintones or there’s funky colors/lighting; I just don’t want a tan character with dark hair colored as a #FFFFFF-skinned blonde, y’feel?</p>
+				<p class="smol">**ArtFight uses the following examples (artist credits not given): <a href="https://rainy.s-ul.eu/E7leugEL.png" target="_blank">open self-harm wounds</a> and <a href="https://rainy.s-ul.eu/WMXNUV8V.png" target="_blank">suicidal imagery (specifically a noose, but nothing graphic)</a>. Would prefer not to see the former, but the latter is alright with me 👍</p>
+				<p>Also, as a general disclaimer, <strong>I don’t care how my characters are drawn</strong>. This is more a list of things, based on ArtFight’s rating system, that I don’t want <em>shown directly to me</em>. Like, if you wanna draw something in the “heck nah” box then go for it, I don’t judge; I just don’t want to <em>receive</em> it :V</p></section>
 			</details>
 			
 			<p>Thanks for checking out my page, don’t forget to stretch your wrists, and have fun :D</p>
 			
 			
 			<h2>If you’re reading this in any other context…</h2>
-			<p>For those unaware, Art Fight is <a href="https://artfight.net/info/about">a month-long art trading competition</a>, based around drawing other participants’ characters. I first heard about it years ago and have been dragging my heels on jumping in, for various reasons which I may or may not write a blog post about, but in 2021 I finally decided to take the plunge.</p>
+			<p>For those unaware, Art Fight is <a href="https://artfight.net/info/about" class="af">a month-long art trading competition</a>, based around drawing other participants’ characters. I first heard about it years ago and have been dragging my heels on jumping in, for various reasons which I may or may not write a blog post about, but in 2021 I finally decided to take the plunge.</p>
 			<p>Predictably, though, I don’t care for the site’s formatting. And I’m vaguely aware it’s prone to downtime, especially in the first few days. So what the heck, figured I’d post everything on my own site, both for utility <em>and</em> long-term archival. Thus, here we are!</p>
 		</section>
 		
 		<section id="characters">
 			<h2>Characters</h2>
-			<article>
-				<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="sdkjdsf"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a>
-				<figcaption><h3>Zero</h3></figcaption></figure>
+			<article id="zero">
+				<figure class="profile">
+					<figcaption><h3><a href="#zero">Zero</a></h3></figcaption>
+					<a href="https://artfight.net/character/1439410.zero" target="_blank"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a>
+				</figure>
 				
-				<p>A technicolor lizardy-friemd that I’ve had since 2012, and his design has never ever ever been perfectly consistent but I have fun with it—and so have other people, with things like <a href="https://cdn.discordapp.com/attachments/350353682489147393/521831635738558467/IMG_20181210_233027.jpg">making his dot markings look like eyes</a> (by the lovely <a href="https://www.deviantart.com/starmoths">starmoths</a>!) and <a href="https://www.deviantart.com/serosthedragon/art/Gift-for-A-FlyLeaf-878643581">adding glowy effects</a>. And now I invite y’all to do the same &gt;;3</p>
-				<p>Images are in roughly chronological order (minus main image, which is from 2021) to show how his design’s shifted over the years. Doesn’t have much lore but I roleplayed him briefly, and here’s the gist:</p>
-				<ul><li>created in some sort of laboratory for unknown reasons; wholly organic, with no supernatural powers</li>
-				<li>naturally curious, playful, and trusting; skittish in threatening situations</li>
-				<li>basically just wanders around exploring the world, sticking his snout where it doesn’t belong</li>
-				<li>would probably love to meet you(r character/s)!</li>
-				<li>no seriously he’s like horse-sized or bigger he will give rides to the little ones</li></ul>
-				
-				<p>Transcription of the 2021 (last) sketchdump’s end note: “as you can see I pay very little attention to detail and hex color in this design. the most important aspects are the shape and general palette; variations welcome (+encouraged)!”</p>
-				<p>the wings and feather patterns especially keep changing every other drawing lol</p>
-				
-				<section>
-					<h4>References</h4>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption2"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption3"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption4"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption5"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
+				<section class="desc">
+					<p>A technicolor lizardy-friemd that I’ve had since 2012, and his design has never ever ever been perfectly consistent but I have fun with it—and so have other people, with things like <a href="https://cdn.discordapp.com/attachments/350353682489147393/521831635738558467/IMG_20181210_233027.jpg">making his dot markings look like <b>extra eyes</b></a> (by the lovely <a href="https://www.deviantart.com/starmoths">starmoths</a>!) and <a href="https://www.deviantart.com/serosthedragon/art/Gift-for-A-FlyLeaf-878643581">adding <b>glowy effects</b></a>. And now I invite y’all to do the same &gt;;3</p>
+					<p>Images are in roughly chronological order (minus main image, which is from 2021) to show how his design’s shifted over the years. Doesn’t have much lore but I roleplayed him briefly, and here’s the gist:</p>
+					<ul class="smol"><li>created in some sort of laboratory for unknown reasons; wholly organic, with no supernatural powers</li>
+					<li>naturally curious, playful, and trusting; skittish in threatening situations</li>
+					<li>basically just wanders around exploring the world, sticking his snout where it doesn’t belong</li>
+					<li>would probably love to meet you(r character/s)!</li>
+					<li>no seriously he’s like horse-sized or bigger he will give rides to the little ones</li></ul>
 				</section>
 				
-				<p>Original design by <a href="https://www.deviantart.com/glitchedbat/">GlitchedBat</a>, but has changed significantly from its first version (which is no longer online); recycled with permission.</p>
+				<section class="gallery">
+					<h4>References</h4>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption2"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption3"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption4"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption5"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zr" data-animation-effect="false" data-slideshow="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
+				</section>
+				
+				<p class="smol">Original design by <a href="https://www.deviantart.com/glitchedbat/">GlitchedBat</a>, but has changed significantly from its first version (which is no longer online); recycled with permission.</p>
 			</article>
 			
-			<article>
-				<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="cringetober" data-animation-effect="false" data-caption="sdkjdsf"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a>
-				<figcaption><h3>cringetober duo</h3></figcaption></figure>
+			<article id="cringetober">
+				<figure class="profile">
+					<figcaption><h3><a href="#cringetober">#cringetober duo</a></h3></figcaption>
+					<img src="https://via.placeholder.com/200x200.png" alt="zero"/>
+				</figure>
 				
-				<p>two designs that kinda just Spawned in the <a href="https://www.deviantart.com/a-flyleaf/gallery/75431402/cringetober">2020 cringetober challenge</a>; listed separately onsite but related enough to be grouped on this page. feel free to take extensive artistic liberty—just have fun with ’em~</p>
+				<section class="desc">
+					<p>two designs that kinda just Spawned in the <a href="https://www.deviantart.com/a-flyleaf/gallery/75431402/cringetober">2020 cringetober challenge</a>; <a href="https://artfight.net/character/1415042.toolbelt-kid" class="af">listed</a> separately <a href="https://artfight.net/character/1416706.the-entity" class="af">onsite</a> but related enough to be grouped on this page. feel free to take extensive artistic liberty—just have fun with ’em~</p>
+					<ul class="smol"><li>literally made up toolbelt kid’s palette from the waist down on the spot, so go ham on that</li>
+					<li>genuinely have no idea what demon-entity-thing is, but the ears are based on the <a href="https://animals.sandiegozoo.org/animals/bat-eared-fox">bat-eared fox</a>. different interpretations welcome; you may draw them as traffic cones if you wish</li></ul>
+				</section>
 				
-				<ul><li>literally made up toolbelt kid’s palette from the waist down on the spot, so go ham on that</li>
-				<li>genuinely have no idea what demon-entity-thing is, but the ears are based on the <a href="https://animals.sandiegozoo.org/animals/bat-eared-fox">bat-eared fox</a>. different interpretations welcome; you may draw them as traffic cones if you wish</li></ul>
-				
-				<section>
+				<section class="gallery">
 					<h4>References</h4>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="cringetober" data-animation-effect="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="cringetober" data-animation-effect="false" data-caption="caption2"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="cringetober" data-animation-effect="false" data-caption="caption3"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="cringetober" data-animation-effect="false" data-caption="caption4"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="cringetober" data-animation-effect="false" data-caption="caption5"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="cringetober" data-animation-effect="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption2"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption3"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption4"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption5"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="ct" data-animation-effect="false" data-slideshow="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="cringetober"/></a></figure>
 				</section>
 			</article>
 			
-			<article>
-				<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sawface" data-animation-effect="false" data-caption="sdkjdsf"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a>
-				<figcaption><h3>“sawface”</h3></figcaption></figure>
+			<article id="sawface">
+				<figure class="profile">
+					<figcaption><h3><a href="#sawface">“sawface”</a></h3></figcaption>
+					<a href="https://artfight.net/character/1416800.sawface" target="_blank"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a>
+				</figure>
 				
-				<p>A weird monster with an inconsistent number of eyes, limbs, and teeth. Very pointy, very long; <em>go nuts</em> :V.V:</p>
-				<p>Sometimes appears with a human “host.” What’s their deal? Your guess is good as mine!</p>
+				<section class="desc">
+					<p>A weird monster with an inconsistent number of eyes, limbs, and teeth. Very pointy, very long; <em>go nuts</em> :V.V:</p>
+					<p>Sometimes appears with a human “host.” What’s their deal? Your guess is good as mine!</p>
+				</section>
 				
-				<section>
+				<section class="gallery">
 					<h4>References</h4>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption2"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption3"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption4"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption5"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
-					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="zero" data-animation-effect="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="zero"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption1"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption2"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption3"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption4"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption5"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
+					<figure><a href="https://via.placeholder.com/1000x1000.png" data-fancybox="sf" data-animation-effect="false" data-slideshow="false" data-caption="caption6"><img src="https://via.placeholder.com/200x200.png" alt="sawface"/></a></figure>
 				</section>
 			</article>
 		</section>
@@ -156,7 +188,11 @@
 		<!--insert post-mortem section here ig? maybe statistics and/or my own attacks??-->
 	</main>
 	
-	<footer>original content do not steal. except for <a href="https://fancyapps.com/fancybox/3/">fancybox</a> which i abuse every single day forever</footer>
+	<footer class="wrap">
+		<p>character descriptions and reference drawings by <a href="https://www.deviantart.com/nightauctor" target="_blank">NightAuctor</a></p>
+		<!--obligatory "other people's art by them, reuplodaed with permission" part goes here-->
+		<p>gallery code via <a href="https://fancyapps.com/fancybox/3/" target="_blank">fancybox</a></p>
+	</footer>
 	
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.4/dist/jquery.fancybox.min.js"></script>
