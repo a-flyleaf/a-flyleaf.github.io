@@ -6,27 +6,67 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<title>a-flyleaf</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Fira+Mono&family=Lato:wght@400;900&display=swap" rel="stylesheet"> 
+		<style>
+			*{margin:0; padding:0; box-sizing:border-box; font-size:100%;}
+			body{overflow-x:hidden; font-family:lato,calibri,sans-serif; font-weight:400; font-size:1.5em; color:#111;}
+			::selection{background:rgba(0,128,255,.85); color:#fff;}
+			header,main,nav,footer{display:block;}
+			
+			html,body{height:100%; overflow:auto;}
+			#scribbl{background:url(bg-light.png); height:100%; width:35%;}
+			#content{position:fixed; top:25%; left:35%; padding-left:2em;}
+			
+			h1{font-size:2em; display:inline;}
+			summary{list-style-type:none; cursor:pointer;}
+			summary:hover,summary:active,summary:focus{color:#0080ff;}
+			blockquote{font-family:'alegreya',georgia,serif; font-size:.75em; margin-left:-.5rem; padding:.25em .5rem .5em;}
+			blockquote a:hover{text-decoration:underline;}
+			p span{display:inline-block;}
+			
+			nav{margin-top:1rem; margin-left:-.35rem;}
+			ul{font-size:.75em; list-style-type:none;}
+			ul,li{display:inline-block;} li{margin:.15em 0;}
+			a{color:inherit; text-decoration:none;}
+			
+			#oyp:active,#oyp:focus,#oyp:hover{color:#0000ee; text-decoration:underline;}
+			#em:active,#em:focus,#em:hover{font-weight:bold;}
+			
+			nav a{padding:.25rem .35rem;}
+			#pj{text-transform:uppercase; letter-spacing:.075em;} #pj:active,#pj:focus,#pj:hover{background:#d8ecff;}
+			#sb{font-family:'fira mono',consolas,monospace;} #sb:active,#sb:focus,#sb:hover{background:#d9d9d9;}
+			#da:active,#da:focus,#da:hover{color:#05cc47; border-bottom:2px solid;}
+			#yt:active,#yt:focus,#yt:hover{color:#ff0000; border-bottom:2px solid;}
+			#da,#yt{padding:0 .35rem;}
+			
+			footer{color:#c0c0c0; font-size:.65em; margin-top:1.5rem;}
+			footer a:hover,footer a:active,footer a:focus{color:#808080;}
+		</style>
 	</head>
 	<body>
-		<header>
-			<span>hi, I’m</span>
-			<h1>a-flyleaf</h1>
-			<span>and when I grow up I wanna be one of those people who does things weird or messy on purpose, but who can be professional like a Normal Member of Society™ when they want to.</span>
-			<p>It’s a perpetual work-in-progress.</p>
-		</header>
-		<hr>
-		<main>
-			<h2>I do…</h2>
-			<ul>
-				<li><b>digital art</b>, primarily via <a href="https://www.deviantart.com/a-flyleaf/">drawings</a> and <a href="https://www.youtube.com/channel/UCUJfFQQUcpUmaRLCs-hCF4A/">animation</a>;</li>
-				<li><b>web coding</b>, like this website, <a href="/shriblets">scattered pages</a>, and <a href="https://github.com/a-flyleaf/">my other repositories</a>;</li>
-				<li><b>storytelling</b>, with the current big one being <a href="/hello-world">an experimental web-based narrative</a>;</li>
-				<li>and <b>graphic design</b>, for college. Link to a portfolio site will go here someday.</li>
-			</ul>
-			<hr>
-			<p>Social media is a privacy- and time-devouring hellscape so I’m more or less committed to <a href="https://www.alwaysownyourplatform.com/">owning my platform</a>, except where convenience outweighs the aforementioned concerns.</p>
-			<p>You can contact me through one of the sites linked above or via good-ol-fashioned email at <code>[this url, but instead of ".github.io" it’s "@protonmail.com"]</code>.</p>
-			<p>Thanks for stopping by ✌️</p>
-		</main>
+		<div id="scribbl"></div>
+		<div id="content">
+			<header><details>
+				<summary><h1>a-flyleaf</h1></summary>
+				<blockquote><a href="https://en.wikipedia.org/wiki/Book_design#Front_cover,_spine,_and_back_cover_of_the_dust-jacket" target="_blank">flyleaf <i>(noun)</i></a>: a blank page at the beginning or end of a book</blockquote>
+			</details></header>
+			
+			<main>
+				<p><span><a href="https://www.alwaysownyourplatform.com/" target="_blank" id="oyp">internet hub</a> of an&nbsp;</span><span><a href="mailto:a-flyleaf@pm.me" id="em">amorphous nerd</a></span></p>
+				
+				<nav><ul>
+					<a href="/projects" id="pj"><li>projects</li></a>
+					<a href="/shriblets" id="sb"><li>shriblets</li></a>
+					<!--<a href="/blog"><li>blog</li></a>
+					<a href="/professionalism"><li>portfolio</li></a>--></ul>
+					
+					<ul><a href="https://nightauctor.deviantart.com/" target="_blank" id="da"><li>deviantArt</li></a>
+					<a href="https://www.youtube.com/channel/UCUJfFQQUcpUmaRLCs-hCF4A" id="yt"><li>YouTube</li></a>
+				</ul></nav>
+			</main>
+			
+			<footer><a href="https://github.com/a-flyleaf/">©2018–2021</a></footer>
+		</div>
 	</body>
 </html>
