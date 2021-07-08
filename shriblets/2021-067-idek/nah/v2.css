@@ -1,10 +1,9 @@
 /*heck it, use color. glowy. ~cyberpunk~
 bg #111, default text white/light gray, accents #80ffff and #d65bff; maybe #3200ff for hovers but it's too dark to be accessible as a main color
 
-will re-add line by line to account for HTML changes
+will re-add line by line to account for HTML changes*/
 
 
-/*
 *{margin:0; padding:0; box-sizing:border-box; font-size:100%;}
 body{max-width:1280px; margin:0 auto; overflow-x:hidden; font-family:'Noto Sans',helvetica,calibri,arial,sans-serif; font-size:1.15em; line-height:150%; color:#212529;}
 .x {position:absolute; left:-999px; width:1px; height:1px; top:auto; overflow:hidden;}
@@ -13,7 +12,7 @@ body{max-width:1280px; margin:0 auto; overflow-x:hidden; font-family:'Noto Sans'
 header,nav,main,footer,section,figure,article{display:block;}
 
 img{max-width:100%; height:auto;}
-.fancybox-button--play{display:none !important;} /*might not need the important if css is in a separate sheet* /
+.fancybox-button--play{display:none !important;} /*might not need the important if css is in a separate sheet*/
 
 a{color:inherit; text-decoration:underline dashed;} a:hover,a:active,a:focus{text-decoration:underline; color:#78797d;}
 a.af{color:#3b7e90;} a.af:hover,a.af:active,a.af:focus{color:#5acae9;}
@@ -40,7 +39,7 @@ details p,details ul{padding:0 1rem;}
 table{text-align:left; line-height:150%; border-collapse:collapse;} table a{text-decoration:none;}
 th{color:#a3a3a3;} th,td{padding:.5em 0 .5em .75em;} th:first-child,td:first-child{font-weight:bold;} td{vertical-align:top;}
 tbody tr:nth-of-type(odd){background:rgba(0,0,0,.05);}
-th:nth-of-type(2),td:nth-of-type(2){color:#376b54;}  th:nth-of-type(3),td:nth-of-type(3){color:#a92123; padding-right:.75em;} /*colors picked from https://www.deviantart.com/artyfight/art/Team-Zombies-2014-844491549 & https://www.deviantart.com/artyfight/art/Team-Hunters-2014-844491323* /
+th:nth-of-type(2),td:nth-of-type(2){color:#376b54;}  th:nth-of-type(3),td:nth-of-type(3){color:#a92123; padding-right:.75em;} /*colors picked from https://www.deviantart.com/artyfight/art/Team-Zombies-2014-844491549 & https://www.deviantart.com/artyfight/art/Team-Hunters-2014-844491323*/
 
 #characters h2{text-align:center;}
 
