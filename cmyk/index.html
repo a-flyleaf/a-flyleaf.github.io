@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,37 +53,23 @@
 		
 		<section id="cards">
 			<h2>the losers</h2>
-			
-			<article>
-				<img src="https://via.placeholder.com/360x640.png" alt="" class="char"/>
-				<div class="col">
-					<div class="flex">
-						<h3>Firstname Surname</h3>
-						<ul class="stats nolist">
-							<li>~##s</li>
-							<li>pro/noun</li>
-							<li>?'??"</li>
-						</ul>
-					</div>
-					<p class="summary">very short summary of their deal</p>
-					<ul class="notes">
-						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-						<li>Aenean et neque neque. Vestibulum sodales dui vitae ante vehicula efficitur. Aenean et neque neque. Vestibulum sodales dui vitae ante vehicula efficitur. Aenean et neque neque. Vestibulum sodales dui vitae ante vehicula efficitur. Aenean et neque neque. Vestibulum sodales dui vitae ante vehicula efficitur. Aenean et neque neque. Vestibulum sodales dui vitae ante vehicula efficitur.</li>
-						<li>Sed interdum tempor felis, a porttitor ipsum.</li>
-						<li>Fusce eu erat eget neque pharetra blandit in quis augue.</li>
-					</ul>
-					<section class="gallery"><!--use fancybox here-->
-						<img src="https://via.placeholder.com/150x150.png" alt=""/>
-						<img src="https://via.placeholder.com/150x150.png" alt=""/>
-						<img src="https://via.placeholder.com/150x150.png" alt=""/>
-					</section>
-					<p class="design"><b>design notes:</b> Aenean et neque neque. Vestibulum sodales dui vitae ante vehicula efficitur.</p>
-					<ul class="factoids nolist">
-						<li>𝅘𝅥𝅮 wow a song</li>
-						<li>🗨 wow a voiceclaim</li>
-					</ul>
-				</div><!--/col-->
-			</article>
+			<!--main image designed for 360x640, gallery 150px square. there are limited "gallery" images + notes for a Reason; these are overviews, not whole-ass bios. song/voice stuff should have links right here in the include-->
+			<!--don't forget about fancybox!!-->
+			{%include cmyk.html
+				nm="ns"
+				fullname="Nico Sylvester"
+				age="~##s"
+				hem="pro/noun"
+				height="1'11&quot;?"
+				summary="very short summary of their deal"
+				note1="lipsum"
+				note2="lipsum"
+				note3="lipsum"
+				note4="lipsum"
+				design="design notes"
+				song="wow a song. maybe more"
+				voice="wow a voice"
+			%}
 		</section>
 	</main>
 	<footer>writing, art, and code by <a href="{{site.url}}">a-flyleaf</a></footer>
