@@ -24,22 +24,21 @@ section{margin-bottom:1em; box-shadow:0 0 1em #000;}
 #kl .title{grid-area:5/8/9/12; font-size:1.15em; line-height:1em; text-align:right; margin-right:-0.075em;} #kl .title span:nth-child(2){font-size:.95em; margin-right:-0.01em;} #kl h2{font-size:.5em; font-weight:700; letter-spacing:1em; margin-right:-1em;}
 
 /*tracklist*/
-#j ol{line-height:1.15em; font-weight:400; color:#2f1e12; grid-area:5/6/12/10;} #j ol li:first-child{padding-right:1em;} #j ol li:nth-child(3){padding-right:2em;}
+#j ol{line-height:1.15em; font-weight:400; color:#2f1e12; grid-area:5/6/12/10;} #j ol li:first-child{padding-right:1em;} #j ol li:nth-child(3){padding-right:2.5em;}
 #kl ol{letter-spacing:-.075em; grid-area:3/3/9/12;}
 
 @media only screen and (min-width:500px){
-	body{background:red;}
+	section{width:90vw; margin:1em auto; font-size:4vw;}
+	#j .title{font-size:7vw;} #j ol{font-size:5vw;}
+	
+	#j1{background-image:url(j1-fullsize.png);} #j2{background-image:url(j2-fullsize.png);} #kl1{background-image:url(kl1-fullsize.png);} #kl2{background-image:url(kl2-fullsize.png);}
 }
 
-/*
-body font-size:1.25vw
-
-section{display:grid; grid-template-columns:1fr 1fr; width:90vw; margin:1vw auto; box-shadow:0 0 1vw #000;}
-
-.grid{width:45vw; width:100%;}
-
-#j .title{font-size:2.5em;}
-#j ol{grid-area:7 / 3 / 11 / 5;} #j ol li:nth-child(3){padding-right:1em;}
-
-#kl .title{font-size:1.85em;}
-*/
+@media only screen and (min-width:950px){
+	body{font-size:1.25vw;}
+	section{display:grid; grid-template-columns:1fr 1fr; width:90vw; margin:1vw auto; box-shadow:0 0 1vw #000; font-size:100%;}
+	#j .title{font-size:2.5em;}
+	#j ol{grid-area:7/3/11/5; font-size:100%;} #j ol li:nth-child(3){padding-right:1em;}
+	#kl .title{font-size:1.85em;}
+	footer{padding-bottom:1vw;}
+}
