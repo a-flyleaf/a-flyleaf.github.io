@@ -1,0 +1,23 @@
+*{margin:0; padding:0; box-sizing:border-box; font-size:100%; word-wrap:break-word;}
+body{overflow-x:hidden; background:#000; color:#fff; font-family:'segoe ui',tahoma,sans-serif; background:url(noise.png) fixed; font-size:1.25vw;}
+main,section,footer{display:block;}
+::selection{background:rgba(0,0,0,.5);}
+a{color:inherit; text-decoration:none;} a:hover,a:active,a:focus{text-decoration:underline;}
+.x{position:absolute; left:-999px; width:1px; height:1px; top:auto; overflow:hidden;}
+
+h2{font-weight:inherit;}
+
+section{display:grid; grid-template-columns:1fr 1fr; width:90vw; margin:1vw auto; box-shadow:0 0 1vw #000;}
+#j{font-family:teko,'segoe ui',tahoma,sans-serif; font-size:1.25em; letter-spacing:.05em; font-weight:300; text-transform:lowercase;} #j a:hover,#j a:active,#j a:focus{font-weight:500;}
+#kl{font-family:asap,'segoe ui',tahoma,sans-serif; text-transform:uppercase;} #kl a:hover,#kl a:active,#kl a:focus{font-weight:700;}
+.grid{aspect-ratio:1; width:45vw; background-size:cover; display:grid; grid-template-columns:repeat(11,1fr); grid-template-rows:repeat(11,1fr); width:100%;}
+#j1{background-image:url(j1.png);} #j2{background-image:url(j2.png);} #kl1{background-image:url(kl1.png);} #kl2{background-image:url(kl2.png);}
+	/*row-start col-start row-end col-end*/
+#j .title{grid-area:5 / 3 / 7 / 7; font-size:2.5em; line-height:.85em; padding-top:.35em;} #j h2{text-transform:uppercase; font-weight:500; font-size:.5em; letter-spacing:.25em; margin-top:-.05em;}
+#j ol{grid-area:7 / 3 / 11 / 5; line-height:1.15em;} #j ol li:nth-child(2){padding-right:1em;}
+#kl .title{grid-area:5 / 8 / 9 / 12; font-size:1.85em; line-height:1em; text-align:right; margin-right:-0.075em;} #kl .title span:nth-child(2){font-size:.95em; margin-right:-0.01em;} #kl h2{font-size:.5em; font-weight:700; letter-spacing:1em; margin-right:-1em;}
+#kl ol{grid-area:3 / 3 / 9 / 12; letter-spacing:-.075em;}
+
+/*temp*/.grid:first-child{background-color:white;} .grid:nth-child(2){background-color:gray;}
+
+footer{text-shadow:0 0 .15em #000,0 0 .05em #000; text-align:center; padding-bottom:1vw;}
