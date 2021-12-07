@@ -4,8 +4,8 @@
 		<h2><a href="{{site.url}}/shriblets/{{include.date}}-{{include.title}}">{{include.title}}</a></h2> <span class="date">{{include.date}}</span>
 		<p>{{include.desc}}</p>
 		<aside><ul>
-			<li>lang = {{include.lang}};</li>
-			<li>isResponsive = {{include.mobile}};</li>
+			{%if include.lang%}<li>lang = {{include.lang}};</li>{%endif%}
+			{%if include.mobile%}<li>isResponsive = {{include.mobile}};</li>{%endif%}
 		</ul></aside>
 </div>
 </article>
