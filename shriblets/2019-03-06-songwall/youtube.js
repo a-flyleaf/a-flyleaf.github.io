@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded",
     });
 
 function labnolThumb(id) {
-    var thumb = '<img src="https://i.imgur.com/L62v8ip.png"/>';
+    var thumb = '<img src="placeholder.png"/>';
     return thumb;
 }
 
