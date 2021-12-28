@@ -1,5 +1,23 @@
+/*main styling*/
 *{margin:0; padding:0; box-sizing:border-box; font-size:100%; word-wrap:break-word;}
-body{overflow-x:hidden; font-family:verdana,sans-serif; line-height:1.35em;}
+body{overflow-x:hidden; font-family:verdana,sans-serif; background:#ccd9c8; color:#2b3432;}
 header,main,section,footer{display:block;}
+::selection{background:#dfe8dd;}
+a{color:inherit; text-decoration-color:#8c9b8c;} a:hover,a:active,a:focus{color:#8c9b8c;}
+section{background:#dfe8dd; margin:1em 0; padding:1em 0;} section ::selection{background:#ccd9c8;}
+
+/*general layout+typography*/
+.wrap{padding:0 1.5rem;}
+
+h1,h2{text-align:center;}
+h1 a,h2 a{text-decoration:none;}
+h1{font-size:1.5em; margin:1rem 0;}
+h2{font-size:2em;}
+
+.desc{font-size:.85em; line-height:1.5em;}
+p{margin:.5em 0;}
 span{display:inline-block;}
-#wrap{padding:1em;}
+.count{margin-top:1.5em; text-align:center;}
+
+footer{font-size:.75em; line-height:1.5em; text-align:center; padding:.5rem 1.5em 1.5rem;}
+footer ul{list-style-type:none;} footer li{margin:1em 0;}
