@@ -4,7 +4,7 @@ body{overflow-x:hidden; font-family:verdana,sans-serif; background:#ccd9c8; colo
 header,main,section,footer{display:block;}
 ::selection{background:#dfe8dd;}
 a{color:inherit; text-decoration-color:#8c9b8c;} a:hover,a:active,a:focus{color:#8c9b8c;}
-section{background:#dfe8dd; margin:1em 0; padding:1em 0;} section ::selection{background:#ccd9c8;}
+section{background:#dfe8dd; margin:1rem 0; padding:1rem 0;} section ::selection{background:#ccd9c8;}
 
 /*general layout+typography*/
 .wrap{padding:0 1.5rem;}
@@ -21,3 +21,9 @@ span{display:inline-block;}
 
 footer{font-size:.75em; line-height:1.5em; text-align:center; padding:.5rem 1.5em 1.5rem;}
 footer ul{list-style-type:none;} footer li{margin:1em 0;}
+
+/*gallery*/
+.gallery{background:#506256; padding:1.5rem 0; margin-top:1.5rem; font-size:0; text-align:center;}
+.gallery img{width:22.5%; margin:0 1%;}
+
+.fancybox-infobar,.fancybox-button--play{display:none;}
