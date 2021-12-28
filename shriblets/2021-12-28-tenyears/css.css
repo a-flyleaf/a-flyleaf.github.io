@@ -1,0 +1,5 @@
+*{margin:0; padding:0; box-sizing:border-box; font-size:100%; word-wrap:break-word;}
+body{overflow-x:hidden; font-family:verdana,sans-serif; line-height:1.35em;}
+header,main,section,footer{display:block;}
+span{display:inline-block;}
+#wrap{padding:1em;}
