@@ -35,6 +35,7 @@ footer ul{list-style-type:none;} footer li{margin:1em 0;}
 .fancybox-caption a{color:inherit !important; text-decoration:underline !important; text-decoration-color:#808080;} .fancybox-caption ::selection{background:#2b3432;}
 .fancybox-caption__body{max-width:25em; margin:0 auto;}
 .da{font-weight:bold;} .fancybox-caption a.da{text-decoration:none !important;} .fancybox-caption a.da:hover,.fancybox-caption a.fancybox-caption a.da:active,.da-focus{text-decoration:underline !important;}
+.fancybox-caption a:hover,.fancybox-caption a:active,.fancybox-caption a:focus{text-decoration:none !important;}
 
 /*widescreen*/
 @media only screen and (min-width:65em){
