@@ -12,46 +12,83 @@ layout: none
 		
 		<style>
 			*{margin:0; padding:0; box-sizing:border-box; font-size:100%;}
-			body{overflow-x:hidden;}
+			body{overflow-x:hidden; color:#111; font-family:verdana,sans-serif; padding:1em;}
 			main,footer{display:block;}
-			img{max-width:100%; height:auto;}
+			.wrap,hr{max-width:30em; margin:0 auto;}
+			
+			h1{font-size:2em; margin:3em 0 .5em;}
+			
+			figure{text-align:center;}
+			img{max-width:100%; width:60em; height:auto;}
+			
+			@media (prefers-color-scheme:dark){body{background:#111; color:#fff;}
 		</style>
 	</head>
 	<body>
 		<main>
-			<figure><picture>
-				<source media="(min-width:641px)" srcset="self-portrait-full.png">
-				<img src="self-portrait-640.jpg" alt="self-portrait.png, or .jpg if your browser is small"/>
-				</picture><figcaption>
-					<p>self-portrait.mdp</p>
-					<details><summary>description/transcript:</summary>
-					skdfjdskj?
-					</details>
-			</figcaption></figure>
+			<section id="about">
+				<div class="wrap"><h1>about <a href="{{site.url}}">a-flyleaf</a></h1></div>
+				
+				<figure><a href="self-portrait-full.png" target="_blank"><picture>
+					<source media="(min-width:641px)" srcset="self-portrait-full.png">
+					<img src="self-portrait-640.jpg" alt="self-portrait.png, or .jpg if your browser is small"/>
+					</picture></a><figcaption class="wrap">
+						<p>self-portrait.mdp</p>
+						<details><summary>description/transcript:</summary>
+						skdfjdskj?
+						</details>
+				</figcaption></figure>
+				
+				<div class="wrap"><ul>
+					<li>amorphous internet nerd</li>
+					<li>terminal rambler</li>
+					<li>hobbyist digital artist, HTML/CSS coder, and story-wrangler</li>
+				</ul><ul>
+					<li>bullet-point-overuser</li>
+					<li>meta-appreciator</li>
+					<li>archival enjoyer</li>
+					<li>recovering perfectionist</li>
+				</ul></div>
+			</section>
 			
-			<ul>
-				<li>amorphous internet nerd</li>
-				<li>terminal rambler</li>
-				<li>hobbyist digital artist, HTML/CSS coder, and story-wrangler</li>
-			</ul><ul>
-				<li>bullet-point-overuser</li>
-				<li>meta-appreciator</li>
-				<li>archival enjoyer</li>
-				<li>recovering perfectionist</li>
-			</ul>
+			<hr/>
 			
-			<p>Tools of the trade include (but are not limited to)</p>
-			<ul>
-				<li><b>art:</b> <a href="https://firealpaca.com/" target="_blank">FireAlpaca</a> for desktop, <a href="https://medibangpaint.com/en/" target="_blank">MediBang Paint</a> for iPad</li>
-				<li><b>code:</b> <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a></li>
-			</ul>
-			<p>*Links open in new tabs.</p>
+			<section id="tools" class="wrap">
+				<h2>nifty stuff</h2>
+				<p>Tools of the trade include (but are not limited to)*</p>
+				<ul>
+					<li><b>art:</b> <a href="https://firealpaca.com/" target="_blank">FireAlpaca</a> for desktop, <a href="https://medibangpaint.com/en/" target="_blank">MediBang Paint</a> for iPad
+						<ul><li>occasionally <a href="https://krita.org/en/" target="_blank">Krita</a>, various Adbe programs (while subscription lasts), and good ol’ MSPaint</li></ul></li>
+					<li><b>code:</b> <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a></li>
+				</ul>
+				
+				<p>Other tools & resources I use with decent frequency*</p>
+				<ul>
+					<li><a href="https://lipsum.com/" target="_blank">lipsum.com</a> (Lorem Ipsum generator)</li>
+					<li>2.31 alphabets, via <a href="https://practicaltypography.com/line-length.html" target="_blank">Matthew Butterick’s <i>Practical Typography</i></a></li>
+					<li><a href="https://jekyllrb.com/" target="_blank">Jekyll (sitebuilder) documentation</a></li>
+					<li><a href="https://www.libreoffice.org/" target="_blank">LibreOffice</a> (like Microsoft Office, but free and open-source)</li>
+				</ul>
+				
+				<p>*Links open in new tabs.</p>
+			</section>
 			
-			<p>Email is <a href="mailto:a-flyleaf@pm.me">a-flyleaf@protonmail.com</a> (spambots do not interact). It gets checked once in a blue moon.</p>
+			<hr/>
 			
-			<p><a href="{{site.url}}">← back to index</a></p>
+			<section id="contact" class="wrap">
+				<h2>obligatory contact section</h2>
+				<p>Email is <a href="mailto:a-flyleaf@pm.me">a-flyleaf@protonmail.com</a> (spambots do not interact). It gets checked once in a blue moon.</p>
+				
+				<p>I can also be potentially reached through <a href="https://www.deviantart.com/nightauctor" target="_blank">deviantArt</a>, if that’s a site you have an account on.</p>
+			</section>
 		</main>
-		
-		<footer><p>page made and designed on a total whim January 13, 2022</p></footer>
+			
+		<hr/>
+			
+		<footer class="wrap">
+			<p><a href="{{site.url}}">← back to index</a></p>
+			
+			<p>page made on a total whim January 13, 2022</p>
+		</footer>
 	</body>
 </html>
