@@ -12,37 +12,78 @@ layout: none
 		
 		<style>
 			*{margin:0; padding:0; box-sizing:border-box; font-size:100%;}
-			body{overflow-x:hidden; color:#111; font-family:verdana,sans-serif; padding:1em;}
+			body{overflow-x:hidden; color:#111; font-family:verdana,sans-serif; line-height:1.35em;}
 			main,footer{display:block;}
-			.wrap,hr{max-width:30em; margin:0 auto;}
+			.wrap,hr{max-width:30rem; margin:0 auto;} .wrap{padding:1rem;}
 			
-			h1{font-size:2em; margin:3em 0 .5em;}
+			::selection{background:rgba(0,128,255,.85); color:#fff;}
+			a{color:inherit; text-decoration-color:#c0c0c0;} a:hover,a:active,a:focus{color:#0080ff; text-decoration:none;}
+			#da:hover,#da:active,#da:focus{color:#05cc47;}
 			
-			figure{text-align:center;}
-			img{max-width:100%; width:60em; height:auto;}
+			figcaption,footer,li>ul,footer p:last-child{font-size:.85em; line-height:1.5em;}
 			
-			@media (prefers-color-scheme:dark){body{background:#111; color:#fff;}
+			header{background:url(../bg-light.png); margin-bottom:1.5em; padding:5rem 1rem 0;}
+			h1{font-size:3em; margin-bottom:-.435em; line-height:100%;}
+			h1 a{text-decoration:none;}
+			
+			figure{text-align:center; padding:0 1rem;}
+			img{max-width:100%; width:60em; height:auto; border:1px solid #c0c0c0;} img:hover,img:active,img:focus{border-color: #808080;}
+			figcaption{text-align:left; color:#808080; border-bottom:1px solid #c0c0c0; margin-top:-.5em !important;}
+			summary{list-style-type:none; cursor:pointer; margin-top:.5em;} summary:hover,summary:active,summary:focus{color:#111;}
+			
+			h2{font-size:1.5em;}
+			ul,p{margin:.75rem 0;} figcaption p{margin:.5em 0;}
+			ul{padding-left:1em;} li>ul{margin:0;}
+			li{margin:.25em 0;} figcaption li{margin:0;}
+			p+ul{margin-top:-.25em;}
+			
+			hr{display:none;}
+			
+			@media (prefers-color-scheme:dark){
+				body{background:#111; color:#fff;}
+				img{border-color:#808080;} img:hover,img:active,img:focus{border-color:#c0c0c0;}
+				figcaption{color:#c0c0c0; border-color:#808080;}
+				summary:hover,summary:active,summary:focus{color:#808080;}
+			}
 		</style>
 	</head>
 	<body>
+		<header><div class="wrap"><h1>about <a href="{{site.url}}">a-flyleaf</a></h1></div></header>
+		
 		<main>
 			<section id="about">
-				<div class="wrap"><h1>about <a href="{{site.url}}">a-flyleaf</a></h1></div>
-				
 				<figure><a href="self-portrait-full.png" target="_blank"><picture>
 					<source media="(min-width:641px)" srcset="self-portrait-full.png">
 					<img src="self-portrait-640.jpg" alt="self-portrait.png, or .jpg if your browser is small"/>
 					</picture></a><figcaption class="wrap">
-						<p>self-portrait.mdp</p>
-						<details><summary>description/transcript:</summary>
-						skdfjdskj?
-						</details>
+						<p><b>self-portrait.mdp</b></p>
+						<details><summary>A screenshot of an entire computer screen, art program open and gratuitously littered with notes.</summary>
+						<p><b>Central drawing</b> is a quick sketch of a figure sitting on a couch, not facing the viewer, and reading a book. Noted details:</p>
+						<ul><li>First thought was transparent figure on photo/realistic BG (I am but words in a void), entire sketch works too</li>
+							<li>no interest in sitting normally[; legs are crossed on the back of the couch]</li>
+							<li>[reading] McCloud’s <i>Understanding Comics</i> (ch2)</li>
+							<li>thinking about making The Most Meta Self-Portrait Ever™</li>
+							<li>[on couch nearby:] iPad, computer cord, [both trailing to] plug (offscreen)</li>
+							<li>[trays next to couch indicate] temporary setup in family room</li>
+							<li>[noted items on tray:] laptop, earbuds, water bottle</li></ul>
+						<p><b>Overall screenshot</b> features the following notes:</p>
+						<ul><li>open art program is FireAlpaca (64bit)</li>
+							<li>[current file & side layer folders indicate] original daily sketchdump—additional layer of meta</li>
+							<li>[palette docker features] 90% <a href="{{site.url}}/hello-world" target="_blank"><i>404</i></a> colors, not used much but haven’t bothered clearing (or using a new palette…)</li>
+							<li>[brush docker =] brush hoard; [only a small handful of those visible are] the ones that are actually frequently used
+								<ul><li>[includes a duplicate of a “default-size” brush;] temp, forgot to delete</li></ul></li>
+							<li>[pointing back at the sketch, behind the computer:] <em style="font-style:normal;text-transform:uppercase">oh</em> tablet is back here, forgot to draw second tray</li>
+							<li>was tempted to take a screenshot <em style="font-style:normal;text-transform:uppercase">of</em> all this but then it’d never end… time capsule portrait fractal.</li>
+							<li>[UI at the bottom of the screen indicates] Windows 10</li>
+							<li>[screenshot taken at 5:37PM 1/13/2022;] but a tme capsule</li></ul>
+					</details>
 				</figcaption></figure>
 				
-				<div class="wrap"><ul>
-					<li>amorphous internet nerd</li>
-					<li>terminal rambler</li>
-					<li>hobbyist digital artist, HTML/CSS coder, and story-wrangler</li>
+				<div class="wrap">
+				<h2>who’s this nerd</h2>
+				<ul>
+					<li>amphorous rambling in a trenchcoat</li>
+					<li>digital artist, HTML/CSS coder, and story-wrangler</li>
 				</ul><ul>
 					<li>bullet-point-overuser</li>
 					<li>meta-appreciator</li>
@@ -58,16 +99,16 @@ layout: none
 				<p>Tools of the trade include (but are not limited to)*</p>
 				<ul>
 					<li><b>art:</b> <a href="https://firealpaca.com/" target="_blank">FireAlpaca</a> for desktop, <a href="https://medibangpaint.com/en/" target="_blank">MediBang Paint</a> for iPad
-						<ul><li>occasionally <a href="https://krita.org/en/" target="_blank">Krita</a>, various Adbe programs (while subscription lasts), and good ol’ MSPaint</li></ul></li>
+						<ul><li>occasionally <a href="https://krita.org/en/" target="_blank">Krita</a>, various Adobe programs (while subscription lasts), and good ol’ MSPaint</li></ul></li>
 					<li><b>code:</b> <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a></li>
 				</ul>
 				
 				<p>Other tools & resources I use with decent frequency*</p>
 				<ul>
 					<li><a href="https://lipsum.com/" target="_blank">lipsum.com</a> (Lorem Ipsum generator)</li>
-					<li>2.31 alphabets, via <a href="https://practicaltypography.com/line-length.html" target="_blank">Matthew Butterick’s <i>Practical Typography</i></a></li>
+					<li><a href="https://practicaltypography.com/" target="_blank">Matthew Butterick’s <i>Practical Typography</i></a></li>
 					<li><a href="https://jekyllrb.com/" target="_blank">Jekyll (sitebuilder) documentation</a></li>
-					<li><a href="https://www.libreoffice.org/" target="_blank">LibreOffice</a> (like Microsoft Office, but free and open-source)</li>
+					<li><a href="https://www.libreoffice.org/" target="_blank">LibreOffice</a></li>
 				</ul>
 				
 				<p>*Links open in new tabs.</p>
@@ -79,7 +120,7 @@ layout: none
 				<h2>obligatory contact section</h2>
 				<p>Email is <a href="mailto:a-flyleaf@pm.me">a-flyleaf@protonmail.com</a> (spambots do not interact). It gets checked once in a blue moon.</p>
 				
-				<p>I can also be potentially reached through <a href="https://www.deviantart.com/nightauctor" target="_blank">deviantArt</a>, if that’s a site you have an account on.</p>
+				<p>I can also be potentially reached through <a href="https://www.deviantart.com/nightauctor" target="_blank" id="da">deviantArt</a>, if that’s a site you have an account on.</p>
 			</section>
 		</main>
 			
