@@ -20,7 +20,8 @@ section{margin:1.5em 0; text-align:center; line-height:0;} section a{border:0; b
 figure{display:inline-block; margin:.5em .25em;}
 a>img{opacity:.5; transition:.3s;} img:hover,img:focus{opacity:1;}
 
-footer{font-size: 0.7em; padding:1em; text-align:center;} footer a{border:0;}
+footer{font-size: 0.7em; padding:1em 1em 1.5em; text-align:center;} footer a{border:0;}
+footer p{margin:0;} footer p:nth-child(2){font-size:.85em;}
 
 .fancybox-bg{background:#000;}
 .fancybox-infobar,.fancybox-button--play{display:none;}
