@@ -39,25 +39,26 @@ layout: none
 			
 			#ygbtdm{background:#151515; color:#fff; font-family: 'bookman old style','urw bookman l','itc bookman',georgia,times,serif; font-size:1.25em; line-height:145%;}
 			#ygbtdm ::selection{background:#404040;}
+			#ygbtdm .sum{max-width:30rem;}
 			#ygbtdm p{line-height:145%;}
 			
 			#four{background:#fff; font-family:initial; font-size:1.25em;}
 			#four ::selection{background:rgba(128,128,128,.5);}
-			#four h3{font-family:consolas,monospace; font-size:4em; line-height:65%; text-align:right;}
+			#four .sum{max-width:25rem;}
+			#four h3{font-family:consolas,monospace; font-size:4em; line-height:.75em; margin-top:-.5rem;}
 			#four blockquote{line-height:135%;}
 			
 			#tfe{background:#000; color:#fff; font-family:calibri,sans-serif; font-size:1.25em; line-height:135%;}
 			#tfe ::selection{background:#ff9600;}
+
+			#tfe .sum,#cmyk .sum{max-width:20rem;}
 			
-			#cmyk{background:#404040; color:#fff;} #cmyk img{opacity:.5;} #cmyk p{line-height:150%;}
+			#cmyk{background:#404040; color:#fff;} #cmyk img{opacity:.5; filter:grayscale(95%);} #cmyk p{line-height:150%;}
 			#cmyk span{display:inline; font-weight:normal;}
-			
-			#here .wrap{padding:1rem 2rem;}
-			#here p{line-height:150%;} #here a:last-child{font-weight:bold;}
 			
 			#p5js{background:#202020; color:#dfdfdf; font-family:sans-serif; line-height:150%;}
 			#p5js ::selection{background:#000; color:#fff;}
-			#p5js figure{width:50%; margin:0 auto;}
+			#p5js figure{width:65%; margin:0 auto;}
 			#p5js h3{margin:1rem 0 0;}
 			
 			#artfight{background:#111; color:#fff; font-family:'segoe ui',helvetica,arial,sans-serif; line-height:150%;}
@@ -66,12 +67,48 @@ layout: none
 			#dragonotes h3{background:#731d08; color:#fff; margin-bottom:0;}
 			#dragonotes p{margin-top:-.25rem;}
 			
+			#other .wrap{max-width:25rem;}
+			
+			#here{padding:1rem 0;}
+			#here .wrap{padding:1rem;}
+			#here p{line-height:150%;} #here a:last-child{font-weight:bold;}
+			
 			@media (prefers-color-scheme:dark){
 				.brand{background:url(../bg-dark.png) #111; color:#fff; line-height:150%;} .brand .wrap{background:rgba(17,17,17,.5);}
 			}
 			
 			@media only screen and (min-width:640px) {
-				.block{margin:0;}
+				.block,#cmyk{margin:0;}
+				main .wrap{padding:2rem;}
+				.desc{font-size:1.5em; margin-bottom:1.5rem;}
+				#stories .wrap{padding:1.5rem;}
+				
+				#ygbtdm h3{margin-top:-1.75em;}
+				#four h3{margin:-1em 0 .5rem -.05em; color:#fff;}
+				#tfe h3{margin-top:-1.65em; color:#000;}
+				#cmyk h3{margin-top:-.5em;}
+				
+				.float{width:100%; overflow:auto;}
+				#tfe,#cmyk,#other .float section{display:inline-block; float:left;}
+				#tfe,#cmyk{width:50%; min-height:21rem;}
+				
+				#other .desc{margin:1rem auto;}
+				#p5js figure{width:100%;} #artfight h3{margin-top:-.5em;}
+				#other .float section{width:33.33%; font-size:.85em; min-height:24rem;}
+				
+				#here{padding:3rem 0;}
+			}
+			
+			@media only screen and (min-width:915px){
+				#sitewrap{margin:0 auto; padding:1rem;}
+				#tfe,#cmyk{min-height:22rem;}
+				#other .float section{font-size:1em; min-height:26rem;}
+			}
+			
+			@media only screen and (min-width:1000px){
+				#sitewrap{padding:2rem;}
+				#tfe,#cmyk{min-height:25.25rem;}
+				#other .float section{min-height:30rem;}
 			}
 		</style>
 	</head>
@@ -89,42 +126,48 @@ layout: none
 					<p>In reverse-chronological order.</p>
 				</div>
 				<a class="block" href="{{site.url}}/ygbtdm"><section id="ygbtdm">
-					<figure><img src="img/ygbtdm-640.png" alt=""/></figure>
+					<figure><picture><source media="(min-width:640px)" srcset="img/ygbtdm-full.png"><img src="img/ygbtdm-640.png" alt=""/></picture></figure>
 					<div class="wrap">
 						<h3><span>You’re gonna be</span> <span>the death of me</h3>
-						<blockquote>A twitchy survivalist-wannabe warily teams up with a suspiciously-careless girl in a thrilling, destructive hellscape.</blockquote>
-						<p>Story that I’m figuring out how to present as I go along. Site published early this year (2022), updates ongoing.</p>
+						<div class="sum">
+							<blockquote>A twitchy survivalist-wannabe warily teams up with a suspiciously-careless girl in a thrilling, destructive hellscape.</blockquote>
+							<p>Story that I’m figuring out how to present as I go along. Site published early this year (2022), updates ongoing.</p>
+						</div>
 					</div>
 				</section></a>
 				<a class="block" href="{{site.url}}/hello-world"><section id="four">
-					<figure><img src="img/404-640.png" alt=""/></figure>
+					<figure><picture><source media="(min-width:640px)" srcset="img/404-full.png"><img src="img/404-640.png" alt=""/></picture></figure>
 					<div class="wrap">
 						<h3>404</h3>
-						<blockquote>Four people attempt to navigate and develop the artificial, incomplete world in which they exist.</blockquote>
-						<p>Experimental web-based story. Launched 2020; in development limbo.</p>
+						<div class="sum">
+							<blockquote>Four people attempt to navigate and develop the artificial, incomplete world in which they exist.</blockquote>
+							<p>Experimental web-based story. Launched 2020; in development limbo as of late 2021.</p>
+						</div>
 					</div>
 				</section></a>
-				<a class="block" href="{{site.url}}/projects/tfe"><section id="tfe">
-					<figure><img src="img/tfe-640.png" alt=""/></figure>
+				<div class="float"><a class="block" href="{{site.url}}/projects/tfe"><section id="tfe">
+					<figure><picture><source media="(min-width:640px)" srcset="img/tfe-full.png"><img src="img/tfe-640.png" alt=""/></picture></figure>
 					<div class="wrap">
 						<h3>The Firebird Effect</h3>
-						<blockquote>A young pokémon trainer is pulled ever wayward on her search for answers.</blockquote>
-						<p>Discontinued comic. First posted 2016–17 on deviantArt, officially dropped in 2018.</p>
+						<div class="sum">
+							<blockquote>A young pokémon trainer is pulled ever wayward on her search for answers.</blockquote>
+							<p>Discontinued comic. First posted 2016–17 on deviantArt, officially dropped in 2018.</p>
+						</div>
 					</div>
 				</section></a>
 				<section id="cmyk">
-					<figure><img src="img/cmyk-640.png" alt=""/></figure>
+					<figure><picture><source media="(min-width:640px)" srcset="img/cmyk-full.png"><img src="img/cmyk-640.png" alt=""/></picture></figure>
 					<div class="wrap">
 						<h3>??? <span>[not clickable]</span></h3>
-						<p>Some other characters; not part of a concentrated storytelling effort, but they sure do exist all right.</p>
+						<p class="sum">Some other characters; not part of a concentrated storytelling effort, but they sure do exist all right.</p>
 					</div>
-				</section>
+				</section></div><!--/float-->
 			</section><section id="other">
 				<div class="wrap desc">
 					<h2>miscellany</h2>
 					<p>In no particular order.</p>
 				</div>
-				<a href="{{site.url}}/p5jsomething" class="block"><section id="p5js">
+				<div class="float"><a href="{{site.url}}/p5jsomething" class="block"><section id="p5js">
 					<div class="wrap">
 						<figure><img src="img/p5js.png" alt=""/></figure>
 						<h3>p5jsomething</h3>
@@ -141,7 +184,7 @@ layout: none
 				<a href="{{site.url}}/dragonotes" class="block"><section id="dragonotes">
 						<h3><div class="wrap">dragonotes</div></h3>
 						<div class="wrap"><p>Resource hub & personal tracker for the browser-based game Flight Rising; sporadically updated.</p></div>
-				</section></a>
+				</section></a></div><!--/float-->
 				<section class="brand" id="here"><div class="wrap">
 					<h3>This site!</h3>
 					<p>You are here. <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/1e78f061897b5c1b0fb4bb996d956c4e8541469d" target="_blank">Created on GitHub in 2019</a> and still kickin’. <a href="{{site.url}}">Here’s a link back to base~</a></p>
