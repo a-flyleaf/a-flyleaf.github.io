@@ -11,66 +11,142 @@ layout: none
 		<title>Projects™ by a-flyleaf</title>
 		<style>
 			*{margin:0; padding:0; box-sizing:border-box; font-size:100%; word-wrap:break-word;}
-			body{overflow-x:hidden; font-family:verdana,sans-serif; line-height:135%; color:#111;}
-			header,main,section{display:block;}
+			body{overflow-x:hidden; font-family:verdana,sans-serif; line-height:135%; background:#c0c0c0; color:#111;}
+			header,main,section,figure,.block{display:block;}
 			
-			::selection{background:rgba(0,128,255,.85); color:#fff;}
-			a{color:inherit; text-decoration-color:#c0c0c0;} a:hover,a:focus,a:active{color:#0080ff; text-decoration:none;}
+			#sitewrap{max-width:1280px;}
+			.wrap{padding:1rem; margin:0 auto;}
+			span{display:inline-block;}
+			.block,#cmyk{margin:1.5rem; text-decoration:0;} .block:hover,.block:focus,.block:active{opacity:.65;}
+			p{margin-top:.5em;}
+			figure{line-height:0;} img{max-width:100%; height:auto;}
+			::selection{background:rgba(0,0,0,.15);}
+			a{color:inherit;} a:hover,a:focus,a:active{text-decoration:none;}
+			
+			.brand {background:url(../bg-light.png) #fff;} 
+			.brand .wrap{max-width:17.5rem; text-align:center; background:rgba(255,255,255,.75);}
+			.brand a{text-decoration-color:#c0c0c0;} .brand a:hover,.brand a:focus,.brand a:active{color:#0080ff;}
+			.brand ::selection{background:rgba(0,128,255,.85); color:#fff;}
+			
+			header{padding:2rem 0;}
+			h1{font-size:2em; line-height:115%;} h1 a{text-decoration:0;}
+			
+			h2{font-size:1.5em; line-height:125%;}
+			.desc{text-align:center;} .desc p{margin-bottom:-1rem;}
+			
+			h3{font-size:1.5em; line-height:115%; margin-bottom:.5rem;}
+			#stories .block p{font-size:.85em;}
+			
+			#ygbtdm{background:#151515; color:#fff; font-family: 'bookman old style','urw bookman l','itc bookman',georgia,times,serif; font-size:1.25em; line-height:145%;}
+			#ygbtdm ::selection{background:#404040;}
+			#ygbtdm p{line-height:145%;}
+			
+			#four{background:#fff; font-family:initial; font-size:1.25em;}
+			#four ::selection{background:rgba(128,128,128,.5);}
+			#four h3{font-family:consolas,monospace; font-size:4em; line-height:65%; text-align:right;}
+			#four blockquote{line-height:135%;}
+			
+			#tfe{background:#000; color:#fff; font-family:calibri,sans-serif; font-size:1.25em; line-height:135%;}
+			#tfe ::selection{background:#ff9600;}
+			
+			#cmyk{background:#404040; color:#fff;} #cmyk img{opacity:.5;} #cmyk p{line-height:150%;}
+			#cmyk span{display:inline; font-weight:normal;}
+			
+			#here .wrap{padding:1rem 2rem;}
+			#here p{line-height:150%;} #here a:last-child{font-weight:bold;}
+			
+			#p5js{background:#202020; color:#dfdfdf; font-family:sans-serif; line-height:150%;}
+			#p5js ::selection{background:#000; color:#fff;}
+			#p5js figure{width:50%; margin:0 auto;}
+			#p5js h3{margin:1rem 0 0;}
+			
+			#artfight{background:#111; color:#fff; font-family:'segoe ui',helvetica,arial,sans-serif; line-height:150%;}
+			
+			#dragonotes{background:#dcd6c8; color:#232323;}
+			#dragonotes h3{background:#731d08; color:#fff; margin-bottom:0;}
+			#dragonotes p{margin-top:-.25rem;}
 			
 			@media (prefers-color-scheme:dark){
-				body{background:#111; color:#fff;}
+				.brand{background:url(../bg-dark.png) #111; color:#fff; line-height:150%;} .brand .wrap{background:rgba(17,17,17,.5);}
+			}
+			
+			@media only screen and (min-width:640px) {
+				.block{margin:0;}
 			}
 		</style>
 	</head>
 	
-	<body>
-		<header>
-			<h1>Projects™ by <a href="{{site.url}}">a-flyleaf</a></h1>
+	<body><div id="sitewrap">
+		<header class="brand"><div class="wrap">
+			<h1><span>Projects™</span> <span>by <a href="{{site.url}}">a-flyleaf</a></span></h1>
 			<p>An assortment of stuff that, unlike the <a href="{{site.url}}/shriblets">shriblets</a>, has taken some significant amount of time to develop.</p>
-		</header>
+		</div></header>
 		
 		<main>
 			<section id="stories">
-				<h2>Misdaventures in Narrative</h2>
-				<p>In reverse-chronological order.</p>
-				<section class="block" id="ygbtdm">
-					<h3>You’re gonna be the death of me</h3>
-					<blockquote>A twitchy survivalist-wannabe warily teams up with a suspiciously-careless girl in a thrilling, destructive hellscape.</blockquote>
-					<p>Story that I’m figuring out how to present as I go along. Site published early this year (2022), updates ongoing.</p>
-				</section>
-				<section class="block" id="four">
-					<h3>404</h3>
-					<blockquote>Four people attempt to navigate and develop the artificial, incomplete world in which they exist.</blockquote>
-					<p>Experimental web-based story. Launched 2020; <a href="{{site.url}}/blog/project-rambling">in development limbo</a>.</p>
-				</section>
-				<section class="block" id="tfe">
-					<h3>The Firebird Effect</h3>
-					<blockquote>When a wayward pokémon trainer unexpectedly loses a teammate, her search for answers uncovers darkness she’d rather leave buried.</blockquote>
-					<p>Discontinued comic. First posted 2016–17 on deviantArt, officially dropped in 2018.</p>
-				</section>
-				<section class="block" id="cmyk">
-					<h3>[other people]</h3>
-					<p>Some other characters; not part of a concentrated storytelling effort, but they sure do exist all right.</p>
+				<div class="wrap desc">
+					<h2>Misdaventures in Narrative</h2>
+					<p>In reverse-chronological order.</p>
+				</div>
+				<a class="block" href="{{site.url}}/ygbtdm"><section id="ygbtdm">
+					<figure><img src="img/ygbtdm-640.png" alt=""/></figure>
+					<div class="wrap">
+						<h3><span>You’re gonna be</span> <span>the death of me</h3>
+						<blockquote>A twitchy survivalist-wannabe warily teams up with a suspiciously-careless girl in a thrilling, destructive hellscape.</blockquote>
+						<p>Story that I’m figuring out how to present as I go along. Site published early this year (2022), updates ongoing.</p>
+					</div>
+				</section></a>
+				<a class="block" href="{{site.url}}/hello-world"><section id="four">
+					<figure><img src="img/404-640.png" alt=""/></figure>
+					<div class="wrap">
+						<h3>404</h3>
+						<blockquote>Four people attempt to navigate and develop the artificial, incomplete world in which they exist.</blockquote>
+						<p>Experimental web-based story. Launched 2020; in development limbo.</p>
+					</div>
+				</section></a>
+				<a class="block" href="{{site.url}}/projects/tfe"><section id="tfe">
+					<figure><img src="img/tfe-640.png" alt=""/></figure>
+					<div class="wrap">
+						<h3>The Firebird Effect</h3>
+						<blockquote>A young pokémon trainer is pulled ever wayward on her search for answers.</blockquote>
+						<p>Discontinued comic. First posted 2016–17 on deviantArt, officially dropped in 2018.</p>
+					</div>
+				</section></a>
+				<section id="cmyk">
+					<figure><img src="img/cmyk-640.png" alt=""/></figure>
+					<div class="wrap">
+						<h3>??? <span>[not clickable]</span></h3>
+						<p>Some other characters; not part of a concentrated storytelling effort, but they sure do exist all right.</p>
+					</div>
 				</section>
 			</section><section id="other">
-				<h2>miscellany</h2>
-				<p>In no particular order.</p>
-				<section class="block" id="p5js">
-					<h3>p5jsomething</h3>
-					<p>Code experimentation for class, spring 2020. Originally titled “p5j<a href="https://en.wikipedia.org/wiki/Snake_(video_game_genre)" target="_blank">snake</a>” but in the process of coding it stopped being snake.</p>
-				</section>
-				<section class="block" id="artfight">
-					<h3>ArtFight 2021</h3>
-					<p>Art gallery for <a href="https://artfight.net/info/about" target="_blank">ArtFight</a>, an annual art trading game. May or may not be revisited if I participate again.</p>
-				</section>
-				<section class="block" id="petsites">
-					<h3>dragonotes</h3>
-					<p>Resource hub & personal tracker for the browser-based game <a href="https://www1.flightrising.com/" target="_blank">Flight Rising</a>; sporadically updated.</p>
-				</section>
-				<section class="block" id="here">
+				<div class="wrap desc">
+					<h2>miscellany</h2>
+					<p>In no particular order.</p>
+				</div>
+				<a href="{{site.url}}/p5jsomething" class="block"><section id="p5js">
+					<div class="wrap">
+						<figure><img src="img/p5js.png" alt=""/></figure>
+						<h3>p5jsomething</h3>
+						<p>Code experimentation for class, spring 2020. Originally titled “p5jsnake” but in the process of coding it stopped being snake.</p>
+					</div>
+				</section></a>
+				<a href="{{site.url}}/artfight" class="block"><section id="artfight">
+					<figure><img src="img/artfight.png" alt=""/></figure>
+					<div class="wrap">
+						<h3>ArtFight 2021</h3>
+						<p>Gallery for an annual art trading game, because the official site isn’t particularly guest-friendly.</p>
+					</div>
+				</section></a>
+				<a href="{{site.url}}/dragonotes" class="block"><section id="dragonotes">
+						<h3><div class="wrap">dragonotes</div></h3>
+						<div class="wrap"><p>Resource hub & personal tracker for the browser-based game Flight Rising; sporadically updated.</p></div>
+				</section></a>
+				<section class="brand" id="here"><div class="wrap">
 					<h3>This site!</h3>
 					<p>You are here. <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/1e78f061897b5c1b0fb4bb996d956c4e8541469d" target="_blank">Created on GitHub in 2019</a> and still kickin’. <a href="{{site.url}}">Here’s a link back to base~</a></p>
+				</div></section>
 			</section>
 		</main>
-	</body>
+	</div></body>
 </html>
