@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><!--https://validator.w3.org/ 2022-03-03-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>{%if page.title%}{{page.title}} | {%endif%}{{site.name}}</title>
+		<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/plaintext.css"/>
+	</head>
+	
+	<body>
+		<header>
+			<a href="{{site.url}}"><div id="home">a-flyleaf.github.io</div></a>
+			<nav><ul>
+				<a href="{{site.url}}/about"><li>about</li></a>
+				<a href="{{site.url}}/projects"><li>projects</li></a>
+				<a href="{{site.url}}/shriblets"><li>shriblets</li></a>
+				<a href="{{site.url}}/blog"><li>blog</li></a>
+			</ul></nav>
+		</header>
+		
+		<main>
+			<h1>{{page.title}}</h1>{%if page.date%}
+			<div id="date">{{page.date|date:"%B %-d, %Y"}}</div>{%endif%}
+			
+			{{content}}
+		</main>
+		
+		<footer>site by <a href="{{site.url}}">a-flyleaf</a>, 2019–2022</footer>
+	</body>
+</html>
