@@ -36,6 +36,10 @@ footer{color:#808080;}
 footer .content{padding:9em 0 0; font-size:.85em;}
 footer ul{list-style-type:none;}
 #up{display:inline-block; padding:.5em; margin-left:-.5em; margin-top:.5em;}
+@media screen and (min-width:27em){
+	footer li{display:inline-block;}
+	footer li:last-of-type{padding-left:.75em;} footer li:last-of-type::before{content:"•"; padding-right:1em;}
+}
 
 @media (prefers-color-scheme:dark){
 	body{background:#111; color:#fff;}
