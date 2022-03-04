@@ -10,23 +10,27 @@
 	</head>
 	
 	<body>
-		<header>
-			<a href="{{site.url}}"><div id="home">a-flyleaf.github.io</div></a>
+		<header id="top"><div class="wrap"><div class="content">
+			<a href="#main" id="skip">skip to content</a>
+			<a href="{{site.url}}" id="home">a-flyleaf.github.io</a>
 			<nav><ul>
 				<a href="{{site.url}}/about"><li>about</li></a>
 				<a href="{{site.url}}/projects"><li>projects</li></a>
 				<a href="{{site.url}}/shriblets"><li>shriblets</li></a>
 				<a href="{{site.url}}/blog"><li>blog</li></a>
 			</ul></nav>
-		</header>
+		</div></div></header>
 		
-		<main>
+		<main class="wrap" id="main"><div class="content">
 			<h1>{{page.title}}</h1>{%if page.date%}
 			<div id="date">{{page.date|date:"%B %-d, %Y"}}</div>{%endif%}
 			
 			{{content}}
-		</main>
+		</div></main>
 		
-		<footer>site by <a href="{{site.url}}">a-flyleaf</a>, 2019–2022</footer>
+		<footer class="wrap"><div class="content"><ul>
+			<li>site by <a href="{{site.url}}">a-flyleaf</a>, 2019–2022</li>
+			<li><a href="#top" id="up">back to top</a></li>
+		</ul></div></footer>
 	</body>
 </html>
