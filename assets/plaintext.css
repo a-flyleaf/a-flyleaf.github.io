@@ -10,7 +10,10 @@ a{color:inherit; text-decoration-color:#c0c0c0;} a:hover,a:active,a:focus{color:
 img{max-width:100%; height:auto;}
 p,ul{margin:.75em 0; line-height:1.45em;} li>ul{margin:0 0 0 1em;}
 h1{font-size:2.25em;}
-h2{font-size:1.5em; margin-top:1em;} h1+h2{margin-top:.5em;} h2+p,h2+ul{margin-top:.5em;}
+h2{font-size:1.5em; margin-top:1em;} h1+h2{margin-top:.5em;}
+h3{font-size:1.15em; margin-top:1em;}
+h2+p,h2+ul,h3+p,h3+ul{margin-top:.5em;}
+code{font-family:consolas,monospace; background:rgba(0,0,0,0.075);}
 
 /*layout*/
 #skip{position:absolute; left:-999px; width:1px; height:1px; top:auto; overflow:hidden;}
@@ -30,7 +33,11 @@ header li::before{content:"•"; padding-right:1em;} header a:first-of-type li::
 }
 
 main .content{padding:1em 0;}
-#date{color:#808080; margin-top:.5em; padding-bottom:1em;}
+.date{color:#808080; margin-top:.5em; padding-bottom:1em;}
+article{padding-bottom:2em;}
+article .date{padding-bottom:0;}
+article p:last-of-type{display:inline;}
+.readmore{font-size:.85em;}
 
 footer{color:#808080;}
 footer .content{padding:9em 0 0; font-size:.85em;}
@@ -44,5 +51,6 @@ footer ul{list-style-type:none;}
 @media (prefers-color-scheme:dark){
 	body{background:#111; color:#fff;}
 	a{text-decoration-color:inherit;}
-	header,#date{color:#c0c0c0;}
+	code{background:rgba(255,255,255,0.2);}
+	header,.date{color:#c0c0c0;}
 }

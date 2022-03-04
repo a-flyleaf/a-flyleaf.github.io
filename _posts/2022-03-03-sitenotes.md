@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: plaintext
 title: "sitenotes"
 date: 2022-03-03
 slug: sitenotes
