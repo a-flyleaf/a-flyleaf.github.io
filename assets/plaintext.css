@@ -17,16 +17,23 @@ h1{font-size:2.25em;}
 #skip:focus,#skip:active{width:auto; height:auto; overflow:visible; left:auto;}
 
 header{color:#484848; background:url(../bg-light.png);}
-header .content{padding:1em 0 .5em;}
+header .content{padding:1em 0 .25em;}
 header a{text-decoration:none;}
-#home{font-weight:bold;}
-header ul{font-size:.85em; margin-left:-.5em;}
-header li{display:inline-block; padding:.25em .5em;}
+#home{font-weight:bold; padding:.5em; margin-left:-.5em;}
+header ul{font-size:.85em; margin:.25em 0 .5em -.5em;}
+header li{display:inline-block; padding:.5em;}
+header li::before{content:"•"; padding-right:1em;} header a:first-of-type li::before{content:none;}
+@media screen and (min-width:40em){
+	header{padding-bottom:.5em;}
+	header nav{display:inline-block;}
+	header a:first-of-type li::before{content:"•"; padding-right:1em;}
+}
 
+main .content{padding:1em 0;}
 #date{color:#808080; margin-top:.5em; padding-bottom:1em;}
 
 footer{color:#808080;}
-footer .content{padding:10em 0 0; font-size:.85em;}
+footer .content{padding:9em 0 0; font-size:.85em;}
 footer ul{list-style-type:none;}
 #up{display:inline-block; padding:.5em; margin-left:-.5em; margin-top:.5em;}
 
