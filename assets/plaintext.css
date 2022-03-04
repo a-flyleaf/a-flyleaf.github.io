@@ -1,0 +1,14 @@
+/*core*/
+*{margin:0; padding:0; box-sizing:border-box; font-size:100%;}
+body{overflow-x:hidden; word-wrap:break-word; font-family:verdana,san-serif; color:#111; padding:1em; max-width:30em; margin:3em auto;}
+header,nav,main,footer{display:block;}
+
+/*general*/
+::selection{background:rgba(0,128,255,.85); color:#fff;}
+a{color:inherit; text-decoration-color:#c0c0c0;} a:hover,a:active,a:focus{color:#0080ff; text-decoration:none;}
+img{max-width:100%; height:auto;}
+p{margin:.75em 0; line-height:1.45em;}
+
+@media (prefers-color-scheme:dark){
+		body{background:#111; color:#fff;}
+}
