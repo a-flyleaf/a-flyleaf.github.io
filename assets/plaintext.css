@@ -13,10 +13,11 @@ h1{font-size:2.25em;}
 h2{font-size:1.5em; margin-top:1em;} h1+h2{margin-top:.5em;}
 h3{font-size:1.15em; margin-top:1em;}
 h2+p,h2+ul,h3+p,h3+ul{margin-top:.5em;}
+small{font-size:.85em;}
 
 code,hr{background:rgba(0,0,0,0.075);}
 code{font-family:consolas,monospace;}
-blockquote{border-left:.5em solid rgba(0,0,0,0.075); padding-left:1em;}
+blockquote{border-left:.5em solid rgba(0,0,0,0.075); padding-left:1em; margin:1em 0;}
 hr{border:0; height:2px; width:65%; margin:1.75em auto 1.5em;}
 
 /*layout*/
