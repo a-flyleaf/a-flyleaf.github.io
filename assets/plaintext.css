@@ -13,7 +13,11 @@ h1{font-size:2.25em;}
 h2{font-size:1.5em; margin-top:1em;} h1+h2{margin-top:.5em;}
 h3{font-size:1.15em; margin-top:1em;}
 h2+p,h2+ul,h3+p,h3+ul{margin-top:.5em;}
-code{font-family:consolas,monospace; background:rgba(0,0,0,0.075);}
+
+code,hr{background:rgba(0,0,0,0.075);}
+code{font-family:consolas,monospace;}
+blockquote{border-left:.5em solid rgba(0,0,0,0.075); padding-left:1em;}
+hr{border:0; height:2px; width:65%; margin:1.75em auto 1.5em;}
 
 /*layout*/
 #skip{position:absolute; left:-999px; width:1px; height:1px; top:auto; overflow:hidden;}
@@ -51,6 +55,6 @@ footer ul{list-style-type:none;}
 @media (prefers-color-scheme:dark){
 	body{background:#111; color:#fff;}
 	a{text-decoration-color:inherit;}
-	code{background:rgba(255,255,255,0.2);}
+	code,hr{background:rgba(255,255,255,0.2);} blockquote{border-color:rgba(255,255,255,0.2);}
 	header,.date{color:#c0c0c0;}
 }
