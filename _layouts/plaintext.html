@@ -6,7 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>{%if page.title%}{{page.title}} | {%endif%}{{site.name}}</title>
-		<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/plaintext.css"/>
+		<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/plaintext.css"/>{%if page.css%}
+		<style>{{page.css}}</style>{%endif%}
 	</head>
 	
 	<body>
