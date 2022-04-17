@@ -3,18 +3,20 @@
 	<head>
 		<title>draggable svg</title>
 		<style>
-			body{background:#707070;}
+			body{background:#707070; color:#fff;} a{color:inherit;} a:hover,a:focus,a:active{font-weight:bold;}
 			svg{margin:1em 0;}
 			.static{cursor:not-allowed;} .draggable{cursor:ew-resize;}
+			image{image-rendering:pixelated;}
 		</style>
-		<script src="draggable.js"></script>
+		<script src="drag.js"></script>
 	</head><body>
 		<p>following <a href="https://www.petercollingridge.co.uk/tutorials/svg/interactive/dragging/">this tutorial</a> | placeholder images via <a href="https://placeholder.com/">placeholder.com</a></p>
-		<p>lags somewhat (everything upscaled x6); zooming out helps</p>
+		<p>lags somewhat (canvas upscaled x6); zooming out helps</p>
 		
 		<svg xmlns="http://www.w3.org/2000/svg" width="4200" height="504" onload="makeDraggable(evt)" >
 			<defs><!--https://stackoverflow.com/questions/3796025/fill-svg-path-element-with-a-background-image-->
-				<pattern id="sj" width="16" height="60"><image href="img/sj.png" x="0" y="0"/></pattern><!--don't know WHY entering the original pixel dimensions for width/height (despite using an upscaled image) makes it display not-blurry but it does-->
+				<pattern id="sj" width="16" height="60"><image href="img/sj.png" x="0" y="0" width="96" height="360"/></pattern>
+				<pattern id="sn" width="26" height="54"><image href="img/sn.png" x="0" y="0" width="156" height="324"/></pattern>
 			</defs>
 			<g id="bg">
 				<rect x="0" y="0" width="4200" height="504" fill="#cfcfcf"/>
@@ -22,7 +24,11 @@
 				<rect x="0" y="216" width="4200" height="72" fill="#c5c5c5"/>
 				<rect x="0" y="360" width="4200" height="72" fill="#c5c5c5"/>
 			</g>
-			<rect x="150" y="144" width="96" height="360" fill="url(#sj)" class="draggable"/>
+			<rect x="72" y="144" width="96" height="360" fill="url(#sj)" class="draggable"/>
+			<rect x="174" y="180" width="156" height="324" fill="url(#sn)" class="draggable"/>
 		</svg>
+		
+		<p>okay yeah wow no, with only two (2) people this lags like a motherfucker. scratch the upscaling, and maybe use data (or hell “cheat” with a spreadsheet) because there is a <em>lot</em> of tedious info being re-entered here >_></p>
+		<p>and/or: don’t… do all 25+ people....</p>
 	</body>
 </html>
