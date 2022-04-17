@@ -1,18 +1,35 @@
+---
+layout: none
+---
 <!doctype html>
 <html lang="en">
 	<head>
 		<title>draggable svg</title>
 		<style>
-			body{background:#707070; color:#fff;} a{color:inherit;} a:hover,a:focus,a:active{font-weight:bold;}
+			body{background:#707070; color:#fff; font-family:verdana,sans-serif; font-size:.85em; padding:0 1em;} a{color:inherit;} a:hover,a:focus,a:active{background:rgba(0,0,0,0.25);}
 			svg{transform:scale(3); transform-origin:top left;}
-			.static{cursor:not-allowed;} .draggable{cursor:ew-resize;}
+			.static{cursor:not-allowed;} .draggable{cursor:ew-resize; position:relative;}
 			image{image-rendering:pixelated; image-rendering:crisp-edges;}
-			/* .active{fill:#fff;} for overlaps, doesn't work atm */
-			#svg-margin{height:252px; /*84xTransform*/}
+			.active{opacity:.5;}
+			#svg-margin{height:252px; /*655x84, multiply by transformation*/}
+			#labels{margin-bottom:1em;} label{margin-right:.5em;}
+			h1,h2{margin-bottom:0;} h1+p,h2+p,h2+ul{margin-top:.5em;}
+			ul{line-height:1.5em;}
 		</style>
 		<script src="draggable.js"></script>
 	</head><body>
-		<p>following <a href="https://www.petercollingridge.co.uk/tutorials/svg/interactive/dragging/">this tutorial</a> | placeholder images via <a href="https://placeholder.com/">placeholder.com</a></p>
+		<h1>height 2: the pixelening</h1>
+		<p>sort of revisiting <a href="{{site.url}}/shriblets/2018-08-heighthell/">a height chart from 3 years ago</a>, but coded using SVGs following <a href="https://www.petercollingridge.co.uk/tutorials/svg/interactive/dragging/">this tutorial</a></p>
+		
+		<!-- cba to figure these out
+		<h2>group toggles</h2>
+		<div id="labels">
+			<label><input type="checkbox" id="tfe-check" checked><i>The Firebird Effect</i></label>
+			<label><input type="checkbox" id="cmyk-check" checked>[whoever these people are]</label>
+			<label><input type="checkbox" id="404-check" checked><i>404</i></label>
+			<label><input type="checkbox" id="ygbtdm-check" checked><i>You’re gonna be the death of me</i></label>
+		</div>
+		-->
 		
 		<div id="svg-margin"><svg xmlns="http://www.w3.org/2000/svg" width="655" height="84" onload="makeDraggable(evt)" >
 			<defs><!--https://stackoverflow.com/questions/3796025/fill-svg-path-element-with-a-background-image-->
@@ -95,13 +112,20 @@
 		
 		<h2>patch notes</h2>
 		<ul>
-			<li>upscaled x3 by default</li>
+			<li>upscaled x3 via CSS</li>
 			<li>should work on a touchscreen (at least with one pointer)</li>
-			<li>stuff to add/tweak maybe:
-				<ul><li>z-index to top onclick</li>
-				<li>outline or other styling when active</li>
-				<li>per-story toggles</li>
-				<li>replace PNGs with SVGs??</li></ul></li>
+		</ul>
+		
+		<h2>possible changes</h2>
+		<ul>
+			<li><s>z-index to top onclick</s> this doesn’t work with SVGs apparently, big F</li>
+			<li><s>outline or other</s> styling when active
+				<ul><li>✔ outline looked weird, lowered opacity it is</li></ul></li>
+			<li>per-story toggles
+				<ul><li>exist in the code but non-functional, hidden</li></ul></li>
+			<li>readjust scale manually with an input</li>
+			<li>replace PNGs with SVGs??</li>
+			<li>redo from scratch with JSON data????? mostly to automate all the got dang code redundancy</li>
 		</ul>
 	</body>
 </html>
