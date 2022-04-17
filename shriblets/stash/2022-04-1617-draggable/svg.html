@@ -6,17 +6,17 @@
 			body{background:#707070; color:#fff;} a{color:inherit;} a:hover,a:focus,a:active{font-weight:bold;}
 			svg{margin:1em 0;}
 			.static{cursor:not-allowed;} .draggable{cursor:ew-resize;}
-			image{image-rendering:pixelated;}
+			image{image-rendering:pixelated; image-rendering:crisp-edges;}
 		</style>
 		<script src="drag.js"></script>
 	</head><body>
 		<p>following <a href="https://www.petercollingridge.co.uk/tutorials/svg/interactive/dragging/">this tutorial</a> | placeholder images via <a href="https://placeholder.com/">placeholder.com</a></p>
-		<p>lags somewhat (canvas upscaled x6); zooming out helps</p>
+		<p>canvas upscaled x3; if there’s lag zooming out may help</p>
 		
 		<svg xmlns="http://www.w3.org/2000/svg" width="4200" height="504" onload="makeDraggable(evt)" >
 			<defs><!--https://stackoverflow.com/questions/3796025/fill-svg-path-element-with-a-background-image-->
-				<pattern id="sj" width="16" height="60"><image href="img/sj.png" x="0" y="0" width="96" height="360"/></pattern>
-				<pattern id="sn" width="26" height="54"><image href="img/sn.png" x="0" y="0" width="156" height="324"/></pattern>
+				<pattern id="sj" width="1" height="1"><image href="img/sj.png" x="0" y="0" width="96" height="360"/></pattern>
+				<pattern id="sn" width="1" height="1"><image href="img/sn.png" x="0" y="0" width="156" height="324"/></pattern>
 			</defs>
 			<g id="bg">
 				<rect x="0" y="0" width="4200" height="504" fill="#cfcfcf"/>
@@ -25,10 +25,17 @@
 				<rect x="0" y="360" width="4200" height="72" fill="#c5c5c5"/>
 			</g>
 			<rect x="72" y="144" width="96" height="360" fill="url(#sj)" class="draggable"/>
-			<rect x="174" y="180" width="156" height="324" fill="url(#sn)" class="draggable"/>
+			<rect x="174" y="180" width="156" height="360" fill="url(#sn)" class="draggable"/>
 		</svg>
 		
 		<p>okay yeah wow no, with only two (2) people this lags like a motherfucker. scratch the upscaling, and maybe use data (or hell “cheat” with a spreadsheet) because there is a <em>lot</em> of tedious info being re-entered here >_></p>
 		<p>and/or: don’t… do all 25+ people....</p>
+		
+		<br/>
+		
+		<p>next day update: there is zero lag on iPad, but it isn’t multi-touch-friendly and the (upscaled PNG) images look bad. whyyyy</p>
+		<p>lags much less at x3 instead of the original x6 though, nice</p>
+		<br/>
+		<p>update again: pattern width and height don’t need to be defined for some reason and improve lag a ton??? back to x6 it is then</p>
 	</body>
 </html>
