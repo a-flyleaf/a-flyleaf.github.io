@@ -21,17 +21,26 @@ function makeDraggable(evt) {
 	function getMousePosition(evt) {
 		var CTM=svg.getScreenCTM();
 		/*no multi-touch weirdness*/ if (evt.touches) {evt = evt.touches[0];}
-		return {x: (evt.clientX - CTM.e) / CTM.a};
+		return {
+			x: (evt.clientX - CTM.e) / CTM.a,
+			/*y: (evt.clientY - CTM.f) / CTM.d*/
+		};
 	}
 	
 	/*calculate offset & hacky transformation-thing for dragging other elements*/
 	var selectedElement, offset, transform;
 	
-	/*movability*/
+	/*side note: console.log directly inside these functions runs for /literally every mouse movement*/
 	function startDrag(evt) {/*user clicks*/
+		/*console.log("startDrag");*/
 		if (evt.target.classList.contains('draggable')) {/*if target of click has class "draggable"*/
 			selectedElement=evt.target; /*selectedElement will be click target*/
 			offset = getMousePosition(evt);
+			
+			/*before "Dragging other elements"
+			offset.x -= parseFloat(selectedElement.getAttributeNS(null,"x"));
+			offset.y -= parseFloat(selectedElement.getAttributeNS(null,"y"));
+			*/
 			
 			/*get all transformations currently on the element*/
 			var transforms=selectedElement.transform.baseVal;
@@ -48,6 +57,7 @@ function makeDraggable(evt) {
 				/*get initial transform amount*/
 				transform = transforms.getItem(0);
 				offset.x -= transform.matrix.e;
+				/*offset.y -= transform.matrix.f;*/
 			
 			console.log("startDrag");
 		}
@@ -58,16 +68,34 @@ function makeDraggable(evt) {
 		if (selectedElement) {
 			evt.preventDefault(); /*prevents dragged elements from messing with content outside the SVG*/
 			
+			/* before "Dragging an element"
+			var x = parseFloat(selectedElement.getAttributeNS(null,"x"));
+			selectedElement.setAttributeNS(null,"x",x+0.1); /gets x-position of element, then adds +0.1px (moves to the right)/
+			*/
+			
+			/*Dragging an element
+			var dragX=evt.clientX;
+			var dragY=evt.clientY;
+			selectedElement.setAttributeNS(null,"x",dragX);
+			selectedElement.setAttributeNS(null,"y",dragY);
+			*/
+			
 			var coord=getMousePosition(evt);
 			
+			/*before "Dragging other elements"
+			selectedElement.setAttributeNS(null,"x",coord.x - offset.x);
+			selectedElement.setAttributeNS(null,"y",coord.y - offset.y);
+			*/
+			
 			/*hacky transformation thing*/
-			transform.setTranslate(coord.x - offset.x,0);
+			transform.setTranslate(coord.x - offset.x/*, coord.y - offset.y*/,0);
 			
 			console.log("drag");
 		}
 	}
 	
 	function endDrag(evt) {/*user unclicks OR mouse leaves the svg*/
-		selectedElement=null; /*deactivates selected element*/
+		/*console.log("endDrag"); <-- will affect ANY mouseoff so this is staying commented-out*/
+		selectedElement=null; /*resets selected element*/
 	}
 }
