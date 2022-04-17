@@ -6,26 +6,91 @@
 			body{background:#707070; color:#fff;} a{color:inherit;} a:hover,a:focus,a:active{font-weight:bold;}
 			svg{margin:1em 0;}
 			.static{cursor:not-allowed;} .draggable{cursor:ew-resize;}
-			image{image-rendering:pixelated; image-rendering:crisp-edges;}
+			image{image-rendering:pixelated; image-rendering:crisp-edges; transform:scale(6);}
+			/* .active{fill:#fff;} for overlaps, doesn't work atm */
 		</style>
-		<script src="drag.js"></script>
+		<script src="draggable.js"></script>
 	</head><body>
 		<p>following <a href="https://www.petercollingridge.co.uk/tutorials/svg/interactive/dragging/">this tutorial</a> | placeholder images via <a href="https://placeholder.com/">placeholder.com</a></p>
-		<p>canvas upscaled x3; if there’s lag zooming out may help</p>
+		<p>upscaled x3 from the original pixel art; lag and/or image weirdness may be fixed by readjusting the zoom</p>
 		
-		<svg xmlns="http://www.w3.org/2000/svg" width="4200" height="504" onload="makeDraggable(evt)" >
+		<svg xmlns="http://www.w3.org/2000/svg" width="3930" height="504" onload="makeDraggable(evt)" >
 			<defs><!--https://stackoverflow.com/questions/3796025/fill-svg-path-element-with-a-background-image-->
-				<pattern id="sj" width="1" height="1"><image href="img/sj.png" x="0" y="0" width="96" height="360"/></pattern>
-				<pattern id="sn" width="1" height="1"><image href="img/sn.png" x="0" y="0" width="156" height="324"/></pattern>
+				<!--tfe-->
+				<pattern id="sj" width="1" height="1"><image href="img/sj.png"/></pattern>
+				<pattern id="sn" width="1" height="1"><image href="img/sn.png"/></pattern>
+				<pattern id="cc" width="1" height="1"><image href="img/cc.png"/></pattern>
+				<!--rr-->
+				<pattern id="rb" width="1" height="1"><image href="img/rb.png"/></pattern>
+				<pattern id="fs" width="1" height="1"><image href="img/fs.png"/></pattern>
+				<!--cmyk-->
+				<pattern id="ns17" width="1" height="1"><image href="img/ns17.png"/></pattern>
+				<pattern id="ir17" width="1" height="1"><image href="img/ir17.png"/></pattern>
+				<pattern id="ns12" width="1" height="1"><image href="img/ns12.png"/></pattern>
+				<pattern id="ir12" width="1" height="1"><image href="img/ir12.png"/></pattern>
+				<pattern id="af" width="1" height="1"><image href="img/af.png"/></pattern>
+				<pattern id="tc" width="1" height="1"><image href="img/tc.png"/></pattern>
+				<pattern id="vc" width="1" height="1"><image href="img/vc.png"/></pattern>
+				<pattern id="ld" width="1" height="1"><image href="img/ld.png"/></pattern>
+				<pattern id="dh" width="1" height="1"><image href="img/dh.png"/></pattern>
+				<!--404-->
+				<pattern id="vl" width="1" height="1"><image href="img/vl.png"/></pattern>
+				<pattern id="kd" width="1" height="1"><image href="img/kd.png"/></pattern>
+				<pattern id="cy" width="1" height="1"><image href="img/cy.png"/></pattern>
+				<pattern id="rd" width="1" height="1"><image href="img/rd.png"/></pattern>
+				<!--ygbtdm-->
+				<pattern id="jc" width="1" height="1"><image href="img/jc.png"/></pattern>
+				<pattern id="kl" width="1" height="1"><image href="img/kl.png"/></pattern>
+				<pattern id="ad" width="1" height="1"><image href="img/ad.png"/></pattern>
+				<pattern id="cb" width="1" height="1"><image href="img/cb.png"/></pattern>
+				<pattern id="gr" width="1" height="1"><image href="img/gr.png"/></pattern>
+				<pattern id="da" width="1" height="1"><image href="img/da.png"/></pattern>
+				<pattern id="sq" width="1" height="1"><image href="img/sq.png"/></pattern>
+				<pattern id="em" width="1" height="1"><image href="img/em.png"/></pattern>
 			</defs>
 			<g id="bg">
-				<rect x="0" y="0" width="4200" height="504" fill="#cfcfcf"/>
-				<rect x="0" y="72" width="4200" height="72" fill="#c5c5c5"/>
-				<rect x="0" y="216" width="4200" height="72" fill="#c5c5c5"/>
-				<rect x="0" y="360" width="4200" height="72" fill="#c5c5c5"/>
+				<rect x="0" y="0" width="3930" height="504" fill="#cfcfcf"/>
+				<rect x="0" y="72" width="3930" height="72" fill="#c5c5c5"/>
+				<rect x="0" y="216" width="3930" height="72" fill="#c5c5c5"/>
+				<rect x="0" y="360" width="3930" height="72" fill="#c5c5c5"/>
 			</g>
-			<rect x="72" y="144" width="96" height="360" fill="url(#sj)" class="draggable"/>
-			<rect x="174" y="180" width="156" height="360" fill="url(#sn)" class="draggable"/>
+			<g id="tfe">
+				<rect x="72" y="144" width="96" height="360" fill="url(#sj)" class="draggable"/>
+				<rect x="174" y="180" width="156" height="360" fill="url(#sn)" class="draggable"/>
+				<rect x="342" y="126" width="114" height="378" fill="url(#cc)" class="draggable"/>
+			</g>
+			<g id="rr">
+				<rect x="486" y="102" width="132" height="402" fill="url(#rb)" class="draggable"/>
+				<rect x="630" y="72" width="120" height="432" fill="url(#fs)" class="draggable"/>
+			</g>
+			<g id="cmyk">
+				<rect x="750" y="114" width="114" height="390" fill="url(#ns17)" class="draggable"/>
+				<rect x="870" y="102" width="138" height="402" fill="url(#ir17)" class="draggable"/>
+				<rect x="1032" y="144" width="138" height="360" fill="url(#ns12)" class="draggable"/>
+				<rect x="1170" y="120" width="96" height="384" fill="url(#ir12)" class="draggable"/>
+				<rect x="1278" y="180" width="186" height="324" fill="url(#af)" class="draggable"/>
+				<rect x="1476" y="48" width="144" height="456" fill="url(#tc)" class="draggable"/>
+				<rect x="1626" y="192" width="108" height="312" fill="url(#vc)" class="draggable"/>
+				<rect x="1752" y="114" width="150" height="390" fill="url(#ld)" class="draggable"/>
+				<rect x="1920" y="72" width="174" height="432" fill="url(#dh)" class="draggable"/>
+			</g>
+			<g id="404">
+				<rect x="2100" y="96" width="174" height="408" fill="url(#vl)" class="draggable"/>
+				<rect x="2304" y="132" width="96" height="372" fill="url(#kd)" class="draggable"/>
+				<rect x="2436" y="54" width="150" height="450" fill="url(#cy)" class="draggable"/>
+				<rect x="2616" y="192" width="90" height="312" fill="url(#rd)" class="draggable"/>
+			</g>
+			<g id="ygbtdm">
+				<rect x="2754" y="66" width="138" height="438" fill="url(#jc)" class="draggable"/>
+				<rect x="2892" y="198" width="84" height="306" fill="url(#kl)" class="draggable"/>
+				<rect x="3006" y="114" width="126" height="390" fill="url(#ad)" class="draggable"/>
+				<rect x="3138" y="216" width="72" height="288" fill="url(#cb)" class="draggable"/>
+				<rect x="3222" y="102" width="168" height="402" fill="(#gy)" class="draggable"/>
+				<rect x="3384" y="36" width="162" height="468" fill="url(#da)" class="draggable"/>
+				<rect x="3564" y="60" width="132" height="444" fill="url(#sq)" class="draggable"/>
+				<rect x="3708" y="90" width="168" height="414" fill="url(#em)" class="draggable"/>
+			</g>
+			If you’re reading this, your browser isn’t compatible with <a href="https://caniuse.com/svg">inline SVGs</a>.
 		</svg>
 		
 		<p>okay yeah wow no, with only two (2) people this lags like a motherfucker. scratch the upscaling, and maybe use data (or hell “cheat” with a spreadsheet) because there is a <em>lot</em> of tedious info being re-entered here >_></p>

@@ -49,6 +49,9 @@ function makeDraggable(evt) {
 				transform = transforms.getItem(0);
 				offset.x -= transform.matrix.e;
 			
+			/*adds active class*/
+			selectedElement.classList.add("active");
+			
 			console.log("startDrag");
 		}
 	}
@@ -68,6 +71,7 @@ function makeDraggable(evt) {
 	}
 	
 	function endDrag(evt) {/*user unclicks OR mouse leaves the svg*/
+		selectedElement.classList.remove("active"); /*removes active class; MUST be before the null below*/
 		selectedElement=null; /*deactivates selected element*/
 	}
 }
