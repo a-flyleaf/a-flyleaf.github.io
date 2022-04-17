@@ -23,7 +23,7 @@ function makeDraggable(evt) {
 		/*no multi-touch weirdness*/ if (evt.touches) {evt = evt.touches[0];}
 		return {
 			x: (evt.clientX - CTM.e) / CTM.a,
-			y: (evt.clientY - CTM.f) / CTM.d
+			/*y: (evt.clientY - CTM.f) / CTM.d*/
 		};
 	}
 	
@@ -57,7 +57,7 @@ function makeDraggable(evt) {
 				/*get initial transform amount*/
 				transform = transforms.getItem(0);
 				offset.x -= transform.matrix.e;
-				offset.y -= transform.matrix.f;
+				/*offset.y -= transform.matrix.f;*/
 			
 			console.log("startDrag");
 		}
@@ -88,7 +88,7 @@ function makeDraggable(evt) {
 			*/
 			
 			/*hacky transformation thing*/
-			transform.setTranslate(coord.x - offset.x, coord.y - offset.y);
+			transform.setTranslate(coord.x - offset.x/*, coord.y - offset.y*/,0);
 			
 			console.log("drag");
 		}
