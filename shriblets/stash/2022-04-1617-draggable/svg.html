@@ -13,7 +13,6 @@
 		<script src="draggable.js"></script>
 	</head><body>
 		<p>following <a href="https://www.petercollingridge.co.uk/tutorials/svg/interactive/dragging/">this tutorial</a> | placeholder images via <a href="https://placeholder.com/">placeholder.com</a></p>
-		<p>upscaled x3 from the original pixel art; lag and/or image weirdness may be fixed by readjusting the zoom</p>
 		
 		<div id="svg-margin"><svg xmlns="http://www.w3.org/2000/svg" width="655" height="84" onload="makeDraggable(evt)" >
 			<defs><!--https://stackoverflow.com/questions/3796025/fill-svg-path-element-with-a-background-image-->
@@ -94,14 +93,15 @@
 			If you’re reading this, your browser isn’t compatible with <a href="https://caniuse.com/svg">inline SVGs</a>.
 		</svg></div>
 		
-		<p>okay yeah wow no, with only two (2) people this lags like a motherfucker. scratch the upscaling, and maybe use data (or hell “cheat” with a spreadsheet) because there is a <em>lot</em> of tedious info being re-entered here >_></p>
-		<p>and/or: don’t… do all 25+ people....</p>
-		
-		<br/>
-		
-		<p>next day update: there is zero lag on iPad, but it isn’t multi-touch-friendly and the (upscaled PNG) images look bad. whyyyy</p>
-		<p>lags much less at x3 instead of the original x6 though, nice</p>
-		<br/>
-		<p>update again: pattern width and height don’t need to be defined for some reason and improve lag a ton??? back to x6 it is then</p>
+		<h2>patch notes</h2>
+		<ul>
+			<li>upscaled x3 by default</li>
+			<li>should work on a touchscreen (at least with one pointer)</li>
+			<li>stuff to add/tweak maybe:
+				<ul><li>z-index to top onclick</li>
+				<li>outline or other styling when active</li>
+				<li>per-story toggles</li>
+				<li>replace PNGs with SVGs??</li></ul></li>
+		</ul>
 	</body>
 </html>
