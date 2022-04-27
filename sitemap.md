@@ -2,7 +2,7 @@
 layout: plaintext
 title: sitemap
 ---
-Organized by [repository](https://github.com/a-flyleaf?tab=repositories), which is basically GitHub's way of organizing related content.
+Organized by [repository](https://github.com/a-flyleaf?tab=repositories), which is how GitHub groups related content.
 
 ## main site
 - [<b>about</b>](/about): a peek behind the curtain
