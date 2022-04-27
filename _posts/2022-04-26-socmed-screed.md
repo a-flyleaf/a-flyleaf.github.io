@@ -97,3 +97,7 @@ That being said: hi, you're on a-flyleaf(.github).com. This is *my* stuff. This 
 But really. I did my "social media" time. I had fun, learned a lot, met some cool people—but all in all, it is a *ton* of screentime that I don't think I spent well. What I'm doing now? Not perfect (it never is), but rewarding.
 
 Also I was raised on "don't trust strangers on the internet" and after years of avoiding those platforms like the plague (and learning about all their privacy issues along the way) there's no way in *hell* I'm gonna touch them now *byeeeee*~
+
+&nbsp;
+
+<small>(P.S.: Can a HTML-disabled site do [*this*?!??](https://web.archive.org/web/20150313041327/http://www.sewingandembroiderywarehouse.com/embtrb.htm))</small>
