@@ -6,7 +6,7 @@ header,nav,main,footer{display:block;}
 
 /*general type*/
 ::selection{background:rgba(0,128,255,.85); color:#fff;}
-a{color:inherit; text-decoration-color:#c0c0c0;} a:hover,a:active,a:focus{color:#0080ff; text-decoration:none;}
+a{color:inherit; text-decoration-color:#dfdfdf; text-decoration-thickness:2px;} a:hover,a:active,a:focus{color:#0080ff; text-decoration:none;}
 img{max-width:100%; height:auto;}
 p,ul{margin:.75em 0; line-height:1.45em;} li>ul{margin:0 0 0 1em;}
 h1{font-size:2.25em;}
@@ -46,6 +46,7 @@ article h2{font-size:1.5em;}
 article .date{padding-bottom:0;}
 article p:last-of-type{display:inline;}
 .readmore{font-size:.85em; display:inline-block; color:#808080;}
+aside{color:#606060; font-size:.85em; margin-left:1em; line-height:150%;}
 
 footer{color:#808080;}
 footer .content{padding:9em 0 0; font-size:.85em;}
@@ -58,7 +59,7 @@ footer ul{list-style-type:none;}
 
 @media (prefers-color-scheme:dark){
 	body{background:#111; color:#fff;}
-	a{text-decoration-color:inherit;}
+	a{text-decoration-color:#808080;}
 	code,hr{background:rgba(255,255,255,0.2);} blockquote{border-color:rgba(255,255,255,0.2);}
-	header,.date{color:#c0c0c0;}
+	header,.date,aside{color:#c0c0c0;}
 }
