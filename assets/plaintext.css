@@ -39,10 +39,12 @@ header li::before{content:"•"; padding-right:1em;} header a:first-of-type li::
 
 main .content{padding:1em 0;}
 .date{color:#808080; margin-top:.5em; padding-bottom:1em;}
-article{padding-bottom:2em;}
+article{padding-bottom:1em;}
+article h2{font-size:1.5em;}
+.title{text-decoration:none;} .excerpt{margin-top:.5em;}
 article .date{padding-bottom:0;}
 article p:last-of-type{display:inline;}
-.readmore{font-size:.85em;}
+.readmore{font-size:.85em; display:inline-block; color:#808080;}
 
 footer{color:#808080;}
 footer .content{padding:9em 0 0; font-size:.85em;}
