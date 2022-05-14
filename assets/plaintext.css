@@ -1,6 +1,6 @@
 /*core*/
 *{margin:0; padding:0; box-sizing:border-box; font-size:100%;}
-body{overflow-x:hidden; word-wrap:break-word; font-family:verdana,san-serif; color:#111; font-size:1.25em;}
+body{overflow-x:hidden; word-wrap:break-word; font-family:verdana,sans-serif; color:#111; font-size:1.25em;}
 header,nav,main,footer{display:block;}
 .wrap{margin:0 auto; max-width:30em; padding:0 1em;}
 
