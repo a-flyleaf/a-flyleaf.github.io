@@ -7,13 +7,13 @@ Organized by [repository](https://github.com/a-flyleaf?tab=repositories), which 
 ## main site
 - [<b>about</b>](/about): a peek behind the curtain
 - [<b>projects</b>](/projects): substantial stuff
-	- [<i>The Firebird Effect</i>](/projects/tfe): discontinued comic that I haven't gotten around to making a separate repository for
+	- includes [<i>The Firebird Effect</i>](/projects/tfe), a discontinued comic that I haven't gotten around to making a separate repository for
 - [<b>shriblets</b>](/shriblets): assorted webpages
 - [<b>blog</b>](/blog): rambling galore
 - <b>sitemap</b>: You are here!
 <!--privacy policy and colophon Exist but aren't being shown on this layout-->
 
-## elsewhere on the site
+## elsewhere on a-flyleaf.github.io
 Ordered alphabetically. Also noted by actual title on [the projects page](/projects).
 
 - [<b>/artfight</b>](/artfight): public galleries for an art challenge
