@@ -1,1 +1,0 @@
-mostly dumping an old p5js relearn-run, a profile-compendium-thing that hasn’t been finished, and whatever WIPs I feel like uploading early without adding to the shriblets page proper. do with them what you will ¯\_(ツ)_/¯
