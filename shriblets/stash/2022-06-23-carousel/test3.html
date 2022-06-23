@@ -9,5 +9,32 @@
 	<iframe title="carousel" style="height:300px; width:400px; border:1px solid #000;" name="crsl" src="test3a.html"></iframe>
 	
 	<p><a href="about:blank" target="crsl">wipes the carousel</a></p>
+	
+	<hr/>
+	
+	<div id="counter">counter: <span id="count">if you're reading this JS isn't working</span></div>
+	<button onclick="add()">+</button> <button onclick="sub()">-</button>
+	
+	<script>
+		var num = 1;
+		console.log("num = " + num);
+		document.getElementById("count").innerHTML = num;
+		
+		function add(){
+			num = num + 1;
+			console.log("num = " + num);
+			document.getElementById("count").innerHTML = num;
+		}
+		
+		function sub(){
+			num = num - 1;
+			console.log("num = " + num);
+			document.getElementById("count").innerHTML = num;
+		}
+		
+		//https://sebhastian.com/display-javascript-variable-html/
+		//https://stackoverflow.com/questions/15305527/javascript-user-input-through-html-input-tag-to-set-a-javascript-variable < is why this is put in the add/subtract functions
+		//document.getElementById("count").innerHTML = num;
+	</script>
 </body>
 </html>
