@@ -40,6 +40,17 @@
 		ctrls.querySelector('.btn-next').addEventListener('click', function(){nextSlide(true);});
 		carousel.appendChild(ctrls);
 		console.log("controls appended at the end of #carousel");
+		
+		// ARIA live region
+		var liveregion = document.createElement('div');
+		liveregion.setAttribute('aria-live','polite');
+		liveregion.setAttribute('aria-atomic','true');
+		liveregion.setAttribute('class','liveregion visuallyhidden');
+		carousel.appendChild(liveregion);
+			//side note: you can see how to append and style divs with raw javascript between this and the code above, hmmm. could be useful for height stuff or other "don't make something appear unless JS is enabled" functionality...
+		if (announceItem){
+			carousel.querySelector('.liveregion').textContent = 'Item' + (new_current + 1) + ' of ' + slides.length;
+		}
 	</script>
 </body>
 </html>
