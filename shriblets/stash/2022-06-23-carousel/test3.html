@@ -15,21 +15,33 @@
 	<div id="counter">counter: <span id="count">if you're reading this JS isn't working</span></div>
 	<button onclick="add()">+</button> <button onclick="sub()">-</button>
 	
-	<script>
+	<div id="img"></div>
+	
+	<script>		
+		//just the number
 		var num = 1;
 		console.log("num = " + num);
 		document.getElementById("count").innerHTML = num;
+		
+		//append image
+		var imgs = document.createElement('figure');
+		imgs.innerHTML = '<img src="' + num + '.png" alt=""/>';
+		img.appendChild(imgs);
 		
 		function add(){
 			num = num + 1;
 			console.log("num = " + num);
 			document.getElementById("count").innerHTML = num;
+			imgs.innerHTML = '<img src="' + num + '.png" alt=""/>';
+			img.appendChild(imgs);
 		}
 		
 		function sub(){
 			num = num - 1;
 			console.log("num = " + num);
 			document.getElementById("count").innerHTML = num;
+			imgs.innerHTML = '<img src="' + num + '.png" alt=""/>';
+			img.appendChild(imgs);
 		}
 		
 		//https://sebhastian.com/display-javascript-variable-html/
