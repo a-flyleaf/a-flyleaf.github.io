@@ -6,20 +6,40 @@
 <body>
 	<p>following <a href="https://www.w3.org/WAI/tutorials/carousels/">this tutorial</a> more or less</p>
 	
-	<section id="carousel">
-		<figure>
+	<section id="carousel"><ul>
+		<li><figure>
 			<img src="https://via.placeholder.com/400x300.png" alt="1"/>
 			<figcaption><p>caption 1</p></figcaption>
-		</figure>
-		<figure>
+		</li></figure>
+		<li><figure>
 			<img src="https://via.placeholder.com/400x300.png" alt="2"/>
 			<figcaption><p>caption 2<br/>
 			which is two lines</p></figcaption>
-		</figure>
-		<figure>
+		</li></figure>
+		<li><figure>
 			<img src="https://via.placeholder.com/400x300.png" alt="3"/>
 			<figcaption><p>caption threeeee</p></figcaption>
-		</figure>
-	</section>
+		</li></figure>
+	</ul></section>
+	
+	<script>
+		// creates buttons via javascript; they won't appear otherwise
+		var ctrls = document.createElement('ul');
+		ctrls.className = 'controls';
+		ctrls.innerHTML = '<li>' +
+				'<button type="button" class="btn-prev">' +
+					'←' +
+				'</button>' +
+			'</li>' +
+			'<li>' +
+				'<button type="button" class="btn-next">' +
+					'→' +
+				'</button>' +
+			'</li>';
+		ctrls.querySelector('.btn-prev').addEventListener('click', function(){prevSlide(true);});
+		ctrls.querySelector('.btn-next').addEventListener('click', function(){nextSlide(true);});
+		carousel.appendChild(ctrls);
+		console.log("controls appended at the end of #carousel");
+	</script>
 </body>
 </html>
