@@ -10,16 +10,16 @@
 		<li><figure>
 			<img src="https://via.placeholder.com/400x300.png" alt="1"/>
 			<figcaption><p>caption 1</p></figcaption>
-		</li></figure>
+		</figure></li>
 		<li><figure>
 			<img src="https://via.placeholder.com/400x300.png" alt="2"/>
 			<figcaption><p>caption 2<br/>
 			which is two lines</p></figcaption>
-		</li></figure>
+		</figure></li>
 		<li><figure>
 			<img src="https://via.placeholder.com/400x300.png" alt="3"/>
 			<figcaption><p>caption threeeee</p></figcaption>
-		</li></figure>
+		</figure></li>
 	</ul></section>
 	
 	<script>
@@ -42,6 +42,7 @@
 		console.log("controls appended at the end of #carousel");
 		
 		// ARIA live region
+		/* (disabling temporarily, else javascript stops at "announceItem" being undefined)
 		var liveregion = document.createElement('div');
 		liveregion.setAttribute('aria-live','polite');
 		liveregion.setAttribute('aria-atomic','true');
@@ -51,6 +52,30 @@
 		if (announceItem){
 			carousel.querySelector('.liveregion').textContent = 'Item' + (new_current + 1) + ' of ' + slides.length;
 		}
+		*/
+		
+		// visible nav
+		// oh hey now I get to test JS-appending right now immediately
+		var slnv = document.createElement('ul');
+		slnv.className = 'slidenav';
+		slnv.innerHTML = '<li>' +
+				'<button class="current" data-slide="0">' +
+					'<span class="visuallyhidden">test</span> 1' +
+					'<span class="visuallyhidden">(current slide)</span>' +
+				'</button>' +
+			'</li>' +
+			'<li>' +
+				'<button data-slide="1">' +
+					'<span class="visuallyhidden">test</span> 2' +
+				'</button>' +
+			'</li>' +
+			'<li>' +
+				'<button data-slide="2">' +
+					'<span class="visuallyhidden">test</span> 3' +
+				'</button>' +
+			'</li>';
+		carousel.appendChild(slnv);
+		console.log("slidenav appended at the end of #carousel");
 	</script>
 </body>
 </html>
