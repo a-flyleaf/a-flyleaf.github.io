@@ -18,14 +18,14 @@ layout: none
 			.wrap{padding:1rem; margin:0 auto;}
 			span{display:inline-block;}
 			.block,#cmyk{margin:1.5rem; text-decoration:0;} .block:hover,.block:focus,.block:active{opacity:.65;}
-			p{margin-top:.5em; line-height:150%;}
+			p{margin-top:.5em;}
 			figure{line-height:0;} img{max-width:100%; height:auto;}
 			::selection{background:rgba(0,0,0,.15);}
-			a{color:inherit; text-decoration:none;}
+			a{color:inherit;} a:hover,a:focus,a:active{text-decoration:none;}
 			
 			.brand {background:url(../bg-light.png) #fff;} 
 			.brand .wrap{max-width:17.5rem; text-align:center; background:rgba(255,255,255,.75);}
-			.brand a{text-decoration:underline #c0c0c0;} .brand a:hover,.brand a:focus,.brand a:active{color:#0080ff;}
+			.brand a{text-decoration-color:#c0c0c0;} .brand a:hover,.brand a:focus,.brand a:active{color:#0080ff;}
 			.brand ::selection{background:rgba(0,128,255,.85); color:#fff;}
 			
 			header{padding:2rem 0;}
@@ -34,7 +34,6 @@ layout: none
 			h2{font-size:1.5em; line-height:125%;}
 			.desc{text-align:center;} .desc p{margin-bottom:-1rem;}
 			
-			section a{display:block;}
 			h3{font-size:1.5em; line-height:115%; margin-bottom:.5rem;}
 			#stories .block p{font-size:.85em;}
 			
@@ -46,43 +45,40 @@ layout: none
 			#four{background:#fff; font-family:initial; font-size:1.25em;}
 			#four ::selection{background:rgba(128,128,128,.5);}
 			#four .sum{max-width:25rem;}
-			#four h3{font-family:consolas,monospace; font-size:4em; line-height:.75em; margin-top:-.1em;}
+			#four h3{font-family:consolas,monospace; font-size:4em; line-height:.75em; margin-top:-.5rem;}
 			#four blockquote{line-height:135%;}
 			
 			#tfe{background:#000; color:#fff; font-family:calibri,sans-serif; font-size:1.25em; line-height:135%;}
 			#tfe ::selection{background:#ff9600;}
-			#tfe .sum{max-width:20rem;}
+
+			#tfe .sum,#cmyk .sum{max-width:20rem;}
 			
-			#toyshelf img,#artfight img{opacity:.15;}
-			
-			#toyshelf{background:#fff;}
-			#toyshelf h3{margin-top:em;}
-			#toyshelf ::selection{background:#dfdfdf; background:rgba(0,0,0,.15);}
-			
-			#artfight{background:#3d3d3d; color:#c2c2c2;}
-			#artfight figure{background:linear-gradient(#bf54e2,#98a54e);}
-			#artfight h3{margin-top:-.15em;}
-			#artfight ::selection{background:rgba(128,128,128,.25);}
-			
-			#dragonotes{background:#dcd6c8; color:#232323;}
-			#dragonotes figure{background:#731d08;}
-			#dragonotes img{opacity:.5;}
-			#dragonotes ::selection{background:rgba(189,179,156,.5);}
+			#cmyk{background:#404040; color:#fff; margin:0;} #cmyk img{filter:grayscale(50%);} #cmyk p{line-height:150%;}
+			#cmyk span{display:inline; font-weight:normal;}
 			
 			#p5js{background:#202020; color:#dfdfdf; font-family:sans-serif; line-height:150%;}
 			#p5js ::selection{background:#000; color:#fff;}
 			#p5js figure{width:65%; margin:0 auto;}
-			#p5js h3{margin:1em 0 0;}
+			#p5js h3{margin:1rem 0 0;}
+			
+			#artfight{background:#111; color:#fff; font-family:'segoe ui',helvetica,arial,sans-serif; line-height:150%;}
+			
+			#dragonotes{background:#dcd6c8; color:#232323;}
+			#dragonotes h3{background:#731d08; color:#fff; margin-bottom:0;}
+			#dragonotes p{margin-top:-.25rem;}
+			
+			#other .wrap{max-width:25rem;}
+			
 			#here{padding:1rem 0;}
 			#here .wrap{padding:1rem;}
-			#here a:last-child{font-weight:bold;}
+			#here p{line-height:150%;} #here a:last-child{font-weight:bold;}
 			
 			@media (prefers-color-scheme:dark){
 				.brand{background:url(../bg-dark.png) #111; color:#fff; line-height:150%;} .brand .wrap{background:rgba(17,17,17,.5);}
 			}
 			
 			@media only screen and (min-width:640px) {
-				.block{margin:0;}
+				.block,#cmyk{margin:0;}
 				main .wrap{padding:2rem;}
 				.desc{font-size:1.5em; margin-bottom:1.5rem;}
 				#stories .wrap{padding:1.5rem;}
@@ -92,25 +88,27 @@ layout: none
 				#tfe h3{margin-top:-1.65em; color:#000;}
 				#cmyk h3{margin-top:-.5em;}
 				
-				.float{width:100%; overflow:auto; display:flex;}
-				#p5js figure{width:100%;} #p5js h3{padding-top:1.5em;}
-				#other h2{margin-top:.5em;}
-				#other .float a{font-size:.85em; display:inline-block; width:50%; float:left;}
-				#other .float section{height:100%;}
-				#other .wrap{padding:1rem 2rem;}
-				#other section .wrap p{max-width:20em;}
+				.float{width:100%; overflow:auto;}
+				#tfe,#cmyk,#other .float section{display:inline-block; float:left;}
+				#tfe,#cmyk{width:50%; min-height:21rem;}
+				
+				#other .desc{margin:1rem auto;}
+				#p5js figure{width:100%;} #artfight h3{margin-top:-.5em;}
+				#other .float section{width:33.33%; font-size:.85em; min-height:24rem;}
 				
 				#here{padding:3rem 0;}
 			}
 			
 			@media only screen and (min-width:915px){
 				#sitewrap{margin:0 auto; padding:1rem;}
-				#other .float a{font-size:1em;}
-				#p5js h3{padding-top:1.15em;}
+				#tfe,#cmyk{min-height:22rem;}
+				#other .float section{font-size:1em; min-height:26rem;}
 			}
 			
 			@media only screen and (min-width:1000px){
 				#sitewrap{padding:2rem;}
+				#tfe,#cmyk{min-height:25.25rem;}
+				#other .float section{min-height:30rem;}
 			}
 		</style>
 	</head>
@@ -124,8 +122,8 @@ layout: none
 		<main>
 			<section id="stories">
 				<div class="wrap desc">
-					<h2>Misadventures in Narrative</h2>
-					<p><span>Storytelling endeavors,</span> <span>oldest to newest.</span></p>
+					<h2>Misdaventures in Narrative</h2>
+					<p>In reverse-chronological order.</p>
 				</div>
 				<a class="block" href="{{site.url}}/ygbtdm"><section id="ygbtdm">
 					<figure><picture><source media="(min-width:640px)" srcset="img/ygbtdm-full.png"><img src="img/ygbtdm-640.png" alt=""/></picture></figure>
@@ -147,7 +145,7 @@ layout: none
 						</div>
 					</div>
 				</section></a>
-				<a class="block" href="{{site.url}}/projects/tfe"><section id="tfe">
+				<div class="float"><a class="block" href="{{site.url}}/projects/tfe"><section id="tfe">
 					<figure><picture><source media="(min-width:640px)" srcset="img/tfe-full.png"><img src="img/tfe-640.png" alt=""/></picture></figure>
 					<div class="wrap">
 						<h3>The Firebird Effect</h3>
@@ -157,38 +155,35 @@ layout: none
 						</div>
 					</div>
 				</section></a>
+				<a class="block" href="{{site.url}}/toyshelf"><section id="cmyk">
+					<figure><picture><source media="(min-width:640px)" srcset="img/cmyk-full.png"><img src="img/cmyk-640.png" alt=""/></picture></figure>
+					<div class="wrap">
+						<h3>Toyshelf <span>(not a story)</span></h3>
+						<p class="sum">A collection of characters, the seven shown above and others. (This should probably be under miscellany but I don’t feel like reshuffling this page yet…)</p>
+					</div>
+				</section></a></div><!--/float-->
 			</section><section id="other">
 				<div class="wrap desc">
 					<h2>miscellany</h2>
-					<p><span>Ordered by most to least likely to update,</span> <span>main site notwithstanding.</span></p>
+					<p>In no particular order.</p>
 				</div>
-				<div class="float"><a href="{{site.url}}/toyshelf" class="block"i><section id="toyshelf">
-					<figure><img src="img/toyshelf.png" alt=""/></figure>
-					<div class="wrap">
-						<h3>Toyshelf</h3>
-						<p>Character repository, where I dump stuff that don’t quite fit elsewhere.</p>
-					</div>
-				</section></a>
-				<a href="{{site.url}}/artfight" class="block"><section id="artfight">
-					<figure><img src="img/artfight2.png" alt=""/></figure>
-					<div class="wrap">
-						<h3>ArtFight</h3>
-						<p>Gallery for an annual art trading game, because you can’t see much on the official site without an account.</p>
-					</div>
-				</section></a></div><!--/float-->
-				<div class="float"><a href="{{site.url}}/dragonotes" class="block"><section id="dragonotes">
-					<figure><img src="img/dragonotes.png" alt=""/></figure>
-					<div class="wrap">
-						<h3>dragonotes</h3>
-						<p>Resource hub & personal tracker for the browser-based game Flight Rising.</p>
-					</div>
-				</section></a>
-				<a href="{{site.url}}/p5jsomething" class="block"><section id="p5js">
+				<div class="float"><a href="{{site.url}}/p5jsomething" class="block"><section id="p5js">
 					<div class="wrap">
 						<figure><img src="img/p5js.png" alt=""/></figure>
 						<h3>p5jsomething</h3>
 						<p>Code experimentation for class, spring 2020. Originally titled “p5jsnake” but in the process of coding it stopped being snake.</p>
 					</div>
+				</section></a>
+				<a href="{{site.url}}/artfight" class="block"><section id="artfight">
+					<figure><img src="img/artfight.png" alt=""/></figure>
+					<div class="wrap">
+						<h3>ArtFight 2021(+)</h3>
+						<p>Gallery for an annual art trading game, because the official site isn’t particularly guest-friendly.</p>
+					</div>
+				</section></a>
+				<a href="{{site.url}}/dragonotes" class="block"><section id="dragonotes">
+						<h3><div class="wrap">dragonotes</div></h3>
+						<div class="wrap"><p>Resource hub & personal tracker for the browser-based game Flight Rising; sporadically updated.</p></div>
 				</section></a></div><!--/float-->
 				<section class="brand" id="here"><div class="wrap">
 					<h3>This site!</h3>
