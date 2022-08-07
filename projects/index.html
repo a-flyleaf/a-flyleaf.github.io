@@ -92,20 +92,21 @@ layout: none
 				#tfe h3{margin-top:-1.65em; color:#000;}
 				#cmyk h3{margin-top:-.5em;}
 				
-				.float{width:100%; overflow:auto; display:flex;}
+				.float{width:100%; overflow:auto;}
+				.float .float{display:flex;}
 				#p5js figure{width:100%;} #p5js h3{padding-top:1.5em;}
 				#other h2{margin-top:.5em;}
 				#other .float a{font-size:.85em; display:inline-block; width:50%; float:left;}
 				#other .float section{height:100%;}
-				#other .wrap{padding:1rem 2rem;}
-				#other section .wrap p{max-width:20em;}
+				#other #misc .wrap{padding:1.5rem 2rem 1.25rem;}
 				
 				#here{padding:3rem 0;}
 			}
 			
 			@media only screen and (min-width:915px){
 				#sitewrap{margin:0 auto; padding:1rem;}
-				#other .float a{font-size:1em;}
+				#other .float{display:flex;}
+				#other .float .float{width:50%; float:left;}
 				#p5js h3{padding-top:1.15em;}
 			}
 			
@@ -160,9 +161,9 @@ layout: none
 			</section><section id="other">
 				<div class="wrap desc">
 					<h2>miscellany</h2>
-					<p><span>Ordered by most to least likely to update,</span> <span>main site notwithstanding.</span></p>
+					<p><span>Most to least likely to update,</span> <span>main site notwithstanding.</span></p>
 				</div>
-				<div class="float"><a href="{{site.url}}/toyshelf" class="block"i><section id="toyshelf">
+				<div class="float" id="misc"><div class="float"><a href="{{site.url}}/toyshelf" class="block"i><section id="toyshelf">
 					<figure><img src="img/toyshelf.png" alt=""/></figure>
 					<div class="wrap">
 						<h3>Toyshelf</h3>
@@ -180,7 +181,7 @@ layout: none
 					<figure><img src="img/dragonotes.png" alt=""/></figure>
 					<div class="wrap">
 						<h3>dragonotes</h3>
-						<p>Resource hub & personal tracker for the browser-based game Flight Rising.</p>
+						<p>Incomplete resource hub & sporadically-updated personal trackers for the browser-based game Flight Rising.</p>
 					</div>
 				</section></a>
 				<a href="{{site.url}}/p5jsomething" class="block"><section id="p5js">
@@ -189,7 +190,7 @@ layout: none
 						<h3>p5jsomething</h3>
 						<p>Code experimentation for class, spring 2020. Originally titled “p5jsnake” but in the process of coding it stopped being snake.</p>
 					</div>
-				</section></a></div><!--/float-->
+				</section></a></div><!--/float--></div><!--/float-->
 				<section class="brand" id="here"><div class="wrap">
 					<h3>This site!</h3>
 					<p>You are here. <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/1e78f061897b5c1b0fb4bb996d956c4e8541469d">Created on GitHub in 2019</a> and still kickin’. <a href="{{site.url}}">Here’s a link back to base~</a></p>
