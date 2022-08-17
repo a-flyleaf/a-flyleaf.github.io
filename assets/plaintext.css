@@ -8,7 +8,7 @@ header,nav,main,footer{display:block;}
 ::selection{background:rgba(0,128,255,.85); color:#fff;}
 a{color:inherit; text-decoration-color:#dfdfdf; text-decoration-thickness:2px;} a:hover,a:active,a:focus{color:#0080ff; text-decoration:none;}
 img{max-width:100%; height:auto;}
-p,ul{margin:.75em 0; line-height:1.45em;} li>ul{margin:0 0 0 1em;}
+p,ul{margin:.75em 0; line-height:1.45em;} ul{margin-left:1em;} li>ul{margin:0 0 0 1em;}
 h1{font-size:2.25em;}
 h2{font-size:1.5em; margin-top:1em;} h1+h2{margin-top:.5em;}
 h3{font-size:1.15em; margin-top:1em;}
