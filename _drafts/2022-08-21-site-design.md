@@ -1,0 +1,19 @@
+---
+layout: plaintext
+title: prattlings on website design
+date: 2022-08-21
+slug: site-design
+css: main li{margin:.5em 0;}
+---
+...and development and such and whatnot. Possibly redundant, not particularly professional, 500% biased. Because if I'm not using my own website to spew thoughts into the void then what even is the point.<!--more-->
+- My own site (you are here) is a disorganized trainwreck. I will own that. You know, I *like* to think it makes some modicrumb of sense, I try to note when I break links on purpose---but like, I saw someone dive in blind in person one day, on an iPad where all the fancy hidden hover links on my homepage are basically irrelevant, don't think they knew what the hell to do from there. Oh well. <span class="dipslay:inline-block;">¯\\\_(ツ)_/¯</span> I keep entertaining the idea of a "splash" or other sort of intro page, actually explaining what's going on here, but. *eh.* This site's for me, target audience of 1, *I* know where my stuff is. Have fun, hypothetical future archivists!
+- I was trained by the school of Bauhaus long before I actually went to graphic design school, which means I like Simple and Clean™ layouts with minimal to no distraction. (The "theme" of this blog post, literally called "plaintext," is a testament.) Geocities hell is, while definitely *unique*, not my go-to style.
+- At the same time, something is definitely *lost* in translation from gif haven to [some corporate template](https://everybootstrap.site/). Authenticity, sincerity, vulgarity, rawness, something along that line. It's like---yeah, the flyers of local small nonprofits aren't Peak Graphic Design™, but do they *need* to be? If they were suddenly all sleek on a grid I can't help but think people might react to them the same way they might react to the [so-called "corporate art style"](https://www.wired.co.uk/article/corporate-memphis-design-tech)---as in, with warranted suspicion and distance.
+- But it's not the *art style* it's the *attitude* it's the *ethics* that's the whole *thing*!!!!
+
+----
+
+- Websites are *inherently* mobile-friendly and work on *all* browsers and we, designers, developers, break that. Sometimes it's an unfortunate side effect, either because the code wasn't far along yet to make things look pretty (tables. tables and Flash sites everywhere) or because someone hasn't learned better (we've had media queries since, what, at *least* [2010](https://alistapart.com/article/responsive-web-design/)?). Or maybe it's "broken" on purpose, because someone's like "I'll just code the desktop site and then [figure out mobile later](https://developer.mozilla.org/en-US/docs/Glossary/Mobile_First)" (foolish, but another long-held default, I get it), or [a certain monopolys browser eats everything it touches](https://compusever.tumblr.com/search/chrome) (bad, terrible, do not touch with 500 foot pole).
+- Do you hear me, over those fifty tangents, though? *The web is fine. The web works great. We break it.*
+- There are ways to *un-*break it or better yet not break it in the first place, but here we are, cookie popups and unnecessary javascript and code bloat that no human eye can read and *aaaaaaaaaaaa. I'm so tired.*
+- They're accessible too, btw. A raw HTML page with absolutely no styling and a couple links is *infinitely* easier to navigate than, idk, 90% of sites out there. Probably including most of mine! Keyboard, mouse, ancient UI that doesn't even have a mouse, you name it. It's there. [It makes perfect sense, it *works*.](http://info.cern.ch/hypertext/WWW/TheProject.html) Everyday we stray further from HTML's light.
