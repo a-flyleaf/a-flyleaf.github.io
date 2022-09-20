@@ -1,0 +1,8 @@
+*{margin:0; padding:0; box-sizing:border-box; font-size:100%; word-wrap:break-word;}
+body{background:#707070; color:#fff; font-family:verdana,sans-serif; font-size:1.25em; line-height:1.5; padding:1em;}
+::selection{background:#202020; background:rgba(0,0,0,.25); color:#fff;}
+img{max-width:100%; height:auto;}
+
+p{margin:.5em 0;}
+main{background:#404040; color:#c0c0c0;}
+figcaption,.desc{font-size:.85em;}
