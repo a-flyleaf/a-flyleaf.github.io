@@ -10,90 +10,121 @@
 </head>
 <body>
 	<header>
-		<h1>sawfaceRedeux.blend</h1>
-		<p>or: something of a glorified blog post</p>
-		<figure><img src="redeux.jpg"/>
+		<div id="title">
+			<h1>sawfaceRedeux.blend</h1>
+			<p>or: something of a glorified blog post</p>
+		</div>
+		<figure>
+			<div class="photoset w2">
+				<a href="original.png" class="pic" target="_blank"><img src="original.png"/></a>
+				<a href="final-crop.png" class="pic" target="_blank"><img src="final-crop.png"/></a>
+			</div>
 			<figcaption>
-				<p>“Draw This Again: 3D edition”: a side-by-side comparison of a drawing from July 2016 (drawn with <a href="https://firealpaca.com/">FireAlpaca</a>, my usual digital art program) and the 3D remake from September 2022 (made entirely with <a href="https://www.blender.org/">Blender</a>).</p>
+				<div id="intro">
+					<p>It’s like a redraw, but 2D to 3D.</p>
+					<p>All images can be clicked, and open the highres in a new tab.</p>
+				</div>
 				<p class="desc">[Image descripton: The art depicts a human figure making a loose <a href="https://old.reddit.com/r/Catholicism/comments/2enu4z/art_question_why_the_two_fingers/ck1g29r/">Jesus hand</a> (thumb, pointer, and middle fingers raised) on the viewer’s left, and the other hand flat on their chest. The figure has no eyes (a shadow flattens the area), two sharp teeth sticking out of the mouth, and a crooked mouth with long, jagged fangs opening in the neck. The figure is rendered as if metallic; the background is a flat gradient with straight rays of light from below. Contrasting the painted or 3-D look of the rest of the piece, a halo is scrawled in shadeless white above the figure’s head, with cartoony light lines on either side. The halo and its lines glow slightly.]</p></figcaption>
 		</figure>
 	</header>
 	<main>
-		<section id="intro">
-			<div><p>and now for some artist commentary</p></div>
-			<div>
-				<h2>why this drawing</h2>
-				<p>The original was drawn on a whim, and turned into something of a style test. I’ve liked it for a while and, while there are some things I would draw differently nowadays (I think I would want to color the lineart more, the background + halo were afterthoughts, and the hair lacks contrast), it’s never been enough to justify an all-out redraw.</p>
-				<p>Recently I’ve been learning 3D via <a href="https://www.blender.org/">Blender</a>, and (also on a whim) got the idea to remake one of my drawings with it. This one came to mind instantly.</p>
-			</div>
+		<section>
+			<div class="big"><p>~and now for some artist commentary~</p></div>
+			<h2>why this drawing</h2>
+			<p>The original was drawn on a whim. I’ve liked it for a while and, while there are some things I would draw differently nowadays (I think I would want to color the lineart more, the background + halo were afterthoughts, and the hair lacks contrast), it’s never been enough to justify an all-out redraw.</p>
+			<figure>
+				<a href="concept.png" class="pic" target="_blank"><img src="concept.png"/></a>
+				<figcaption>
+					<p class="desc">[Image descripton: Original sketch for the drawing. Looks roughly the same as final except as noted below:]</p>
+					<p><abbr title="not gonna lie">NGL</abbr> I completely forgot there was going to be a mouth on the hand until digging this up.</p></figcaption>
+			</figure>
+			<p>Recently I’ve been learning 3D via <a href="https://www.blender.org/">Blender</a>, and (also on a whim) got the idea to remake one of my drawings with it. This one came to mind instantly.</p>
 		</section>
 		<section>
-			<h2>The Process: modeling</h2>
+			<h2><span>The Process:</span> <span>modeling</span></h2>
 			<p>All-out sculpting was intimidating and I had no plans to animate, so I went for a style inspired by <a href="https://www.deviantart.com/search?q=%23paint3d">Paint 3D</a>. The workflow looks similar to how I do lineless art, with each part being its own object; I’ve messed with the program before but once you create a shape it’s tricky to modify, and it’s unintuitive to export for modification in other programs.</p>
-			<figure><img src="wip.png" alt=""/>
-				<figcaption><p class="desc">[Image description: Screenshot of the Blender UI, showing the untextured model in part (head, ears, nose, neck base, and torso with shirt collar). The original drawing is in the background.]</p></figcaption>
-			</figure>
-			<p>Blender + Solidify modifier (makes a flat plane look like a 3d surface) + Subdivision Surface modifier (makes a thing round) seemed viable—and, for the most part, it worked like a charm. Since the original drawing is fairly symmetrical (though, on close inspection, I’m not sure I actually used a symmetry tool) I “traced” it with the vertex points. (I didn’t screenshot the process, unfortunately, but you can see the raw wireframe later; it’s noticeably simpler than the curves shown above. Subsurface is magic.)</p>
-			<p>For the shadows, I swung the light overhead, pumped up the power, and applied Solidify (actually turned the planes into 3D). Then I messed with the Y-axis (pushing parts forward and back, essentially). Does the result make sense in actual 3D? Nah.</p>
-			<p>I thought, at one point, it might be neat to make the camera move a <em>little</em> bit, like those gifs where a flat picture looks 3D-ish through some photoshop magic. (Cannot find a good example for the life of me because I don’t know what you call that effect, but basically, imagine taking a picture, then shifting the camera back and forth a little.) But firstly, that would require working in <a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/projections.html">orthographic perspective</a> (I did not), and also then I got to the irregular parts.</p>
 			<figure>
-				<img src="hand1.png" alt=""/>
-				<img src="hand2.png" alt=""/>
+				<a href="paint3d.png" class="pic" target="_blank"><img src="paint3d.png" alt=""/></a>
+				<figcaption><p class="desc">[Image description: Screenshot of the one Paint 3D file I have saved. A big blob and a couple sphere-like shapes float off to the side; on the actual canvas is a very wonky <a href="https://a-flyleaf.github.io/ygbtdm/cast/kay-lin">character</a> drawing. One piece of the hair is selected, showing options for rotation and scaling—but not, unfortunately, actual shape contour modification]</p></figcaption>
+			</figure>
+			<p>Blender + Solidify modifier (makes a flat plane look like a 3d surface) + Subdivision Surface modifier (makes a thing round) seemed viable for a lookalike—and, for the most part, it worked like a charm. Since the original drawing is fairly symmetrical, I “traced” it with vertex points and a Mirror modifier. (Unfortunately I didn’t screenshot the process, but later screenshots include the raw wireframe; it’s noticeably simpler than the curves shown below. Subsurface is magic.)</p>
+			<figure>
+				<a href="wip.png" class="pic" target="_blank"><img src="wip.png" alt=""/></a>
+				<figcaption><p class="desc">[Image description: Screenshot of the Blender UI, showing the untextured model in part (head, ears, nose, neck base, and torso with shirt collar). The original drawing is behind it.]</p></figcaption>
+			</figure>
+			<p>For the shadows, I moved the light overhead, then turned the planes into actual volumes by applying the Solidify. Rather than paint anything in or shape the form in a normal fashion, I messed with the Y-axis (pushing parts forward and back, essentially). Does the result make sense in actual 3D? <em>Nah.</em></p>
+			<p>I thought, at one point, it might be neat to make the camera move a <em>little</em> bit, like those gifs where a flat picture looks 3D-ish through some photoshop magic. (Cannot find a good example for the life of me because I don’t know what you call that effect. Basically, imagine taking a picture, then shifting the camera back and forth a little.) But firstly, that would call for working in <a href="https://docs.blender.org/manual/en/latest/editors/3dview/navigate/projections.html">orthographic perspective</a> (I did not), and also then I got to the irregular parts.</p>
+			<figure>
+				<div class="photoset w2">
+					<a href="hand1.png" class="pic" target="_blank"><img src="hand1.png"/></a>
+					<a href="hand2.png" class="pic" target="_blank"><img src="hand2.png"/></a>
+				</div>
 				<figcaption>
 					<p class="desc">[Image description: Two views of the hand, one with full lighting and the other with default/preview lighting.]</p>
-					<p>The hands, for instance, have complex lighting in the drawing. I ignored the palm to an extent and got lazy with the folded fingers, but they look okay as rendered. But it looks weird if the light or camera is anywhere else.</p>
 				</figcaption>
-				<img src="hand3.png" alt=""/>
+			</figure>
+			<p>The hands, for instance, have complex shading in the drawing. I ignored the palm to an extent and got lazy with the folded fingers, but they look okay as rendered. But it looks weird if the light or camera is anywhere else.</p>
+			<figure>
+				<a href="hand3.png" class="pic" target="_blank"><img src="hand3.png" alt=""/></a>
 				<figcaption>
 					<p class="desc">[Image description: Another view of the hand, this time at a three-fourths angle. The geometry is severely distorted like semi-squished clay, with parts pulled forward and pushed back for no apparent reason.]</p>
 					<p>This is how lighting works, right?</p>
 				</figcaption>
 			</figure>
 			<hr>
-			<p>For the hair, I followed <a href="https://www.youtube.com/watch?v=BqWYgrXw7Jk">this tutorial by YanSculpts</a>. Translating this stylized hair to full 3D is gonna be a heck of a challenge, but since I only care about the front angle here, it was pretty fun to wing it.</p>
-			<figure><img src="hair.png" alt=""/>
-				<figcaption><p class="desc">[Image description: A closeup on the hair modeling. As with the rest of the model, it roughly follows the contours of the original drawing.]</p></figcaption>
+			<p>For the hair, I followed <a href="https://www.youtube.com/watch?v=BqWYgrXw7Jk">this tutorial by YanSculpts</a> (slightly outdated, see comments). If I ever tackle this style in 3D proper it’s gonna be a heck of a challenge. But fortunately, I only cared about the front view for this, and winging it was fun.</p>
+			<figure>
+				<a href="hair.png" class="pic" target="_blank"><img src="hair.png" alt=""/></a>
+				<figcaption><p class="desc">[Image description: A closeup on the hair. As with the rest of the model, it roughly follows the contours of the original drawing—now with a lot more strands to fill what the drawing left blank]</p></figcaption>
 			</figure>
-			<p>I used the same technique for the neck-teeth since I wanted them to have a little bend and didn’t feel like fussing with cone geometry.</p>
-			<figure><img src="teef.png" alt=""/>
+			<p>I used the same technique for the neck-teeth since I wanted them to have a little bend and didn’t feel like fussing with cone geometry. (I don’t actually know if there’s anything particularly difficult about cone geometry. This just seemed like a quicker solution.)</p>
+			<figure>
+				<a href="teef.png" class="pic" target="_blank"><img src="teef.png" alt=""/></a>
 				<figcaption><p class="desc">[Image description: A closeup on the neck modeling, with the tooth path curves showing.]</p></figcaption>
 			</figure>
-			<p>(For the actual neck cutout (not shown), I made the shape with a pitch black texture, overlapped it with the neck (and torso) objects, and used a Boolean modifier to “subtract” it. The shading is a little weird in the final render because the cutout has <em>way</em> more vertices than the neck itself, but I didn’t want to boost the neck subdivision because my computer doesn’t like high-poly models. But eh, I was also too lazy to model the neck veiny bits, so I don’t think it sticks out <em>too</em> badly….)</p>
+			<p>For the actual neck cutout, I modeled the mouth shape, overlapped it with the neck (and torso, since it intersects) objects, and used a Boolean modifier to “subtract” it. The shading is a little weird in the final render because the cutout has <em>way</em> more vertices than the neck itself, but I didn’t want to boost the neck subdivision because my computer doesn’t like high-poly models. But eh, I was also too lazy to model the veiny bits, so I don’t think it sticks out <em>too</em> badly….</p>
 			<hr>
-			<p>The halo is just a couple of toruses (donut shapes) and some cylinders for the glow lines, all with an <a href="https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/emission.html">Emission</a> material. Considered animating this but I’m still trying to get a handle on parenting and transformations; essentially, things were being weird, opted not to.</p>
+			<p>The halo is just a couple of toruses (donut shapes) and some rounded cylinders for the glow lines, all with an <a href="https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/emission.html">Emission</a> material. Considered animating this but I’m still trying to get a handle on parenting and transformations; for reasons unknown, things were being weird, so no fancy halo spins for today.</p>
 			<p>Have some final models at suboptimal angles.</p>
 			<figure>
-				<img src="um.png" alt=""/>
-				<img src="umm.png" alt=""/>
+				<div class="photoset w2">
+					<a href="um.png" class="pic" target="_blank"><img src="um.png"/></a>
+					<a href="umm.png" class="pic" target="_blank"><img src="umm.png"/></a>
+				</div>
 				<figcaption><p class="desc">[Image description: The full model at three-fourths angles. Both look very uncanny and squished.]</p></figcaption>
 			</figure>
-			<p>Other bits of note:</p>
-			<ul>
-				<li>The face fought me <em>so bad</em>. I don’t have a super 3D way of drawing faces in the first place, so rather than try to model it all in one go, I took a <a href="https://en.wikipedia.org/wiki/Mr._Potato_Head">potato head</a> approach and slapped the nose and mouth on top—which made me sorely aware that I need to practice the mouth and eye areas. I also didn’t quite indent the head enough to make the eye shadow curve where it does in the drawing, but ah well, the bangs probably would’ve thrown that off anyway.
-					<ul><li>Noses I’m a lot more comfortable with, though the model here turned out wider than strictly intended. Also had to turn off the shadow for it because otherwise it covered the whole mouth/chin area. (It was either that or make it flatter and lose the highlight.) Had the same shadow issue with the mouth, since the chin’s pretty flat… ah well, stuff to keep in mind for future projects.</li></ul></li>
-				<li>The sleeve cuffs were simultaneously a blessing (could BS the wrist area more) and a curse (oh my god, getting it to <em>wrap</em>). The (viewer’s) left one follows the drawing contours much, much more closely, and it’s got a weird highlight because it sticks forward a ton. The right one is flatter/closer to the actual arm, but at the sacrifice of shape.</li>
+			<p>Additional rambling on other bits of note; no detail screenshots, but visible above:</p>
+			<ul id="other">
+				<li>The face fought me <em>so bad</em>. I don’t have a super 3D way of drawing faces in the first place, so rather than try to model it all in one go, I took a <a href="https://en.wikipedia.org/wiki/Mr._Potato_Head">potato head</a> approach and slapped the nose and mouth on top.
+					<ul><li>Noses I’m a lot more comfortable with, though the one in the model here turned out wider than strictly intended. Also had to turn off the shadow for it because otherwise it covered the whole mouth/chin area. (It was either that or make it flatter and lose the highlight.) The mouth, meanwhie, cast either too much shadow or (after modeling tweaks) <em>no</em> shadow.</li>
+					<li>I also didn’t quite indent the head enough to make the eye shadow curve where it does in the drawing, but ah well, the bangs probably would’ve thrown that off anyway.</li></ul></li>
+				<li>The sleeve cuffs were simultaneously a blessing (let me BS the wrist area more) and a curse (oh my god, getting it to <em>wrap</em>). The (viewer’s) left one follows the drawing contours much, much more closely, and it’s got a weird highlight because it sticks forward a ton. The right one is flatter/closer to the actual arm, but at the sacrifice of shape.</li>
 			</ul>
 		</section>
 		<section>
-			<h2>The Process: materials & lighting</h2>
-			<p>Don’t have a lot of screenshots for this one, but essentially, I do not understand the Principled BSDF shader but <a href="https://www.youtube.com/watch?v=_IjSYLt9k2A">watched this a bunch</a> and am trying my best. Also I had a small field day with emission gradients, though it only looks good on the hair; don’t quite know why it fades the way it does on the non-hair parts but oh well.</p>
-			<figure><img src="emission.png" alt=""/>
-				<figcaption><p class="desc">[Image description: A process screenshot of the model with no lights, showing some weird colors that I don’t understand enough about to adequately describe. The lower arms are a void because I hadn’t added the materials to them yet; the neckk void, meanwhile, is intentional. (Halo, mouth, and all teeth are hidden.)]</p></figcaption>
-			</figure>
-			<p>For the most part, I tried to use the same colors as the original drawing, including the background gradient, but with some newer liberties for hair contrast. And then more liberties to make the shadows in general look better. And then I added a bunch more lights because why not.</p>
+			<h2><span>The Process:</span> <span>materials & lighting</span></h2>
+			<p>Long story short, I do not understand the Principled BSDF shader but <a href="https://www.youtube.com/watch?v=_IjSYLt9k2A">watched this a bunch</a> and am trying my best. Also I had a small field day with emission gradients, though it only looks good on the hair; don’t quite know why it fades the way it does on the non-hair parts but oh well.</p>
 			<figure>
-				<img src="lighting1.png" alt=""/>
-				<img src="lighting2.png" alt=""/>
+				<a href="emission.png" class="pic" target="_blank"><img src="emission.png" alt=""/></a>
+				<figcaption><p class="desc">[Image description: A process screenshot of the model with no lights, showing some weird colors that I don’t understand enough about to adequately describe. The lower arms are a void because I hadn’t added the materials to them yet; the neck void, meanwhile, is intentional.]</p></figcaption>
+			</figure>
+			<p>For the most part, I tried to use the same colors as the original drawing, including the background gradient, but with some liberties for hair contrast. And then more liberties to make the shadows in general look better. And then I added a bunch more lights because why not.</p>
+			<figure>
+				<div class="photoset full">
+					<a href="lighting1.png" class="pic" target="_blank"><img src="lighting1.png" alt=""/></a>
+					<a href="lighting2.png" class="pic" target="_blank"><img src="lighting2.png" alt=""/></a>
+				</div>
 				<figcaption>
 					<p class="desc">[Image description: Comparisons of the lighting, before and after. In the first screenshot there are only lights above and to one side; in the second, there are now lights underneath, in front, in the mouth, and three side lights total.]</p>
-					<p>Not an entirely fair comparison, since I still hadn’t added arm materials & had some parts hidden in the first screenshot, and the zoom levels are different, but for lighting purposes it works. (Also happen to have the torso wireframe visible in the first one.)</p>
-					<p>The shirt was also darker than the drawing at first; I <em>think</em>, but am not 100% sure, that that’s shown in the “before” screenshot. This was intended, for higher contrast, but later I made it light again and darkened the background instead.</p>
+					<p>Not an entirely fair comparison, since I still hadn’t added arm materials & had some parts hidden in the first screenshot, and the zoom levels are different. But for lighting purposes it works. (Also happen to have the torso wireframe visible in the first one.)</p>
+					<p>The shirt was also darker than the drawing at first; I <em>think</em>, but am not 100% sure, that that’s shown in the “before” screenshot. This was intended, to boost contrast, but later I made it light again and darkened the background instead.</p>
 				</figcaption>
 			</figure>
 			<hr/>
-			<p>The background was surprisingly tricky; I didn’t want to “cheat” and use an image, but I also made the original by just drawing with a low-opacity same-size brush and messing with layer modes, which is not exactly an option in Blender.</p>
-			<p>What I landed on was sticking a big area light underneath the background plane, then uing a jagged invisible object to mess with shadows. (I don’t know why a see-through object casts shadows but hey, it works here!) It’s not as intricate as the original but makes a simile effect, so #GoodEnough.</p>
-			<figure><img src="bglight.png" alt=""/>
+			<p>The background was surprisingly tricky; I didn’t want to “cheat” and use an image, but I also made the original with a low-opacity brush and layer modes, which are not exactly options in Blender. (Well, I <em>could</em> have painted it, but since I didn’t do that for the model shading, made sense to follow suit.)</p>
+			<p>What I landed on was sticking a big area light underneath the background plane, then using a jagged invisible object to mess with shadows. (I don’t know why a see-through object casts shadows but hey, it works.) It’s not as intricate as the original but makes a similar effect, so #GoodEnough.</p>
+			<figure>
+				<a href="bglight.png" class="pic" target="_blank"><img src="bglight.png" alt=""/></a>
 				<figcaption>
 					<p class="desc">[Image description: An orthographic view of the background plane and its lighting weirdness. The area light is outlined in red (no clue why it’s invisible here), and the aforementioned shape is outlined in orange, as are sections where it intersects with the plane.]</p>
 					<p>I also added a couple lights <em>inside</em> the jagged-glass-shape. Effects are negligible but what else is art for if not poring over the tiny details. (There’s a subtle noise texture on the background too, if you squint; my first thought was to make the lights with the equivalent of a stretched noise overlay, but I don’t know nodes well enough to pull it off. Kept it in anyway, even though it’s not in the original, just for the heck of it.)</p>
@@ -103,20 +134,30 @@
 		<section>
 			<h2>The Finished Product</h2>
 			<figure>
-				<img src="final-wireframe-contrast.png" alt=""/>
-				<img src="final-matgray.png" alt=""/>
-				<img src="final-matcolor.png" alt=""/>
-				<img src="final-render.png" alt=""/>
+				<div class="photoset full">
+					<a href="final-wireframe-contrast.png" class="pic" target="_blank"><img src="final-wireframe-contrast.png" alt=""/></a>
+					<a href="final-matgray.png" class="pic" target="_blank"><img src="final-matgray.png" alt=""/></a>
+					<a href="final-matcolor.png" class="pic" target="_blank"><img src="final-matcolor.png" alt=""/></a>
+					<a href="final-render.png" class="pic" target="_blank"><img src="final-render.png" alt=""/></a>
+				</div>
 				<figcaption><p class="desc">[Image description: Four versions of the final redo: wireframe (image contrast boosted for clarity), gray material preview, base material colors, and full render with lighting.]</p></figcaption>
 			</figure>
-			<p>No lineart because, frankly, I was too tired at this point to figure it out. Remaking the original drawing 1:1 would’ve been very difficult if not impossible; some changes (hair contrast, darker background) were intentional, others were a byproduct of not thinking it through more or just not wanting to mess with it more (some hand shading, neck detail). But all things considered, I’m pretty dang happy with this!</p>
-			<p>…And that’s about all I have to say, considering this page was 90% process rambling <span style="display:inline-block;">:D</span> I don’t even have any special commentary on the piece itself; I’m agnostic, I’m not religious, but I am not immune to thinking certain little bits of symbology look cool. Half the reason this blog post of a page exists at all is because I’ve been thinking of making <a href="https://www.deviantart.com/a-flyleaf/gallery?q=%23roundup">monthly art roundups</a> via code, and so now this is an experiment of that sort too.</p>
-			<p>Anyway, on to the next project!</p>
+			<p>No lineart because, bluntly, I was getting tired and wanted to be done. Remaking the original drawing 1:1 would’ve been very difficult if not impossible; some changes (hair contrast, darker background) were intentional, others were a byproduct of not thinking it through or just not wanting to mess with it more (some hand shading, neck detail).</p>
+			<p>But all things considered, I had fun, and I’m pretty dang happy with this! It took roughly 12 hours (all day, sparse breaks included—hence being tired at the end) and, on the heel of a couple days spent bereft of creative drive, was half a day <em>well fucking spent</em>.</p>
+			<hr/>
+			<p>…And that’s about all I have to say, considering this page was 90% process rambling <span style="display:inline-block;">:D</span> I don’t even have any special commentary on the piece itself; I’m agnostic, I’m not religious, but I am not immune to thinking certain little bits of symbology look cool. Half the reason this blog post of a page exists at all is because I’ve been thinking of making <a href="https://www.deviantart.com/a-flyleaf/gallery?q=%23roundup">monthly art roundups</a> via code, and so now this is an experiment of that sort too (even though this is <em>way</em> more text-heavy than those would be, probably…).</p>
+			<figure>
+				<a href="redeux.jpg" class="pic" target="_blank"><img src="redeux.jpg"/></a>
+				<figcaption><p class="desc">[Image description: “Draw This Again: 3D edition”: a side-by-side comparison of the original drawing and the remake, as posted on deviantArt and my Toyshelf site (links TBA).]</p></figcaption>
+			</figure>
+			<p>Anyway, thanks for reading if you did! And if you didn’t, well, hope you got a kick out of the screenshots or something <span style="display:inline-block;">:P</span> I made this not as a tutorial or walkthrough (lord knows I am not experienced enough for that) but because, besides the aforementioned roundup thing, I just had a lot to say and most of it wouldn’t have made sense without pictures, so ~ta-da~</p>
+			<p>Maybe next round will be actual sculpting, maybe something else entirely. Maybe I will make another page like this, maybe not, who knows.</p>
+			<p>…I have no idea how to conclude this <span style="display:inline-block;">\o/</span></p>
 		</section>
 	</main>
 	<footer><ul>
 		<li>by <a href="../../">a-flyleaf</a></li>
-		<li>modeled September 19, 2022; page made on the 20th</li>
+		<li>modeled September&nbsp;19,&nbsp;2022; page made on the 20th</li>
 	</ul></footer>
 </body>
 </html>
