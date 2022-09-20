@@ -49,4 +49,5 @@ footer li{display:inline;} footer li:after{content:".";}
 	
 	#title{text-align:left;}
 	h1,header p{display:inline-block;} header p{padding-left:.5em;}
+	header .imgs{padding:.5em;}
 }
