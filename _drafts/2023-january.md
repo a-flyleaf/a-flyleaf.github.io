@@ -20,6 +20,7 @@ might not end up writing about most of this but just, stuff that caught my inter
 - 19 dA: https://www.deviantart.com/a-flyleaf/art/0193-945882855
 	- side note, this has felt like three months in a trenchcoat so far; first tfw no tablet. then Tablet Fix, but What Do (finished AU at least). then OMORI HELL and we shall see how the rest pans out, really did play for like 4+ hours for 6 days straight there
 - 23 dragonotes sitekeeping
+- 30 dA: https://www.deviantart.com/a-flyleaf/art/you-don-t-know-947380989
 - 31 set up Dreamwidth comment box; next up, monthly roundup, then clean up this mess of a thing
 	- added that pokeymanz thing to the TFE page; there's other TFE stuff that's popped up in roundups and older files and such and whatnot but ~yeah~
 
@@ -34,3 +35,9 @@ might not end up writing about most of this but just, stuff that caught my inter
 - 1/24: more random-ass... not even *earworms* just Songs I Remembered Exist: [Good to Be Alive](https://www.youtube.com/watch?v=GYtBoxGB6Wo) (and by extension [Lyin' 2 Me](https://www.youtube.com/watch?v=PShRULA8sOY) but I like the first better, even had a character animatic in my head for one verse) and, uh, [Gucci Gang](https://www.youtube.com/watch?v=9alXo1OXTec). OMORI soundtrack continues to be great too, listened to some of the area battle themes I've encountered so far
 - 1/25: there's nothing quite like speculating about terrible things happening to a character while listening to their [very pleasant theme](https://www.youtube.com/watch?v=7GIWV__qx4M)
 - 1/26: uhhhh listened to a whole bunch more last night just suffice it to say Soundtrack Good and i Will binge the hell out of it when I'm done here
+
+## not January
+- 2/7 uhhh finished OMORI. im mr wrecked
+	- uploaded a thing on dA yesterday
+- 2/7 ["Get to Heaven" is a good album](https://www.youtube.com/watch?v=3CxOqZValYw&list=PLpdncYt1E9FjsIkAQ21GJ-MQxXRrZ0ioZ&index=11)
+- 2/13 test & recognise, city bird, [shelter](https://piped.garudalinux.org/watch?v=HQnC1UHBvWA)
