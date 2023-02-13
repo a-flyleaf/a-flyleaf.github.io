@@ -9,7 +9,7 @@ I discovered [this lovely blog](https://compusever.tumblr.com) last night and ha
 
 Some notable finds!
 
-<figure><a href="{{site.url}}/assets/idkwheretosavethis.png"><img src="{{site.url}}/assets/idkwheretosavethis.png" alt="Screenshot of a rudimentary JavaScript game site, a side-scrolling shooter but with dragons."/></a><figcaption>“Vaib’s Game” links to the teacher’s site, which isn’t online.</figcaption></figure>
+<figure><a href="{{site.url}}/assets/blog/idkwheretosavethis.png"><img src="{{site.url}}/assets/blog/idkwheretosavethis.png" alt="Screenshot of a rudimentary JavaScript game site, a side-scrolling shooter but with dragons."/></a><figcaption>“Vaib’s Game” links to the teacher’s site, which isn’t online.</figcaption></figure>
 
 - ↑ This relic of a game from its original file *from 2013*. Insanity. Insanity!!! I could not explain all that JavaScript code to you nowadays if I tried!!!!!
 	- Between this and p5jsomething I am very overdue for a "portfolio"/Things I Made In Relation To Real Actual Physical Life repository, but for now you get a non-interactive screenshot.
