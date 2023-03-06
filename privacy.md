@@ -1,6 +1,6 @@
 ---
 layout: plaintext2
-title: A Few Notes on Privacy
+title: a few notes on privacy
 ---
 **This is not a Privacy Policy**; I am not a lawyer.
 
