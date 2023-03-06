@@ -3,6 +3,7 @@ layout: none
 ---
 <!doctype html>
 <html lang="en">
+<!--note to self: "../../projects/img/" should eventually be replaced with "img/v2/", but until I overhaul the page wholesale I'm just loading the same images-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +24,7 @@ layout: none
 			::selection{background:rgba(0,0,0,.15);}
 			a{color:inherit;} a:hover,a:focus,a:active{text-decoration:none;}
 			
-			.brand {background:url(../bg-light.png) #fff;} 
+			.brand {background:url(../../assets/bg-light.png) #fff;} 
 			.brand .wrap{max-width:17.5rem; text-align:center; background:rgba(255,255,255,.75);}
 			.brand a{text-decoration-color:#c0c0c0;} .brand a:hover,.brand a:focus,.brand a:active{color:#0080ff;}
 			.brand ::selection{background:rgba(0,128,255,.85); color:#fff;}
@@ -74,7 +75,7 @@ layout: none
 			#here p{line-height:150%;} #here a:last-child{font-weight:bold;}
 			
 			@media (prefers-color-scheme:dark){
-				.brand{background:url(../bg-dark.png) #111; color:#fff; line-height:150%;} .brand .wrap{background:rgba(17,17,17,.5);}
+				.brand{background:url(../../assets/bg-dark.png) #111; color:#fff; line-height:150%;} .brand .wrap{background:rgba(17,17,17,.5);}
 			}
 			
 			@media only screen and (min-width:640px) {
@@ -126,7 +127,7 @@ layout: none
 					<p>In reverse-chronological order.</p>
 				</div>
 				<a class="block" href="{{site.url}}/ygbtdm"><section id="ygbtdm">
-					<figure><picture><source media="(min-width:640px)" srcset="img/ygbtdm-full.png"><img src="img/ygbtdm-640.png" alt=""/></picture></figure>
+					<figure><picture><source media="(min-width:640px)" srcset="../../projects/img/ygbtdm-full.png"><img src="../../projects/img/ygbtdm-640.png" alt=""/></picture></figure>
 					<div class="wrap">
 						<h3><span>You’re gonna be</span> <span>the death of me</h3>
 						<div class="sum">
@@ -136,7 +137,7 @@ layout: none
 					</div>
 				</section></a>
 				<a class="block" href="{{site.url}}/hello-world"><section id="four">
-					<figure><picture><source media="(min-width:640px)" srcset="img/404-full.png"><img src="img/404-640.png" alt=""/></picture></figure>
+					<figure><picture><source media="(min-width:640px)" srcset="../../projects/img/404-full.png"><img src="../../projects/img/404-640.png" alt=""/></picture></figure>
 					<div class="wrap">
 						<h3>404</h3>
 						<div class="sum">
@@ -146,7 +147,7 @@ layout: none
 					</div>
 				</section></a>
 				<div class="float"><a class="block" href="{{site.url}}/projects/tfe"><section id="tfe">
-					<figure><picture><source media="(min-width:640px)" srcset="img/tfe-full.png"><img src="img/tfe-640.png" alt=""/></picture></figure>
+					<figure><picture><source media="(min-width:640px)" srcset="../../projects/img/tfe-full.png"><img src="../../projects/img/tfe-640.png" alt=""/></picture></figure>
 					<div class="wrap">
 						<h3>The Firebird Effect</h3>
 						<div class="sum">
@@ -156,7 +157,7 @@ layout: none
 					</div>
 				</section></a>
 				<a class="block" href="{{site.url}}/toyshelf"><section id="cmyk">
-					<figure><picture><source media="(min-width:640px)" srcset="img/cmyk-full.png"><img src="img/cmyk-640.png" alt=""/></picture></figure>
+					<figure><picture><source media="(min-width:640px)" srcset="img/v2/cmyk-full.png"><img src="img/v2/cmyk-640.png" alt=""/></picture></figure>
 					<div class="wrap">
 						<h3>Toyshelf <span>(not a story)</span></h3>
 						<p class="sum">A collection of characters, the seven shown above and others. (This should probably be under miscellany but I don’t feel like reshuffling this page yet…)</p>
@@ -169,13 +170,13 @@ layout: none
 				</div>
 				<div class="float"><a href="{{site.url}}/p5jsomething" class="block"><section id="p5js">
 					<div class="wrap">
-						<figure><img src="img/p5js.png" alt=""/></figure>
+						<figure><img src="../../projects/img/p5js.png" alt=""/></figure>
 						<h3>p5jsomething</h3>
 						<p>Code experimentation for class, spring 2020. Originally titled “p5jsnake” but in the process of coding it stopped being snake.</p>
 					</div>
 				</section></a>
 				<a href="{{site.url}}/artfight" class="block"><section id="artfight">
-					<figure><img src="img/artfight.png" alt=""/></figure>
+					<figure><img src="img/v2/artfight.png" alt=""/></figure>
 					<div class="wrap">
 						<h3>ArtFight 2021(+)</h3>
 						<p>Gallery for an annual art trading game, because the official site isn’t particularly guest-friendly.</p>
