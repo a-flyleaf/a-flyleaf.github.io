@@ -7,7 +7,7 @@ header,nav,main,section,article,footer{display:block;}
 
 /*general type*/
 ::selection{background:#dfdfdf;}
-a{color:inherit; text-decoration-color:#bfbfbf; text-decoration-thickness:.1em; text-underline-offset:.15em;} a:hover,a:active,a:focus{text-decoration:none;}
+a{color:inherit; text-decoration-color:#dfdfdf; text-decoration-thickness:.1em; text-underline-offset:.15em;} a:hover,a:active,a:focus{text-decoration:none;}
 img{max-width:100%; height:auto;}
 p,ul,ol{margin:.65em 0;} ul{margin-left:1em;} ol{margin-left:1.25em;} li>ul{margin:0 0 0 1em;} .long ul li{margin:.325em 0;}
 h1{font-size:2em;}
