@@ -1,0 +1,72 @@
+---
+layout: plaintext2
+title: Lorem ipsum
+date: 2023-03-06
+css: "#gray{border:1px solid #808080;} #gray ul{font-family:monospace; text-transform:uppercase;} #gray li{display:inline-block; margin:0; padding:.25em .5em;} .w{color:#fff;} .b{color:#000;}"
+---
+Uses both [generated lipsum](https://lipsum.com/) and random paragraphs I've actually scrawled out.
+
+This theme will most likely be seen/used on the **blog** page, and miscellaneous pages that I don't feel like making separate layouts for (sitemap, privacy, colophon, maybe about). Ditching colors entirely in favor of monochrome, because I like blues but you really can't go wrong with grayscale.
+
+<div id="gray"><ul>
+	<li class="w" style="background:#101010;"><b>#101010</b></li>
+	<li class="w" style="background:#202020;">#202020</li>
+	<li class="w" style="background:#404040;"><b>#404040</b></li>
+	<li class="w" style="background:#606060;">#606060</li>
+	<li class="w" style="background:#808080;"><b>#808080</b></li>
+	<li class="b" style="background:#9f9f9f;">#9f9f9f</li>
+	<li class="b" style="background:#bfbfbf;"><b>#bfbfbf</b></li>
+	<li class="b" style="background:#dfdfdf;">#dfdfdf</li>
+	<li class="b" style="background:#efefef;"><b>#efefef</b></li>
+</ul><p>(#808080 is not a good bg color, not enough contrast with white <em>or</em> black. #9f9f9f on thin ice, <em>looks</em> better with white text imo but the contrast checkers say otherwise (same goes for midgray))</p></div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur mattis pellentesque. Vivamus pellentesque convallis libero eget dignissim. Duis condimentum lectus vitae dolor consectetur, vel elementum urna consequat. Nunc ornare dignissim purus, et pharetra magna varius a. Duis suscipit odio at diam convallis auctor. Suspendisse quis mi dolor. Quisque commodo nibh neque. Phasellus vehicula a lectus non ornare.
+
+Ut volutpat massa ut pulvinar dictum. Proin tincidunt, lorem in mollis commodo, elit dolor condimentum ante, ac placerat elit risus id elit. Quisque lobortis ornare ex, sed efficitur justo sagittis sit amet. Sed aliquet ante vel augue finibus, eget porta orci aliquet. Nulla lacinia, nunc sed consectetur volutpat, ipsum libero pulvinar felis, aliquam fringilla urna sem dignissim nulla. Fusce euismod, libero vel aliquet rutrum, enim justo posuere turpis, ac volutpat tortor mi eget odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis sagittis ut magna in pharetra. Duis orci metus, iaculis scelerisque velit nec, lacinia fringilla magna. In hac habitasse platea dictumst. Donec posuere urna augue, sit amet facilisis felis imperdiet quis. Nullam vitae varius mi, at tincidunt ipsum. Quisque sed scelerisque nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo tortor nisl, in lacinia lacus semper vitae. Pellentesque mattis enim vel tempus eleifend.
+
+Pellentesque quis iaculis nisi, quis interdum ligula. Nam placerat metus sit amet elit mattis, ac finibus lectus posuere. Integer in ornare ligula. Nam consequat arcu ut finibus tincidunt. Quisque semper imperdiet sem, at tristique est suscipit eget. Donec purus velit, cursus ac massa ac, lacinia ornare sem. Maecenas eget molestie sem, nec ultricies risus. Vestibulum convallis ut ex quis tristique. Donec sed quam in purus eleifend tempor ut quis nunc. Nam tristique lorem eu dictum interdum. In aliquet urna sem, et molestie urna posuere sed. Quisque libero nulla, vulputate eu scelerisque sed, facilisis quis ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam nec fringilla justo. Ut in volutpat urna, eget ultrices risus. Mauris in turpis nec nisi vestibulum cursus.
+
+## h2: second-level heading, hewwo? hewwo???
+My font preferences change on a dime, and much as I love Verdana (old forum nostalgia, babey), I'm also a sucker for that "text is displayed more or less as-written" aesthetic. On the other hand, Consolas conveys a techy code-y vibe that I probably don't always want. And much as fancy professional fonts are tempting, I've been drifitng away from them in the interest of [web-safe fonts](https://web.mit.edu/jmorzins/www/fonts.html); they load faster, there's nothing *wrong* with them.
+
+[<i>Practical Typography</i>](https://practicaltypography.com/times-new-roman-alternatives.html) has some pretty damning things to say about Times New Roman, but I don't follow that book like a gospel anymore. It *does* look plain and bring boring essays and government documents to mind, though, which is unfortunate. Is it time to bring Alegreya back for a nicer-looking sans-serif, maybe? Mm, no, it's a very nice font but not quite what I want all the time. The niceness is almost detrimental, I feel; I'm trying *not* to invoke perfectionism here.
+
+### tfw styleguide turns into a ramble in its own right
+Hey, that's as good a way to test as any, right? You know, while I don't need to use Arial specifically (I've cemented it in my own head as The Kade Font---despite Consolas not having that same association, probably largely because it's just the Notepad++ default), I guess it wouldn't hurt to just... leave it sans-serif and specify nothing else. Fuck it I end up changing the font on half the pages anwyay.
+
+### keeps hemming and hawing over fonts
+lol whoops nvm I'm still being finicky here. Honestly, at this point I might as well just make a damn font, but then I'll want to nitpick the kerning and everything.... Bluh, what if we just go with whatever the browser default wants? Segoe UI is nice but I wish it distinguished uppercase-I and lowercase-l better. Although, let's be real, I'm nitpicking at this point. I just don't want to load in an external font if I absolutely *do not* have to, and usually I don't. Segoe is all Microsoft-y but y'know, 90% of people aren't gonna notice or care about this stuff anyway >:V and it's less "this just got spit out of a Word document" than Calibri. Fuck it, Segoe UI new default confirmed??
+
+oh and I guess I should mention I remembered Segoe existed after flipping to a Piped tab and noticing that's the font they use. a'ight we done here
+
+## I think I'm just going to ignore image and hr and blockquote and other styling until it actually becomes, like, necessary.
+Because LBR I don't use them very often, and it becomes *much* less intimidating to add stuff to the default layout if I know it's not going to retroactively fuck up a bunch of things when I do.
+
+- Cool!
+- Awesome.
+- This is a short list but half the time my "lists" are actually just paragraphs in disguise.
+
+Here is a list that is actually just paragraphs:
+
+<div class="long" markdown="1">
+- In ultrices, est id efficitur volutpat, urna felis scelerisque nulla, vitae vulputate quam leo vel nisl. Integer id nunc at nulla fringilla varius. Praesent tempus, est eget finibus sagittis, dolor nibh iaculis quam, eget suscipit justo lorem sed neque. Quisque et tincidunt lorem. Nunc quis turpis nisi.
+- Pellentesque scelerisque, turpis eu vehicula molestie, dui quam molestie urna, id mollis tellus mi sed ex. Suspendisse ac posuere augue. Vestibulum quam magna, varius vel posuere vel, venenatis in est.
+- Duis hendrerit sed libero quis accumsan. Maecenas hendrerit eu eros ac pulvinar. Sed dolor lectus, semper sed felis vel, dictum volutpat est. Praesent tempor arcu et ullamcorper finibus. Ut accumsan commodo nisl sit amet iaculis. Maecenas sed congue mi. Proin porta pellentesque pellentesque. Phasellus nunc magna, euismod at aliquet eu, laoreet eget est. Praesent viverra faucibus neque euismod porta. Morbi quis nisl laoreet, convallis arcu a, lacinia nibh. Ut erat arcu, fringilla eu ultrices a, malesuada sed nibh. Nulla bibendum pretium ligula, non suscipit magna tempus sit amet. 
+</div>
+
+Aaaand one more paragraph.
+
+And oh okay fine some additional formatting amnesty just to save myself work later:
+
+> Blockquote! [There’s a certain thrill to hand-coding a website like this.]({{site.url}}/blog/april-2019-update) Gone is the uncontrollable code of a bloated CMS. Farewell, text fields forbidding HTML. Hello, simple, quickly-loading static pages, in which everything appears exactly as I want it to! It’s all I need from a site for the foreseeable future.
+>
+> edit 4/21: It is also worth noting that doing everything by hand means, if something goes horrifically wrong, I have only myself to blame.
+
+## aaaand one other thign
+I use images in posts very rarely but what the hell.
+
+{%include figure.html wide="y" link="img" img="blog/jettison" caption="Lorem ipsum dolor sit amet etc. etc. etc. Kind of annoying to reformat if I want the picture to be noticeably bigger than the content, though...."%}
+
+[This isn't the sort of guide I was looking for](https://www.habaneroconsulting.com/stories/insights/2021/accessibility-inspired-dark-mode)
+
+Aaand one more line to close.
