@@ -1,0 +1,14 @@
+---
+layout: default
+title: Blog
+---
+<h1>{{page.title}}</h1>
+<p>[<span class="sc">Note</span>: Only shows posts created until this index was changed. For more up-to-date posts, see <a href="/blog">the current page</a>.]</p>
+<section>
+	<!--https://stackoverflow.com/questions/47577336/date-comparison-logic-in-liquid-template-filter + https://stackoverflow.com/questions/70659473/shopify-liquid-how-to-show-content-based-on-dates-->
+	{%for post in site.posts%}{%assign check = post.date|date:"%s"%}{%assign cutoff = "1646283601"%}{%if check<cutoff%}<hr/><article>
+		<a href="{{post.url}}"><h2>{{post.title}}</h2></a>
+		<div class="meta">{{post.date|date:"%B %-d, %Y"}}</div>
+		<span class="excerpt">{{post.excerpt}}<a href="{{post.url}}" class="readmore">&#8230;</a></span>
+	</article>{%endif%}{%endfor%}
+</section>

@@ -3,10 +3,11 @@ layout: plaintext
 title: Blog
 ---
 <p>Assorted writings about varying topics. Page layouts may vary.</p>
+<p><p>[<span class="sc">Note</span>: Only shows posts created until this index was changed. For more up-to-date posts, see <a href="/blog">the current page</a>.]</p>
 
-{%for post in site.posts%}<article>
+{%for post in site.posts%}{%assign check = post.date|date:"%s"%}{%assign cutoff = "1677560401"%}{%if check<cutoff%}<article>
 	<a href="{{post.url}}" class="title"><h2>{{post.title}}</h2></a>
 	<div class="date">{{post.date|date:"%B %-d, %Y"}}</div>
 	<div class="excerpt">{{post.excerpt}}{%if post.content contains '<!--more-->'%}<a href="{{post.url}}" class="readmore">{read more →}</a></div>{%endif%}
-</article>{%endfor%}
+</article>{%endif%}{%endfor%}
 <!--https://jonnylangefeld.com/blog/how-to-add-a-read-more-button-that-doesnt-suck-to-your-jekyll-blog < troubleshoot this when it's not nearing midnight pls-->
