@@ -25,7 +25,7 @@ figure{margin:1em 0;} figcaption{color:#808080; margin-top:.5em; line-height:150
 #skip{position:absolute; left:-999px; width:1px; height:1px; top:auto; overflow:hidden;}
 #skip:focus,#skip:active{width:auto; height:auto; overflow:visible; left:auto;}
 
-header{color:#484848; background:url(../bg-light.png);}
+header{color:#484848; background:url(../assets/bg-light.png);}
 header .content{padding:1em 0 .25em;}
 header a{text-decoration:none;}
 #home{font-weight:bold; padding:.5em; margin-left:-.5em;}
