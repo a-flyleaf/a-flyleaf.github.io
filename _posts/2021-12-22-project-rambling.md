@@ -13,8 +13,8 @@ Theoretically, this is the thesis of <i>404</i>, the story-project-thing current
 
 [Here’s something I drew in October 2019]({{site.url}}/stardust), when I was probably in the middle of some sort of brainfog. It’s not related to <i>404</i>, but it is more or less the tone I imagined it going out on. (The characters being blue- and red-themed is coincidental, "void" and all.)
 
-<figure><a href="{{site.url}}/stardust"><img src="{{site.url}}/stardust/ishouldcheckoutwaitingforgodot.png" alt=""/></a>
-	<figcaption>Since it's 16 images total, it got <a href="{{site.url}}/stardust">its own page</a>.</figcaption>
+<figure><a href="{{site.url}}/blog/stardust"><img src="{{site.url}}/blog/stardust/ishouldcheckoutwaitingforgodot.png" alt=""/></a>
+	<figcaption>Since it's 16 images total, it got <a href="{{site.url}}/blog/stardust">its own page</a>.</figcaption>
 </figure>
 
 It doesn’t really have a lot to do with that creative celebration thesis, does it?
