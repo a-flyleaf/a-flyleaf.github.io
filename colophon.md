@@ -14,4 +14,8 @@ Website hosted on [GitHub Pages](//pages.github.com/) with [Jekyll](//jekyllrb.c
 
 Font family is [Alegreya Sans](//www.huertatipografica.com/en/fonts/alegreya-sans-ht), served ~~from [Google Fonts](//fonts.google.com/?query=alegreya)~~ locally\*. I make frequent use of the following resources: [Matthew Butterick’s <i>Practical Typography</i>](//practicaltypography.com/), [PX to EM](//pxtoem.com/), [the typographic scale](//spencermortensen.com/articles/typographic-scale/), and for testing purposes [Lorem Ipsum](//lipsum.com/).
 
-\***July 23, 2022 update**: Fonts are now embedded into this layout courtesy [the google webfonts helper](https://google-webfonts-helper.herokuapp.com/fonts); otherwise I've left this layout untouched for archival's sake. See [the "Privacy Policy"]({{site.url}}/privacy) for details.
+\***July 23, 2022 update**: Fonts are now embedded into this layout courtesy [the google webfonts helper](https://google-webfonts-helper.herokuapp.com/fonts); otherwise I've left this layout untouched for archival's sake. See [the privacy page]({{site.url}}/privacy) for details.
+
+----
+
+[<span class="sc">Note:</span> The information on this page has largely been folded into [the main about]({{site.url}}/about) as of January 2022.]
