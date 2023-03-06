@@ -1,9 +1,0 @@
-- name: About
-  link: /about
-- name: Projects
-  link: /projects
-- name: Shriblets
-  link: /shriblets
-- name: Blog
-  link: /blog
-  class: blog
