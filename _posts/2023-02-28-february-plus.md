@@ -44,7 +44,7 @@ Mostly music, with a spattering of other stuff.
 - 28
 	- <em style="text-transform:uppercase;font-style:normal;">Omori site live babey!!!</em>
 	- updated [the devaintArt tag reference](https://a-flyleaf.github.io/deviantart/gallery-tag-reference/)
-	- dA: <b>roundup (which is literally just <span style="text-transform:uppercase;">Omori</span>) (link TBA)</b>
+	- dA: <b>[roundup (which is literally just <span style="text-transform:uppercase;">Omori</span>)](https://www.deviantart.com/a-flyleaf/art/roundup-2023-02-artspace-2-sitelink-951613084)</b>
 </div>
 ~yeah~
 
