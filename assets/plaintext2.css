@@ -14,7 +14,7 @@ h1{font-size:2em;}
 h2{font-size:1.5em; margin-top:.75em;}
 h1,h2{color:#404040; line-height:1.25;}
 h3{font-size:1.15em; margin-top:.85em; color:#808080;}
-h2+p,h2+ul,h3+p,h3+ul{margin-top:0;}
+h2+p,h2+ul,h2+h3,h3+p,h3+ul{margin-top:0;}
 small,figcaption p,header ul,footer ul{font-size:.85em;}
 blockquote{border-left:.15em #dfdfdf solid; padding-left:1em;} blockquote p{font-size:.85em; line-height:1.65;}
 code{font-family:consolas,monospace;}

@@ -15,6 +15,7 @@ Base site; you are here!
 - [<b>blog</b>](/blog): rambling galore
 
 ### miscellaneous
+- [<b>colophon</b>](/colophon): credits and resources
 - [<b>oldpages</b>](/oldpages): major sections but deprecated
 - [<b>privacy</b>](/privacy): notes on links and things
 - <b>sitemap</b>: You are here, specifically!
