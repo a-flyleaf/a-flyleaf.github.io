@@ -60,6 +60,8 @@ footer ul{margin-top:1em;} footer li{margin:.25em 0;}
 	hr{background:#404040;}
 	figcaption,.date{color:#bfbfbf;}
 	
+	#skip:focus,#skip:active{background:#000;}
+	
 	header,footer{color:#9f9f9f;}
 	header a:focus,header a:active,header a:hover{color:#fff;}
 	main{line-height:1.5;}
