@@ -1,25 +1,34 @@
 ---
-layout: plaintext
+layout: plaintext2
 title: sitemap
 ---
-Organized by [repository](https://github.com/a-flyleaf?tab=repositories), which is how GitHub groups related content.
+Organized by [repository](https://github.com/a-flyleaf?tab=repositories).
 
-## main site
+## a-flyleaf.github.io
+Base site; you are here!
+
+### major sections
 - [<b>about</b>](/about): a peek behind the curtain
 - [<b>projects</b>](/projects): substantial stuff
 	- includes [<i>The Firebird Effect</i>](/projects/tfe), a discontinued comic that I haven't gotten around to making a separate repository for
 - [<b>shriblets</b>](/shriblets): assorted webpages
 - [<b>blog</b>](/blog): rambling galore
-- <b>sitemap</b>: You are here!
-<!--privacy policy and colophon Exist but aren't being shown on this layout-->
+
+### miscellaneous
+- [<b>oldpages</b>](/oldpages): major sections but deprecated
+- [<b>privacy</b>](/privacy): notes on links and things
+- <b>sitemap</b>: You are here, specifically!
 
 ## elsewhere on a-flyleaf.github.io
 Ordered alphabetically. Also noted by actual title on [the projects page](/projects).
 
-- [<b>/artfight</b>](/artfight): public galleries for an art challenge
-- [<b>/dragonotes</b>](/dragonotes): collected notes and resources for virtual dragon collection game [Flight Rising](https://flightrising.com/)
+- [<b>/artfight</b>](/artfight): public galleries for an annual challenge
+- [/deviantart](/deviantart): essentially just a [gallery tag reference](https://a-flyleaf.github.io/deviantart/gallery-tag-reference/), but might be a full gallery mirror eventually
+- [<b>/dragonotes</b>](/dragonotes): notes and resources for virtual dragon collection game [Flight&nbsp;Rising](https://flightrising.com/)
 - [<b>/hello-world</b>](/hello-world): [project: <span style="font-family:consolas,monospace;">404</span>](/projects#four)
-- [<b>/p5jsomething</b>](/p5jsomething): a code-"game" experiment
-- [<b>/ygbtdm</b>](/ygbtdm): [project: <i>You're gonna be the death of me</i>](/projects#ygbtdm)
-
-<!--not including: collections, professionalism, stray-thoughts, wolvwiki-->
+- [<b>/omori</b>](/omori): fansite for [a very good game](https://www.omori-game.com/en)
+- [/p5jsomething](/p5jsomething): a code-"game" experiment
+	- done for a class and not a mini-website like the rest of these. I don't really know where to link it :V
+- [<b>/toyshelf</b>](/toyshelf): personal [Toyhou.se](https://toyhou.se/) riff; hub for "original characters" that aren't covered elsewhere
+- [<b>/ygbtdm</b>](/ygbtdm): [project: <i>You're&nbsp;gonna&nbsp;be the&nbsp;death&nbsp;of&nbsp;me</i>](/projects#ygbtdm)
+<!--private repos (incl. wolvwiki) not included-->
