@@ -1,0 +1,203 @@
+---
+layout: none
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Projects™ by a-flyleaf</title>
+		<link href="{{site.url}}/assets/fonts-alegreya.css" type="text/css" rel="stylesheet"/>
+		<style>
+			*{margin:0; padding:0; box-sizing:border-box; font-size:100%; word-wrap:break-word;}
+			body{overflow-x:hidden; font-family:verdana,sans-serif; line-height:135%; background:#c0c0c0; color:#111;}
+			header,main,section,figure,.block{display:block;}
+			
+			#sitewrap{max-width:1280px;}
+			.wrap{padding:1rem; margin:0 auto;}
+			span{display:inline-block;}
+			.block,#cmyk{margin:1.5rem; text-decoration:0;} .block:hover,.block:focus,.block:active{opacity:.65;}
+			p{margin-top:.5em; line-height:150%;}
+			figure{line-height:0;} img{max-width:100%; height:auto;}
+			::selection{background:rgba(0,0,0,.15);}
+			a{color:inherit; text-decoration:none;}
+			
+			.brand {background:url(../../assets/bg-light.png) #fff;} 
+			.brand .wrap{max-width:17.5rem; text-align:center; background:rgba(255,255,255,.75);}
+			.brand p a{text-decoration:underline #c0c0c0;} .brand a:hover,.brand a:focus,.brand a:active{color:#0080ff;}
+			.brand ::selection{background:rgba(0,128,255,.85); color:#fff;}
+			
+			header{padding:2rem 0;}
+			h1{font-size:2em; line-height:115%;} h1 a{text-decoration:0;}
+			
+			h2{font-size:1.5em; line-height:125%;}
+			.desc{text-align:center;} .desc p{margin-bottom:-1rem;}
+			
+			#stories section,#misc section a{display:block;}
+			h3{font-size:1.5em; line-height:115%; margin-bottom:.5rem;}
+			#stories .block p{font-size:.85em;}
+			
+			#ygbtdm{background:#151515; color:#fff; font-family: 'bookman old style','urw bookman l','itc bookman',georgia,times,serif; font-size:1.25em; line-height:145%;}
+			#ygbtdm ::selection{background:#404040;}
+			#ygbtdm .sum{max-width:30rem;}
+			#ygbtdm p{line-height:145%;}
+			
+			#four{background:#fff; font-family:initial; font-size:1.25em;}
+			#four ::selection{background:rgba(128,128,128,.5);}
+			#four .sum{max-width:25rem;}
+			#four h3{font-family:consolas,monospace; font-size:4em; line-height:.75em; margin-top:-.1em;}
+			#four blockquote{line-height:135%;}
+			
+			#tfe{background:#000; color:#fff; font-family:'alegreya sans',calibri,sans-serif; font-size:1.25em; line-height:135%;}
+			#tfe ::selection{background:#ff9600;}
+			#tfe .sum{max-width:20rem;}
+			
+			#toyshelf img,#artfight img{opacity:.15;}
+			
+			#toyshelf{background:#fff;}
+			#toyshelf h3{margin-top:em;}
+			#toyshelf ::selection{background:#dfdfdf; background:rgba(0,0,0,.15);}
+			
+			#artfight{background:#3d3d3d; color:#c2c2c2;}
+			#artfight figure{background:linear-gradient(#bf54e2,#98a54e);}
+			#artfight h3{margin-top:-.15em;}
+			#artfight ::selection{background:rgba(128,128,128,.25);}
+			
+			#dragonotes{background:#dcd6c8; color:#232323;}
+			#dragonotes figure{background:#731d08;}
+			#dragonotes img{opacity:.5;}
+			#dragonotes ::selection{background:rgba(189,179,156,.5);}
+			
+			#p5js{background:#202020; color:#dfdfdf; font-family:sans-serif; line-height:150%;}
+			#p5js ::selection{background:#000; color:#fff;}
+			#p5js figure{width:65%; margin:0 auto; opacity:.5;}
+			#p5js h3{margin:1em 0 0;}
+			#here{padding:1rem 0;}
+			#here .wrap{padding:1rem;}
+			#here a:last-child{font-weight:bold;}
+			
+			@media (prefers-color-scheme:dark){
+				.brand{background:url(../../assets/bg-dark.png) #111; color:#fff; line-height:150%;} .brand .wrap{background:rgba(17,17,17,.5);}
+			}
+			
+			@media only screen and (min-width:640px) {
+				.block{margin:0;}
+				main .wrap{padding:2rem;}
+				.desc{font-size:1.5em; margin-bottom:1.5rem;}
+				#stories .wrap{padding:1.5rem;}
+				
+				#ygbtdm h3{margin-top:-1.75em;}
+				#four h3{margin:-1em 0 .5rem -.05em; color:#fff;}
+				#tfe h3{margin-top:-1.65em; color:#000;}
+				#cmyk h3{margin-top:-.5em;}
+				
+				.float{width:100%; overflow:auto;}
+				.float .float{display:flex;}
+				#p5js figure{width:100%;} #p5js h3{padding-top:1.5em;}
+				#other h2{margin-top:.5em;}
+				#other .float a{font-size:.85em; display:inline-block; width:50%; float:left;}
+				#other .float section{height:100%;}
+				#other #misc .wrap{padding:1.5rem 2rem 1.25rem;}
+				
+				#other .brand .wrap{max-width:25em;}
+				#here{padding:3rem 0;}
+			}
+			
+			@media only screen and (min-width:915px){
+				#sitewrap{margin:0 auto; padding:1rem;}
+				#other .float{display:flex;}
+				#other .float .float{width:50%; float:left;}
+				#p5js h3{padding-top:1.15em;}
+			}
+			
+			@media only screen and (min-width:1000px){
+				#sitewrap{padding:2rem;}
+			}
+		</style>
+	</head>
+	
+	<body><div id="sitewrap">
+		<header class="brand"><div class="wrap">
+			<h1><span>Projects™</span> <span>by <a href="{{site.url}}">a-flyleaf</a></span></h1>
+			<p>An assortment of stuff that, unlike the <a href="{{site.url}}/shriblets">shriblets</a>, has taken some significant amount of time to develop.</p>
+		</div></header>
+		
+		<main>
+			<section id="stories">
+				<div class="wrap desc">
+					<h2>Misadventures in Narrative</h2>
+					<p><span>Storytelling endeavors,</span> <span>in reverse-chronological order.</span></p>
+				</div>
+				<a class="block" href="{{site.url}}/ygbtdm"><section id="ygbtdm">
+					<figure><picture><source media="(min-width:640px)" srcset="../../projects/img/ygbtdm-full.png"><img src="../../projects/img/ygbtdm-640.png" alt=""/></picture></figure>
+					<div class="wrap">
+						<h3><span>You’re gonna be</span> <span>the death of me</h3>
+						<div class="sum">
+							<blockquote>A twitchy survivalist-wannabe warily teams up with a suspiciously-careless girl in a thrilling, destructive hellscape.</blockquote>
+							<p>Story that I’m figuring out how to present as I go along. Site published early this year (2022), updates ongoing.</p>
+						</div>
+					</div>
+				</section></a>
+				<a class="block" href="{{site.url}}/hello-world"><section id="four">
+					<figure><picture><source media="(min-width:640px)" srcset="../../projects/img/404-full.png"><img src="../../projects/img/404-640.png" alt=""/></picture></figure>
+					<div class="wrap">
+						<h3>404</h3>
+						<div class="sum">
+							<blockquote>Four people attempt to navigate and develop the artificial, incomplete world in which they exist.</blockquote>
+							<p>Experimental web-based story. Launched 2020; in development limbo as of late 2021.</p>
+						</div>
+					</div>
+				</section></a>
+				<a class="block" href="{{site.url}}/projects/tfe"><section id="tfe">
+					<figure><picture><source media="(min-width:640px)" srcset="../../projects/img/tfe-full.png"><img src="../../projects/img/tfe-640.png" alt=""/></picture></figure>
+					<div class="wrap">
+						<h3>The Firebird Effect</h3>
+						<div class="sum">
+							<blockquote>A young pokémon trainer is pulled ever wayward on her search for answers.</blockquote>
+							<p>Discontinued comic. First posted 2016–17 on deviantArt, officially dropped in 2018.</p>
+						</div>
+					</div>
+				</section></a>
+			</section><section id="other">
+				<div class="wrap desc">
+					<h2>miscellany</h2>
+					<p>Most to least likely to update, main site notwithstanding.</p>
+				</div>
+				<div class="float" id="misc"><div class="float"><a href="{{site.url}}/toyshelf" class="block"i><section id="toyshelf">
+					<figure><img src="../../projects/img/toyshelf.png" alt=""/></figure>
+					<div class="wrap">
+						<h3>Toyshelf</h3>
+						<p>Character repository, where I dump stuff that doesn’t quite fit elsewhere.</p>
+					</div>
+				</section></a>
+				<a href="{{site.url}}/artfight" class="block"><section id="artfight">
+					<figure><img src="../../projects/img/artfight2.png" alt=""/></figure>
+					<div class="wrap">
+						<h3>ArtFight</h3>
+						<p>Gallery for an annual art trading game, because you can’t see much on the official site without an account.</p>
+					</div>
+				</section></a></div><!--/float-->
+				<div class="float"><a href="{{site.url}}/dragonotes" class="block"><section id="dragonotes">
+					<figure><img src="../../projects/img/dragonotes.png" alt=""/></figure>
+					<div class="wrap">
+						<h3>dragonotes</h3>
+						<p>Incomplete resource hub & sporadically-updated personal trackers for the browser-based game Flight Rising.</p>
+					</div>
+				</section></a>
+				<a href="{{site.url}}/p5jsomething" class="block"><section id="p5js">
+					<div class="wrap">
+						<figure><img src="../../projects/img/p5js.png" alt=""/></figure>
+						<h3>p5jsomething</h3>
+						<p>Code experimentation for class, spring 2020. Originally titled “p5jsnake” but in the process of coding it stopped being snake.</p>
+					</div>
+				</section></a></div><!--/float--></div><!--/float-->
+				<section class="brand" id="here"><div class="wrap">
+					<h3>This site!</h3>
+					<p>You are here. <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/1e78f061897b5c1b0fb4bb996d956c4e8541469d">Created on GitHub in 2019</a> and still kickin’. <a href="{{site.url}}">Here’s a link back to base~</a></p>
+				</div></section>
+			</section>
+		</main>
+	</div></body>
+</html>
