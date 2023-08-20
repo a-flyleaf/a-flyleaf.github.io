@@ -10,17 +10,37 @@ layout: none
 		
 		<style>
 			*{margin:0; padding:0; box-sizing:border-box; font-size:100%;}
-			body{overflow-x:hidden; font-family:'segoe ui',sans-serif; font-size:1.15em;}
+			body{overflow-x:hidden; font-family:'segoe ui',sans-serif; font-size:1.15em; color:#111; background:url(assets/bg-light.png); background-attachment:fixed; padding:1em;}
 			header,main,section,footer{display:block;}
+			::selection{background:rgba(0,128,255,.85); color:#fff;}
+			a{color:inherit; text-decoration-color:#dfdfdf; text-decoration-thickness:.1em; text-underline-offset:.15em;}
+			a:hover,a:active,a:focus{color:#0080ff; text-decoration:none;}
+			
+			.box{background:#fff; padding:1em; margin:1em 0;}
+			
+			header.box{background:0; padding:0;}
+			h1{margin-top:5em; font-size:1.5em; background:#fff; padding:.25em .65em;} h1 a{text-decoration:none;}
+			h1,h2{color:#404040;}
+			
+			h2{font-size:3em; margin-top:-1.4em;}
+			main .box{margin-top:3em;}
+			.box p+p{margin-top:.5em;} .box ul{margin:.5em 0 0 1em;} .box li{margin:.15em 0;}
+			
+			footer{font-size:.85em; color:#808080;} footer ul{margin:0 !important; list-style-type:none;}
 			
 			@media (prefers-color-scheme:dark){
+				body,.box,h1{background:#202020;} body{background-image:url(assets/bg-dark.png); background-attachment:fixed; color:#efefef;}
+				a{text-decoration-thickness:.05em;}
+				a:hover,a:focus,a:active,summary:focus,summary:active,summary:hover{color:#00c0ff;}
+				h1,h2{color:#dfdfdf;}
+				footer{color:#bfbfbf;} footer a{text-decoration-color:#808080;}
 			}
 		</style>
 	</head>
 	<body>
-		<header><h1>about a-flyleaf.github.io</h1></header>
+		<header class="box"><h1>about <a href="{{site.url}}">a-flyleaf.github.io</a></h1></header>
 		<main>
-			<section>
+			<section class="box who">
 				<h2>who</h2>
 				<p><b>a-flyleaf</b> is a pseudonymous internet nerd. Can often be found doing digital art, banging away at HTML/CSS, or wrangling some kind of story. Sometimes these activities even go together!</p>
 				<ul><li>bullet-point-overuser</li>
@@ -29,41 +49,41 @@ layout: none
 				<li>trying to be less of a perfectionist</li></ul>
 			</section>
 			
-			<section>
+			<section class="box what">
 				<h2>what</h2>
 				<p>A dubiously-organized hodge-podge of smaller sites <s>in a trenchcoat</s> on a subdomain.</p>
 				<ul><li><a href="{{site.url}}/projects">The <b>Projects</b>™ page</a> showcases some stories and websites I’ve spent some substantial amount of time on. Check ’em out if you want ;V</li>
 				<li><a href="{{site.url}}/shriblets"><b>shriblets</b></a> are one-off pages where I screw around with coding. Not as in-depth, obviously, but still fun little romps in their own right~</li>
 				<li>There is also <a href="{{site.url}}/blog">a blog</a> here, which gets updated whenever. No set topics, no schedule, no masters.</li></ul>
-			</section>
+			</section class="box">
 			
-			<section id="contact">
+			<section class="box where" id="contact">
 				<h2>where</h2>
 				<p>(AKA obligatory contact section)</p>
-				<ul><li>if this ever fails to work assume I am dead: E-mail is <a href="mailto:a-flyleaf@pm.me">a-flyleaf@protonmail.net</a>; spambots do not interact!!!1!</li>
-				<li>also a safe bet: You can drop me an anonymous line through <a href="https://a-notebox.dreamwidth.org/2023/01/31/welcome.html?style=site">this Dreamwidth post masquerading as a guestbook</a>. Reliant on me checking Dreamwidth, but I do that fairly often as of mid-2023.</li>
+				<ul><li>if this ever fails to work assume I am dead: <b>E-mail</b> is <a href="mailto:a-flyleaf@pm.me">a-flyleaf@protonmail.net</a>; spambots do not interact!!!1!</li>
+				<li>also a safe bet: You can drop me an anonymous line through <a href="https://a-notebox.dreamwidth.org/2023/01/31/welcome.html?style=site">this Dreamwidth post masquerading as a <b>guestbook</b></a>. Reliant on me checking Dreamwidth, but I do that fairly often as of mid-2023.</li>
 				<li>I also use <a href="https://nightauctor.deviantart.com/">deviantArt</a> with some degree of regularity, although I am starting to dislike it a lot (and you need an account to contact anyone) so this one’s shaky.</li></ul>
 			</section>
 			
-			<section>
+			<section class="box when">
 				<h2>when</h2>
 				<p>Do you want a painstaking breakdown of exactly when I do what on every other page? Me too! Which is why most of my sites* have a changelog; it may or may not be visibly-linked, but slap a /changelog to the end of the base URL and you might find something. (*Main one not included, ironically. The blog’s the closest I got here.)</p>
 				<p><a href="https://github.com/a-flyleaf">My GitHub commit history</a> also auto-updates every time I hit publish. It’s a lil fluky since I often have updates sitting on my computer ready to publish whenever, but hey.</p>
 			</section>
 			
-			<section>
+			<section class="box why">
 				<h2>why</h2>
 				<p>Social media is a data-sucking hellscape and it makes my brain break out in algorithmically-induced hives. Formatting limitations suck, arbitrary UI changes suck, being constantly subject to the whims of paywalls and CEOs and advertisers—It’s A Lot Of Suck, all the way down.</p>
 				<p>Here, meanwhile, I can do basically whatever I want ;3 And you get to look at it! For free! Without logging in or anything; <a href="{{site.url}}/privacy">data-wise, I get <em>nothing</em>!!</a> And if GitHub ever mucks that up, everything is primarily on my own machine, so I can pack up and move whenever.</p>
 				<p>Not a bad deal for the price of coding knowledge!</p>
 			</section>
 			
-			<section>
+			<section class="box how">
 				<h2>how</h2>
-				<p>Behold, <a href="{{site.url}}">a colophon</a>!lists some resources I use/recommend. Specific code screwery also usually has nifty links adjacent somewhere, even if it’s buried in the code comments.</p>
+				<p>Behold, <a href="{{site.url}}/colophon">a colophon</a>, which lists some resources I use/recommend. Specific code screwery also usually has nifty links adjacent somewhere, even if it’s buried in the code comments.</p>
 			</section>
 		</main>
-		<footer><ul>
+		<footer class="box"><ul>
 			<li><a href="{{site.url}}">← back to index</a></li>
 			<li>see <a href="{{site.url}}/oldpages">the old page index</a> for archived versions</li>
 		</ul></footer>
