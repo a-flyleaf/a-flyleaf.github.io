@@ -1,3 +1,6 @@
+---
+layout: none
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -7,16 +10,49 @@
 		
 		<style>
 			*{margin:0; padding:0; box-sizing:border-box; font-size:100%;}
-			body{overflow-x:hidden; font-family:verdana,sans-serif; font-size:1.15em; color:#111;}
+			body{overflow-x:hidden; font-family:'segoe ui',sans-serif; font-size:1.5em; color:#111;}
 			::selection{background:rgba(0,128,255,.85); color:#fff;}
 			header,main,nav,footer{display:block;}
+			a{color:inherit; text-decoration-color:#dfdfdf; text-decoration-thickness:.1em; text-underline-offset:.15em;}
+			a:focus,a:hover,a:active,summary:hover,summary:active,summary:focus{color:#0080ff; text-decoration:none;}
+			
+			#scribbl{background:url(assets/bg-light.png); width:100%; height:10em;}
+			
+			#content{padding:1em;}
+			
+			header{margin-top:-4.25em;}
+			summary{list-style-type:none; cursor:pointer; color:#404040;}
+			h1{font-size:3em; display:inline;}
+			blockquote{border-left:.15em #dfdfdf solid; padding-left:1em; margin-bottom:.5em;} blockquote p{font-size:.85em;}
+			
+			#etc{margin-top:2em; font-size:.75em; color:#606060;}
+			
+			footer{color:#808080; font-size:.65em; margin-top:5em;}
+			footer a{color:inherit; text-decoration:none;}
 			
 			@media (prefers-color-scheme:dark){
+				body{background:#202020; color:#efefef;}
+				#scribbl{background:url(assets/bg-dark.png);}
+				summary{color:#dfdfdf;}
+				a{text-decoration-thickness:.05em;}
+				a:hover,a:focus,a:active,summary:focus,summary:active,summary:hover{color:#00c0ff;}
+				blockquote{border-color:#606060;}
+				#etc{color:#bfbfbf;}
 			}
 		</style>
 	</head>
 	<body>
-		[redoing this again lol please hold]
-		<!--ok. spontaneous idea: "a-flyleaf". bigass happy gary. links: about, projects, shriblets, blog, dA. (each link looks different.) *done.*-->
+		<div id="scribbl"></div>
+		<div id="content">
+			<header><details>
+				<summary><h1>a-flyleaf</h1></summary>
+				<blockquote><p><a href="https://en.wikipedia.org/wiki/Book_design#Front_cover,_spine,_and_back_cover_of_the_dust-jacket">flyleaf <i>(noun)</i></a>: a blank page at the beginning or end of a book</p></blockquote>
+			</details></header>
+			<main>
+				<p>internet hub of <a href="{{site.url}}/about">an anonymous nerd</a></p>
+				<p id="etc">You know what? No navigation, no gods, no masters. ↑&nbsp;That’s the about page; explore from there ;V</p>
+			</main>
+			<footer><a href="https://github.com/a-flyleaf">©&nbsp;2018–2023</a></footer>
+		</div>
 	</body>
 </html>
