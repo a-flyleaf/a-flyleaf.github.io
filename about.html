@@ -24,7 +24,7 @@ layout: none
 			
 			h2{font-size:3em; margin-top:-1.4em;}
 			main .box{margin-top:3em;}
-			.box p+p{margin-top:.5em;} .box ul{margin:.5em 0 0 1em;} .box li{margin:.15em 0;}
+			.box p+p{margin-top:.5em;} .box ul{margin:.5em 0 0 1em;} .box li{margin:.15em 0;} .who li{margin:0;}
 			
 			footer{font-size:.85em; color:#808080;} footer ul{margin:0 !important; list-style-type:none;}
 			
@@ -35,9 +35,22 @@ layout: none
 				h1,h2{color:#dfdfdf;}
 				footer{color:#bfbfbf;} footer a{text-decoration-color:#808080;}
 			}
+			
+			@media only screen and (min-width:35em){
+				html,body{height:100%; overflow:auto; padding:0;}
+				#content{position:fixed; left:35%; height:100%; right:0; background:#fff; padding:7.5em 1em 0 1.5em; overflow-y:scroll;} .box{margin:0;}
+				@media (prefers-color-scheme:dark){#content{background:#202020;}}
+				h1{margin-top:0; line-height:1;}
+				
+				main .box{margin:0; padding:0 1em;}
+				h2{margin-top:.5em; font-size:2em;} .who h2{margin-top:0;}
+				
+				footer.box{margin-top:3em;}
+				#wrap{max-width:35em;}
+			}
 		</style>
 	</head>
-	<body>
+	<body><div id="content"><div id="wrap">
 		<header class="box"><h1>about <a href="{{site.url}}">a-flyleaf.github.io</a></h1></header>
 		<main>
 			<section class="box who">
@@ -87,5 +100,5 @@ layout: none
 			<li><a href="{{site.url}}">← back to index</a></li>
 			<li>see <a href="{{site.url}}/oldpages">the old page index</a> for archived versions</li>
 		</ul></footer>
-	</body>
+	</div></div></body>
 </html>
