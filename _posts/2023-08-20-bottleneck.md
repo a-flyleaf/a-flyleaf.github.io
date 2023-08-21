@@ -3,7 +3,7 @@ layout: plaintext2
 title: Bottlenecks are a concept.
 date: 2023-08-20
 slug: bottleneck
-css: "#danas li{margin:.5em 0;} li del{color:#00c000;} li del::after{content:' ✔';}"
+css: "#danas li{margin:.5em 0;} li del{color:#00c000;} li del::after{content:' ✔';} main hr{margin:2em auto; max-width:50%;} li ul{margin-bottom:.25em;}"
 ---
 <b>bottleneck</b> <i>(noun.)</i>: what happens when a procrastination-prone coder is like "this can go public once I finish XYZ." and then,, takes 500 years,,, to do XYZ<!--more-->
 
@@ -11,7 +11,7 @@ welcome to the uncorkening, motherfuckers
 
 ----
 
-> Not gonna lie, there's a part of me that thinks [making an entire fansite for a game I *just* played at the time of writing] is a little excessive/hasty; I mean, I've had other All-Consuming Hyperfixations and they haven't gotten their own websites, and I'm barely over a full 30 days into this one. Who's to say the interest won't drop off, like, as soon as I finish reviewing the playthrough if not before then? I *severely* doubt that, but it's a possibility! What if what if what if [insert more anxiety brain scrargling here] ("scrargling" is not a word but it is the closest approximation to the sound I'm imagining)
+> Not gonna lie, there's a part of me that thinks [making an entire fansite for a game I *just* played at [the time of writing](february-plus#the-fansite)] is a little excessive/hasty; I mean, I've had other All-Consuming Hyperfixations and they haven't gotten their own websites, and I'm barely over a full 30 days into this one. Who's to say the interest won't drop off, like, as soon as I finish reviewing the playthrough if not before then? I *severely* doubt that, but it's a possibility! What if what if what if [insert more anxiety brain scrargling here] ("scrargling" is not a word but it is the closest approximation to the sound I'm imagining)
 
 [narrator voice] It Has Been Over Half a Year and The Writer Is Still Into <i style="text-transform:uppercase;font-style:normal;">Omori</i>.
 
@@ -23,7 +23,7 @@ idek what I'm doing online anymore let's put it that way.
 Site's been long overdue for some updates for a *while* now; I've had a bunch of changes sitting in my local GitHub commits, so today I figured I'd actually start cleaning them up.
 
 <div id="danas" markdown="1">
-- In my drafts sits an absolute *behemoth* of a March--July-ish linkdump, which mostly turned into songspam. Might as well publish that at some point, but I've entertained the idea of turning it into like, a sort of yearbook "song most likely to get stuck in my head" sort of thing. That requires Effort™, though, so we'll see if it happens...?
+- In my drafts sits an absolute *behemoth* of a March-to-July-ish linkdump, which mostly turned into songspam. Might as well publish that at some point, but I've entertained the idea of turning it into like, a yearbook-esque "song most likely to get stuck in my head" sort of thing. That requires Effort™, though, so we'll see if it happens...?
 - After getting roadblocked at redoing the index from scratch, I ultimately decided to keep it very similar to [last version]({{site.url}}/oldpages/index/v1), just with a font update and no links. But since the space between the header and footer looked empty with just the "internet hub" line, I slapped in a "status update" of sorts; currently it's the following, and we'll see if it sticks but for now it remains *very, very true*:
 
 > <small><b>2023/08/20</b>:</small> deep in <a href="{{site.url}}/omori"><i style="text-transform:uppercase; font-style:normal;">Omori</i> hell</a> for 8&nbsp;months and counting but at least the main site finally got an update…!!
@@ -35,9 +35,9 @@ If nothing else, maybe having a *small* ephemeral thing on the homepage will mak
 
 I am extremely on the fence about whether to (re-)incorporate the scribble background on pages like this.... I coded it out for a reason on those interim blog posts, because even if it's Peak Minimalism Hell, I *do* like the cleaner look, dangit. But I don't *not* miss the splash of color.... 🤔
 
-*Eh,* something to futz over later. That and the projects page. And the shriblets, I miiight turn that into a repo and also figure out a way to link random pages I've accumulated in not-main-site folders for code testing, bcause they *do* exist and are kinda just buried wherever and I Must Document Everything. *And* the ["miscellaneous things I want to do at some point" from January](eleven#miscellaneous-things-i-want-to-do-at-some-point) still moooostly stands, and so basically, \*explodes\*
+*Eh,* something to futz over later. That and the projects page. And the shriblets, I miiight turn that into a repo and also figure out a way to link random pages I've accumulated in not-main-site folders for code testing, bcause they *do* exist and are kinda just buried wherever and I Must Document Everything. *And* the ["miscellaneous things I want to do at some point" from January](eleven#miscellaneous-things-i-want-to-do-at-some-point) still moooostly stands, and so basically, <i>\*explodes\*</i>
 
----actually fuck it new to-do list while I'm here:
+---actually fuck it new to-do list while I'm here:<a id="todo"></a>
 - main site (you are here):
 	- ~~new homepage + plaintext layout~~
 	- do Something about that giant unholy not-March post
