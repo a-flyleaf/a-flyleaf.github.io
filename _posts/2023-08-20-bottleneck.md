@@ -5,9 +5,9 @@ date: 2023-08-20
 slug: bottleneck
 css: "#danas li{margin:.5em 0;} li del{color:#00c000;} li del::after{content:' ✔';} main hr{margin:2em auto; max-width:50%;} li ul{margin-bottom:.25em;}"
 ---
-<b>bottleneck</b> <i>(noun.)</i>: what happens when a procrastination-prone coder is like "this can go public once I finish XYZ." and then,, takes 500 years,,, to do XYZ<!--more-->
+<b>bottleneck</b> <i>(noun.)</i>: what happens when a procrastination-prone coder is like "this can go public once I finish XYZ." and then,, takes 500 years,,, to do XYZ
 
-welcome to the uncorkening, motherfuckers
+<!--more-->welcome to the uncorkening, motherfuckers
 
 ----
 
@@ -23,7 +23,7 @@ idek what I'm doing online anymore let's put it that way.
 Site's been long overdue for some updates for a *while* now; I've had a bunch of changes sitting in my local GitHub commits, so today I figured I'd actually start cleaning them up.
 
 <div id="danas" markdown="1">
-- In my drafts sits an absolute *behemoth* of a March-to-July-ish linkdump, which mostly turned into songspam. Might as well publish that at some point, but I've entertained the idea of turning it into like, a yearbook-esque "song most likely to get stuck in my head" sort of thing. That requires Effort™, though, so we'll see if it happens...?
+- In my drafts sits an absolute *behemoth* of a March-to-July-ish linkdump, which mostly turned into songspam. Might as well publish that at some point, but I've entertained the idea of turning it into like, a yearbook-esque "song most likely to get stuck in my head" "song most likely to make you go 'WTF am I listening to'" "song most likely to [...]" sort of thing. That requires Effort™, though, so we'll see if it happens...?
 - After getting roadblocked at redoing the index from scratch, I ultimately decided to keep it very similar to [last version]({{site.url}}/oldpages/index/v1), just with a font update and no links. But since the space between the header and footer looked empty with just the "internet hub" line, I slapped in a "status update" of sorts; currently it's the following, and we'll see if it sticks but for now it remains *very, very true*:
 
 > <small><b>2023/08/20</b>:</small> deep in <a href="{{site.url}}/omori"><i style="text-transform:uppercase; font-style:normal;">Omori</i> hell</a> for 8&nbsp;months and counting but at least the main site finally got an update…!!
