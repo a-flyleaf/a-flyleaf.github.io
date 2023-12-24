@@ -33,7 +33,7 @@ These are more general resources that I used at the time; not so much anymore, b
 
 ### for code
 - [CloudCannon's Jekyll tutorials](https://cloudcannon.com/community/learn/jekyll-tutorial/getting-started/), particularly [the date formatting table](https://learn.cloudcannon.com/jekyll/date-formatting/)
-- [Liquid documentation](https://shopify.github.io/liquid/)
+- [Liquid documentation](https://shopify.github.io/liquid/) + [API reference](https://shopify.dev/docs/api/liquid)
 - countless unsung heroes across the internet everywhere (read: whoever showed up in the search results), especially on StackOverflow; specific tutorials are often linked where used, if only in code comments
 
 ### for the computer/internet, in general

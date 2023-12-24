@@ -7,7 +7,7 @@ css: main{font-family:consolas,monospace;} main p{font-size:.75em;} h1{margin-to
 ---
 <!--more-->
 
-it dawns on me, not *in*frequently, that the posts I find myself revisiting most often here (yes I do love gazing into [the pool](https://en.wikipedia.org/wiki/Narcissus_(Caravaggio)) what about it) are the weird ones. the off-the-cuff ones. like what the fuck was I on when I wrote [this [untitled internet screed]](screed). at least I remember the IRL context to [this ["not much"]](moment); and in a similar vein, I still think [the would-be follow-up](lastday) is trying too hard.
+it dawns on me, not *in*frequently, that the posts I find myself revisiting most often here (yes I do love gazing into [the pool](https://en.wikipedia.org/wiki/Narcissus_(Caravaggio)) what about it) are the weird ones. the off-the-cuff ones. like what the fuck was I on when I wrote [this [untitled internet screed]](screed). at least I remember the IRL context to [this ["not much"]](moment); and, relatedly, I still think [the would-be follow-up](lastday) is trying too hard.
 
 the ones I care the least for are the ones I put... I don't want to say Effort™, it's not like the smaller things *don't* take some degree of energy and thought. but like, I actually don't care about the 5,000-word diatribe against social media or whatever. it is vastly more likely than the other stuff to get me a Good Grade in Blogging but like who the fuck cares also
 

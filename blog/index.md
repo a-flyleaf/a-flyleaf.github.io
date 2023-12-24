@@ -5,7 +5,7 @@ css: "#blog hr{background:#efefef;} article{margin:.5em 0 1em;} .lnk{text-decora
 ---
 Wow! Much word, such ramble.
 
-Page layouts are intentionally inconsistent.
+Post layouts may vary.
 <!--{/%assign cutoff = "1673413200"%}-->
 
 <section id="blog">{%for post in site.posts%}<!--{/%assign check = post.date|date:"%s"%}{/%if check>=cutoff%}--><hr><article><a href="{{post.url}}" class="lnk"><small class="date">{{post.date|date:"%Y-%m-%d"}}</small> <b>{{post.title}}</b></a><div class="excerpt">{{post.excerpt}}{%if post.content contains "<!--more-->"%} <a href="{{post.url}}" class="more">{read more →}</a>{%endif%}</div></article><!--{/%endif%}-->{%endfor%}</section>
