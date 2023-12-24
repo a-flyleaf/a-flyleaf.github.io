@@ -24,8 +24,8 @@ Not my favorite megacorporation in the world, but I'm stuck in its omnipresent c
 
 ## Nitter? Piped?
 Alternative frontends to Twitter and YouTube, respectively. I try to link the official instances ([nitter.net](https://nitter.net/) and [piped.video](https://piped.video/))~~, but also use [notabird.site](https://notabird.site/) and [piped.garudalinux.org](https://piped.garudalinux.org)~~\*. **These links are interchangeable**, in the event of one instance not loading or if you want to access the original tweet/video:
-- <code>nitter.net/<span class="lnk">link</span></code> ~~= <code>notabird.site/<span class="lnk">link</span></code> =~~ <code>twitter.com/<span class="lnk">link</span></code>
-- <code>piped.video/<span class="lnk">link</span></code> = <code>piped.garudalinux.org/<span class="lnk">link</span></code> = <code>youtube.com/<span class="lnk">link</span></code>
+- <code>nitter.net/<span class="lnk">link</span></code> ~~= <code>notabird.site/<span class="lnk">link</span></code>~~ = <code>twitter.com/<span class="lnk">link</span></code>
+- <code>piped.video/<span class="lnk">link</span></code> ~~= <code>piped.garudalinux.org/<span class="lnk">link</span></code>~~ = <code>youtube.com/<span class="lnk">link</span></code>
 
 <div id="update" markdown="1">
 \* update August 2023: piped.garudalinux kept redirecting to a Cloudflare DDoS page, so I've stopped using it altogether. Meanwhile, notabird.site is down wholesale, and Nitter struggles intermittently as Twitter-not-Twitter flips the bird to guests and goes continually downhill in general.
