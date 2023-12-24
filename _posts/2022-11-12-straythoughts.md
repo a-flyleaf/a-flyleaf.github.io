@@ -13,7 +13,7 @@ dA recently had [a small explosion](https://www.deviantart.com/a-flyleaf/status-
 
 keep entertaining idle thoughts of a code tutorial of some sort, since then I can actually Direct People To Something whilst shilling the benefits of DIY'ing a site
 
-grudge against carrd ended today after reading [the creator's twitter](https://notabird.site/ajlkn) for a while & his page on [how he made it](https://themakingof.carrd.co/). it's not his fault the kids are feral and have <abbr title="do not interact">DNIs</abbr> that, if printed, would unfurl comically like a toilet paper scroll and make trees cry. anyway carrds are apparently basically static sites which is surprisingly very cool
+grudge against carrd ended today after reading [the creator's twitter](https://nitter.net/ajlkn) for a while & his page on [how he made it](https://themakingof.carrd.co/). it's not his fault the kids are feral and have <abbr title="do not interact">DNIs</abbr> that, if printed, would unfurl comically like a toilet paper scroll and make trees cry. anyway carrds are apparently basically static sites which is surprisingly very cool
 
 thinking maybe it would be nice/good/interesting/etc. to treat storybuilding more like programming<span class="en">---</span>ship early, ship often, get feedback, keep iterating, the job is never truly done etc. well that last part's a misnomer, it's gotta stop *somewhere*, but if nothing else I could probably stand to distance myself from the mythic ideal of The Perfect Finished Product spawning impeccably from the creator's forehead. (gold star if you get the mythology reference)  
 &nbsp;&nbsp;addendum: people used to not write things down (and surely *still* don't, wherever oral traditions thrive) and stories got told just fine, is what something in the territory of what I'm getting at. the Perfect Immaculate Canon is a myth.
@@ -28,7 +28,7 @@ it's dark at 6:30pm and it feels like I should be going to bed soon. unsure whet
 
 time, man. what is it.
 
-(p.s. update: half the reason I was stalking the carrd guy's twitter was morbid curiosity about whether he *knows* what the site's being used for. (the other half was genuinely being interested in the little snippets he puts out.) [looks like he does](https://notabird.site/ajlkn/status/1487855718480986115), and with that my grudge against the core site itself is rescinded fully, god bless.
+(p.s. update: half the reason I was stalking the carrd guy's twitter was morbid curiosity about whether he *knows* what the site's being used for. (the other half was genuinely being interested in the little snippets he puts out.) [looks like he does](https://nitter.net/ajlkn/status/1487855718480986115), and with that my grudge against the core site itself is rescinded fully, god bless.
 
 <details><summary>[quote of tweet, in case it ever goes down]</summary>
 <blockquote><p class="quot">Honestly looking back at this code has been nothing short of inspiring</p>
