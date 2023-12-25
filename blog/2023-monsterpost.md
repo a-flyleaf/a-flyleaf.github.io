@@ -120,14 +120,14 @@ am learning! is fun. deserves a few words.
 	- much later in the day, spent an hour trying to find this ONE piano track from the background of a random religious video my dad was watching. plugging in the raw video with voice and all? nop. note recognition? nah. paging through random royalty-free piano music? *glhf.* <em class="up noi">eventually</em> thought to use Audacity to isolate the audio, which thankfully [an Effect does automatically](https://manual.audacityteam.org/man/tutorial_vocal_removal_and_isolation.html); <em class="up noi">finally</em> [AHA Music](https://www.aha-music.com/) (fitting name!) identified it from the crusty resulting audio. <em class="up noi">rejoice</em>
 		- [is this](https://yewtu.be/watch?v=bpGjVY47gTU)!
 	- P.S. [what the fuck is this](https://yewtu.be/watch?v=rsF5EWOQN9Y) (this is a recommendation. no jumpscares dw)
-	- nightly tunes: [Rhapsody in Green](https://yewtu.be/watch?v=O4x3DKbvi1Y), [The Broken Clock](https://yewtu.be/watch?v=Mmzhi4T6wtM), [Hapsburg Lipp](https://yewtu.be/watch?v=3JqobRHIxqw)
+	- nightly tunes: [Rhapsody in Green](https://homestuck.bandcamp.com/track/rhapsody-in-green-2), [The Broken Clock](https://homestuck.bandcamp.com/track/the-broken-clock-2), [Hapsburg Lipp](https://yewtu.be/watch?v=3JqobRHIxqw)
 - 06 ♪
 	- [album: <i>The Felt</i>](https://yewtu.be/playlist?list=PLlGklfYAdslavhtb5kUefK1V_ki5NvbVu) (source for a a couple of last night's songs!)
 	- went to reference [a meme](https://yewtu.be/watch?v=fq3abPnEEGE); [<em class="up noi">it is no longer a mystery</em>](https://yewtu.be/watch?v=UHUZiVXdaUI)
 	- p.s. banged out ~3k words of, uhhh, Something, today. >83ccccc *I miss writing prose tbh I enjoy it a lot* [may or may not publish this, or maybe hide it in the code? don't wanna build hype for a wip, go Too public...]
 		- <span class="l8r">[<b>12/24</b> so apparently I started missing art updates somewhere along the line here, but at the time of writing 1)&nbsp;thing in question is still a WIP (work in progress) but 2)&nbsp;I've alluded to it publicly on multiple occasions. Namely with a sketchdump from later in April, which is linked below (the 20th) from dA ;V]</span>
 - 07
-	- ♪ [Slow&nbsp;Slicing / Klonopin](https://yewtu.be/watch?v=XLvfobAmQCU)
+	- ♪ [Slow&nbsp;Slicing / Klonopin](https://laurenbousfieldanyev3r.bandcamp.com/track/slow-slicing-klonopin)
 	- <b>art: [untitled character style thing](https://a-flyleaf.github.io/omori/art/aub3)</b>
 - 09
 	- ♪ tune of the morning: [Amorelle (remix)](https://yewtu.be/watch?v=kmb66p1Uilk), which I found years ago through [a cool timelapse](https://yewtu.be/watch?v=w442ir1NRXc)
@@ -142,6 +142,7 @@ am learning! is fun. deserves a few words.
 - 16
 	- [<i>All the Living and the Dead</i>](https://www.hayleycampbell.com/all-the-living-and-the-dead). good book.
 	- ♪ ["eh not my favorite" -starts putting it on repeat- "fuck"](https://yewtu.be/watch?v=3fBL5bht15M)
+		- <span class="l8r">[<b>12/24</b>] cursing past-me for this. I totally forgot about this song and now it's stuck in my head agin!!! >8V</span>
 - 17 ♪ song from [art](https://www.deviantart.com/middynos/art/banana-split-sundae-956116990)? [song from art](https://yewtu.be/watch?v=ZrZuitdjs2Q).
 - 20
 	- hm. yeah I should definitely split the song recs off unless otherwise noted this is nuts. anyway, ♪ [Forget](https://yewtu.be/watch?v=vOreqez4v9Y)!
@@ -152,7 +153,7 @@ am learning! is fun. deserves a few words.
 	- [made a niche silly.](https://a-flyleaf.github.io/omori/piano)
 	- ♪ [throwback Sunday](https://yewtu.be/watch?v=qVdPh2cBTN0)
 - 24
-	- ♪ [funky fucking music](https://yewtu.be/watch?v=NHJbNfaAupE); swinging over to [the full album](https://yewtu.be/watch?v=MLX_aWlQBtU&list=PLjvay0GNhW9Zf5OeEEI6VoFSYgoK3N_7c&index=1), it reminds me a lot of [<i>From Rotting Fantasylands</i>](https://laurenbousfieldanyev3r.bandcamp.com/album/from-rotting-fantasylands). (The title is almost definitely a homage to it, too; the artist then was called "Nero's Day at Disneyland".) I don't know what the hell this genre is called, especially with the sound effects that can make my skin crawl, but it is NOT what I was expecting from that album art o_O
+	- ♪ [funky fucking music](https://rubymydear.bandcamp.com/track/mini-short); swinging over to [the full album](https://rubymydear.bandcamp.com/album/brame), it reminds me a lot of [<i>From Rotting Fantasylands</i>](https://laurenbousfieldanyev3r.bandcamp.com/album/from-rotting-fantasylands). (The title is almost definitely a homage to it, too; the artist then was called "Nero's Day at Disneyland".) I don't know what the hell this genre is called, especially with the sound effects that can make my skin crawl, but it is NOT what I was expecting from that album art o_O
 		- update, apparently it is called [breakcore](https://en.wikipedia.org/wiki/Breakcore), and also there are *[piano versions](https://rubymydear.bandcamp.com/album/brame-piano-version)*; I wouldn't have thought such a thing was possible, tbh??!
 		- <em class="up noi">Wait [this one's Pavane](https://rubymydear.bandcamp.com/track/charade)???? Fuck offfffff I didn't notice!!!!!!</em> ([pavane](https://yewtu.be/watch?v=q9tcHoD6r0c) in question; I literally *just* referenced it re:the piano thing yesterday....)
 		- 4/30 update: these albums have been my earworms nonstop since then! love whenever That Part of "[Asila A La Plage](https://rubymydear.bandcamp.com/track/asile-a-la-plage)" comes up and I *still* go "what... the Actual fuck am I listening to."
