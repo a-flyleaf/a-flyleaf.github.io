@@ -208,8 +208,8 @@ it appeals very much to the person in me who wants to document everything (see: 
 Bruh. <https://haleynahman.substack.com/p/82-what-im-telling-myself>
 
 5/28 also
-got [My Nightmare](https://yewtu.be/watch?v=3Q1J6WqfGJ8) randomly stuck in my head, went through the rest of [this playlist](https://yewtu.be/playlist?list=PLEqd5lNyrSf8m2Cb6fAXsrui0KTs1spjt) and not for the first time... I do <em class="up noi">not</em> remember [this one](https://yewtu.be/watch?v=0op3EN9fBtY) though and holy <em class="up noi">shit. so good</em>
-(P.S. [I Am An Islan](https://yewtu.be/watch?v=LGZnTC9kTLw) and [Sweet](https://yewtu.be/watch?v=Tc4UgI-nY_4) are also old favorites)
+got [My Nightmare](https://phemiec.bandcamp.com/track/my-nightmare) randomly stuck in my head, went through the rest of [this playlist](https://yewtu.be/playlist?list=PLEqd5lNyrSf8m2Cb6fAXsrui0KTs1spjt) and not for the first time... I do <em class="up noi">not</em> remember [this one <span class="l8r">["The Gods Must Be Lying"]</span>](https://phemiec.bandcamp.com/track/the-gods-must-be-lying) though and holy <em class="up noi">shit. so good</em>
+(P.S. [I Am An Island](https://yewtu.be/watch?v=LGZnTC9kTLw) and [Sweet](https://yewtu.be/watch?v=Tc4UgI-nY_4) are also old favorites)
 
 5/30 along with phemiec, [voices I am in love with](https://yewtu.be/watch?v=yzM_SwKx1WE)
 </div>
