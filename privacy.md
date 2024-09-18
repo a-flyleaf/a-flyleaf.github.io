@@ -1,7 +1,7 @@
 ---
 layout: plaintext2
 title: a few notes on privacy
-css: "small{display:inline-block; margin:.5em 0 0 1em;} del{opacity:.35;} #update{border:.05em dotted; border-radius:.5em; padding:0 1em;} #update p{font-size:.85em;} .lnk{text-transform:uppercase;}"
+css: "small{display:inline-block; margin:.5em 0 0 1em;} del{opacity:.35;} #update{border:.05em dotted; border-radius:.5em; padding:0 1em;} #update p{font-size:.85em;} .lnk{text-transform:uppercase;} code{display:inline-block;}"
 ---
 **This is not a Privacy Policy**; I am not a lawyer.
 
@@ -23,19 +23,14 @@ Not my favorite megacorporation in the world, but I'm stuck in its omnipresent c
 - Art pages may have YouTube embeds, because I am not immune to convenience and occasionally work with video.
 
 ## Nitter? Piped?
-Alternative frontends to Twitter and YouTube, respectively. I try to link the official instances ([nitter.net](https://nitter.net/) and [piped.video](https://piped.video/))~~, but also use [notabird.site](https://notabird.site/) and [piped.garudalinux.org](https://piped.garudalinux.org)~~\*. **These links are interchangeable**, in the event of one instance not loading or if you want to access the original tweet/video:
-- <code>nitter.net/<span class="lnk">link</span></code> ~~= <code>notabird.site/<span class="lnk">link</span></code>~~ = <code>twitter.com/<span class="lnk">link</span></code>
-- <code>piped.video/<span class="lnk">link</span></code> ~~= <code>piped.garudalinux.org/<span class="lnk">link</span></code>~~ = <code>yewtu.be/<span class="lnk">link</span></code>\*\* = <code>youtube.com/<span class="lnk">link</span></code>
+Alternative frontends to Twitter and YouTube, respectively. As of September&nbsp;2024, Nitter is dead, and Piped still exists but I use Invidious way more often. There are many instances and I cycle through them periodically when others stop working.
 
-<div id="update" markdown="1">
-\* update August 2023: piped.garudalinux kept redirecting to a Cloudflare DDoS page, so I've stopped using it altogether. Meanwhile, notabird.site is down wholesale, and Nitter struggles intermittently as Twitter-not-Twitter flips the bird to guests and goes continually downhill in general.
+Essentially, **the links are interchangeable**, so the megacorporate source is only a URL change away:
 
-\*\*update 2, December 2023: Piped *in general* has been spitting up errors lately. I haven't changed older links, but I've been using [Invidious](https://yewtu.be/) instead.
-
-*Modern internet is hell.*
-</div>
+- <code>nitter.net/<span class="lnk">link</span></code> = <code>twitter.com/<span class="lnk">link</span></code>
+- <code>piped.video/<span class="lnk">link</span></code> = <code>yewtu.be/<span class="lnk">link</span></code> = <code>youtube.com/<span class="lnk">link</span></code>
 
 ### "Frontend"? "Instance"?? What the hell are you talking about???
-Ever wanted to browse Twitter/YouTube with none of the ads, recommendations, or other bloat? *Bam*, enjoy ;V These websites essentially serve as giant embeds, and frankly I don't know enough tech talk to explain how else it works.
+Ever wanted to browse ~~Twitter/~~YouTube with none of the ads, recommendations, or other bloat? *Bam*, enjoy ;V These websites essentially serve as giant embeds, and frankly I don't know enough tech talk to explain how else it works.
 
 But I *do* know Twitter and YouTube are relentless data-munchers, and I like [open&nbsp;source](https://itsfoss.com/what-is-foss/) projects like these on principle. The downside is that, because these sites are much smaller and entirely reliant on the host continuing to behave as expected, sometimes they just don't load---hence the note above about link interchangeability. A small price to pay for not getting unsolicited recs shoved in your face, IMO.
