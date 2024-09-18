@@ -44,4 +44,4 @@ These are more general resources that I used at the time; not so much anymore, b
 	- for never seeing another godforesaken advertisement again, and generally cleaning up websites with impunity: [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 	- for focus: [LeechBlock](https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/)
 	- for the heck of it: [Wayback Machine](https://addons.mozilla.org/en-US/firefox/addon/wayback-machine_new/)
-- [Nitter + Piped](privacy#nitter-piped) <small>(or whichever frontend is working at the time)</small>
+- whichever [frontends](privacy#nitter-piped) for giant data-munching sites I can scrounge up from the [open source trenches](https://github.com/mendel5/alternative-front-ends)
