@@ -2,7 +2,7 @@
 layout: plaintext2
 title: Fine, Great
 date: 2024-12-18
-slug: 2024-12-18-test
+slug: fine-great
 
 css: "
 	main hr{max-width:50%; margin:1em auto;}
