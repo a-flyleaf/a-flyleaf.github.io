@@ -131,7 +131,7 @@ and back again,
 
 <p style="text-align:center;">occasionally with a respite,<br> but not much.</p>
 
-Now that I've typed it out on a thinner canvas, I'm *certain* I've seen similar in poetry before; still new to me, especially in prose, *especially* for conveying internal narrative. The writer uses it to convey a character's frayed and frenzied thoughts, to a *remarkably* poignant degree.
+Now that I've typed it out on a thinner canvas, I'm *certain* I've seen similar in poetry before; still new to me, especially in prose, and *especially* for conveying internal narrative. The writer uses it to convey a character's frayed and frenzied thoughts, to a *remarkably* poignant degree.
 
 Or, in less pretentious terms, *it fucking slaps.*
 
