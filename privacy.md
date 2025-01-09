@@ -23,9 +23,9 @@ Not my favorite megacorporation in the world, but I'm stuck in its omnipresent c
 - Art pages may have YouTube embeds, because I am not immune to convenience and occasionally work with video.
 
 ## Nitter? Piped?
-Alternative frontends to Twitter and YouTube, respectively. As of September&nbsp;2024, Nitter is dead, and Piped still exists but I use Invidious way more often. There are many instances and I cycle through them periodically when others stop working.
+Alternative frontends to Twitter and YouTube, respectively. They are both dead/non-functional as of January&nbsp;2025, sadly---but I'm leaving this section here anyway, for the following:
 
-Essentially, **the links are interchangeable**, so the megacorporate source is only a URL change away:
+**These links are interchangeable**, so the megacorporate source is only a URL change away.
 
 - <code>nitter.net/<span class="lnk">link</span></code> = <code>twitter.com/<span class="lnk">link</span></code>
 - <code>piped.video/<span class="lnk">link</span></code> = <code>yewtu.be/<span class="lnk">link</span></code> = <code>youtube.com/<span class="lnk">link</span></code>
@@ -34,3 +34,10 @@ Essentially, **the links are interchangeable**, so the megacorporate source is o
 Ever wanted to browse ~~Twitter/~~YouTube with none of the ads, recommendations, or other bloat? *Bam*, enjoy ;V These websites essentially serve as giant embeds, and frankly I don't know enough tech talk to explain how else it works.
 
 But I *do* know Twitter and YouTube are relentless data-munchers, and I like [open&nbsp;source](https://itsfoss.com/what-is-foss/) projects like these on principle. The downside is that, because these sites are much smaller and entirely reliant on the host continuing to behave as expected, sometimes they just don't load---hence the note above about link interchangeability. A small price to pay for not getting unsolicited recs shoved in your face, IMO.
+
+### yeah but they died
+*I know. I'm sad about it.*
+
+Look, it's 2025; Bluesky wants to usurp Twitter, which isn't even *called* Twitter, and if I had a nickel for every time YouTube tried to break adblockers I'd have far, *far* too many nickels.
+
+I don't care ¯\\\_(&nbsp;:V&nbsp;)_/¯ I replace my own dead links as I catch them, and everything else is a simple manual change away. Algorithms are still not my friend, and I highly, *highly* recommend dodging them wherever possible!
