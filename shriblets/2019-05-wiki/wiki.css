@@ -1,7 +1,7 @@
 * {word-wrap: break-word; box-sizing: border-box; margin: 0; padding: 0;}
-body {overflow-x: hidden; font-size: 1.25rem; font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,sans-serif; line-height: 1.35em; color: #232323; orphans: 2;}
+body {overflow-x: hidden; font-size: 1.25rem; font-family: 'Source Sans 3','Helvetica Neue',Helvetica,sans-serif; line-height: 1.35em; color: #232323; orphans: 2;}
 ::selection {background: rgba(0,104,139,.75); color: #fff;}
-blockquote,h1,h2 {font-family: 'Source Serif Pro',Georgia,serif;}
+blockquote,h1,h2 {font-family: 'Source Serif 4',Georgia,serif;}
 header,aside,footer,blockquote {background: #e6e6e6;}
 
 a,nav label {text-decoration: none; color: #00688b;} a:hover,nav label:hover {text-decoration: underline;} .fancybox-caption a {font-weight: bold;}
@@ -10,7 +10,7 @@ figure {text-align: center;} figcaption {padding: 0 1em; font-size: .9rem;}
 .float {margin: 1em 0 .5em 0;}
 h1 {padding: .5em 0; line-height: 1em;} h2,h3,h4,h5,h6 {padding: .5em 0;} h2 {line-height: 1.25em;} main h2 {display: block; border-bottom: 1px solid #b5b5b5; padding-bottom: 0; margin: .5em 0;} h5,h6 {font-size: .9em;} h6 {font-size: .8em;}
 img {max-width: 100%; height: auto;}
-.note {font-size: .8em; font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,sans-serif; line-height: 1.5em;}
+.note {font-size: .8em; font-family: 'Source Sans 3','Helvetica Neue',Helvetica,sans-serif; line-height: 1.5em;}
 ol,ul {margin-left: 1em;}
 p {margin-bottom: .5em;}
 sup {font-size: .65em;}
