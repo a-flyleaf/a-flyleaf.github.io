@@ -1,3 +1,5 @@
+# temporarily breaking this file so it doesn't generate a page yet, I just need to push a couple fonts
+
 ---
 layout: plaintext2
 title: "2025-01-27: what the flyleaf doin"
@@ -34,3 +36,4 @@ Anyway.
 - <b>a-flyleaf.github.io</b>: extremely minor copyediting to [last post](2025-audit)
 
 [...I thought there'd be more but then I actually re-checked the repos and there AIN'T. okay. cool. whatever I'll publish this next round of Substantial Changes ig]
+[+DIAMONDS & DYSTOPIAS]
