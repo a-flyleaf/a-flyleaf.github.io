@@ -27,6 +27,8 @@ Base site; you are here!
 Ordered alphabetically. Also noted by actual title on [the projects page](/projects).
 
 - [<b>/artfight</b>](/artfight): public galleries for an annual challenge
+- [/collections](/collections): backend experimentation ft. default layout made by someone else
+	- <small>this is basically a shriblet but if a shriblet was a template-site</small>
 - [/deviantart](/deviantart): essentially just a [gallery tag reference](https://a-flyleaf.github.io/deviantart/gallery-tag-reference/), but might be a full gallery mirror eventually
 - [<b>/dragonotes</b>](/dragonotes): notes and resources for virtual dragon collection game [Flight&nbsp;Rising](https://flightrising.com/)
 - [<b>/hello-world</b>](/hello-world): [project: <span style="font-family:consolas,monospace;">404</span>](/projects#four)
