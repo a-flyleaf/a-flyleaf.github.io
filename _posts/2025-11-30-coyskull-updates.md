@@ -46,7 +46,7 @@ css: "
 Today's updates are brought to you by a real-life coyote skull. Say hello, real-life coyote skull.<!--more-->
 
 <figure>
-	<a href="{{site.url}}/assets/blog/coyskull.png" target="_blank"><img src="{{site.url}}/assets/blog/coyskull.png"></a>
+	<a href="{{site.url}}/assets/blog/coyskull.png" target="_blank"><img src="{{site.url}}/assets/blog/coyskull.png" alt="photo of the coyote skull, held in one hand"></a>
 	<figcaption>“Howdy.”</figcaption>
 </figure>
 
