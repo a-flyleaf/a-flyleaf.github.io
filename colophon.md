@@ -32,8 +32,10 @@ These are more general resources that I used at the time; not so much anymore, b
 - sitemaking shenanigans: [Lorem&nbsp;Ipsum generator](https://lipsum.com/), [Safe web fonts](https://web.mit.edu/jmorzins/www/fonts.html), [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
 ### for code
-- [CloudCannon's Jekyll tutorials](https://cloudcannon.com/community/learn/jekyll-tutorial/getting-started/), particularly [the date formatting table](https://learn.cloudcannon.com/jekyll/date-formatting/)
+- [CloudCannon's Jekyll tutorials](https://cloudcannon.com/community/learn/jekyll-tutorial/getting-started/), ~~particularly [the date formatting table](https://web.archive.org/web/20200630074924/https://learn.cloudcannon.com/jekyll/date-formatting/)~~
+	- date formatting table broke at some point; the link is an archive now. [The formatting](https://strftime.net/) isn't Jekyll-specific, at least...!
 - [Liquid documentation](https://shopify.github.io/liquid/) + [API reference](https://shopify.dev/docs/api/liquid)
+- [hex color blender](https://meyerweb.com/eric/tools/color-blend/), for all those pesky midpoints
 - countless unsung heroes across the internet everywhere (read: whoever showed up in the search results), especially on StackOverflow; specific tutorials are often linked where used, if only in code comments
 
 ### for the computer/internet, in general
