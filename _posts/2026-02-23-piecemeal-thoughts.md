@@ -39,3 +39,15 @@ shriblers is a thing now. i should finish that tfe site. happy 10 years.
 
 small piece of irony: opened computer to hammer ^this into a post, and also work on TFE site. got immediately sidetracked reading Burkemann's posts. just as I started opening a new tab to yet another series of self-help articles the internet died. but ! I do not need a connection to work on my site. amazign.
 eta: the side effect is that if I want bg music (which I do) I have to use the stuff already on my machine. which is like... a time capsule circa. what. 2015?? jesus. there's a Reason I stopped doing this and mostly it's Holy Fuck That's A Lot Of Music
+
+## oops it's not 2/23 anymore (3/16)
+https://www.youtube.com/watch?v=LCEnje00XLU "What If You Fly". anyway did a blockydob; check desktop commits in general & push
+also now i have discovered New Vibeo Game (pokemon era revival, romhack ed.) so :v: bye
+
+## uhhh. [4/06]
+- improved blockydob. immediately did another model (n. no wip page this time) instead of Finishing the process page. girl help
+- viva pinata. weirdly addicting
+- music: [nostril](https://igorrr.bandcamp.com/album/nostril), [nour](https://rubymydear.bandcamp.com/track/nour)
+	- [4/8] actually? the whole /balloon/ album.
+- blender again but as an aftereffects ripoff. there's some extra steps but y'know what it fucks and more importantly it's FrEE and NOT ADOBE. new 2d animation workflow get B)
+	- ironically it's cumbersome for puppet-type animation in grease pencil but the ol' FA-export method works fine. but i Did figure out grease pencil (sort of??) and may test out some frame-by-frame anims next/eventually. learning is fun!
