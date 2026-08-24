@@ -7,6 +7,7 @@ slug: julaugust
 css: "
 	main hr{max-width:75%; margin:1.5em auto 1em;}
 	main li{margin:.25em 0;} main li ul{margin:-.25em 0 .75em 1em;}
+	.sc{text-transform:uppercase;}
 "
 ---
 It's July in August. August in July? Eh. Monthly update post.<!--more-->
@@ -30,26 +31,26 @@ ordered alphabetically by site URL
 "Random (semi-)standalone pages" seems to have been the code theme of the month, inasmuch as I can retroactively shoehorn a code theme into existence. It's probably worth noting that I moved the colophon bullet for Proper Sleek Clean Modernist Design, exemplified by the theme you're looking at, into "yeah I don't use this much anymore lol."
 
 ## media musings
-### corner to <i>OFF</i>\*
-- As mentioned at the end of [last post](gay-posts), I bought [the <i>OFF</i> remaster](https://offtherpg.com/). I'm enjoying it! If I had a nickel for every Affecting boss fight with a churchly aura in an indie RPG I'd have two nickels, and I did not think I would get jumpscared by a door-wall. Nice.  
+### corner to <i class="sc">Off</i>\*
+- As mentioned at the end of [last post](gay-posts), I bought [the <i class="sc">Off</i> remaster](https://offtherpg.com/). I'm enjoying it! If I had a nickel for every Affecting boss fight with a churchly aura in an indie RPG I'd have two nickels, and I did not think I would get jumpscared by a door-wall. Nice.  
 &emsp;When I played the original game in... jesus *2015* apparently, over 10 years ago, I did not understand its combat system whatsoever. Now I do, and it's fun! More fun than it probably ~should be? There's something to be said about the original feeling more like drudgery, enhancing the bleak, aimelss grind of the purified Zones---compared to the update's secret bosses and flashy UI. I don't think the change is necessarily better or worse, it's just Noticeable.  
-&emsp;Anyway, aaalmost done with it; all Zones cleared, just got The&nbsp;Room to go. I keep being reminded that indie RPGs in general can point to <i>OFF</i> as a major inspiration/homage source. The nostalgia isn't a huge factor to me (I played <i>Undertale</i> first, and wasn't hugely into either fanbase); it is a solid, enjoyable experience, with a mostly-fitting soundtrack switchover and puzzles that I don't regret not spoiling myself on. Except for those dang fish that is *such* a clever gimmick that also obliterated me multiple times despite being (probably? not intentionally) overleveled what's up with that!!!!1!
+&emsp;Anyway, aaalmost done with it; all Zones cleared, just got The&nbsp;Room to go. I keep being reminded that indie RPGs in general can point to <i class="sc">Off</i> as a major inspiration/homage source. The nostalgia isn't a huge factor to me (I played <i>Undertale</i> first, and wasn't hugely into either fanbase); it is a solid, enjoyable experience, with a mostly-fitting soundtrack switchover and puzzles that I don't regret not spoiling myself on. Except for those dang fish that is *such* a clever gimmick that also obliterated me multiple times despite being (probably? not intentionally) overleveled what's up with that!!!!1!
 - Oh yeah, the [soundtrack](https://www.youtube.com/playlist?list=PLFyVSm0bEJUPnRwFIGNMjKPJ14GZnwOwg). Mostly very different vibes from the original, but it still hits. Zone&nbsp;3 no longer puts static in my brain so I was actually able to play it this time, so that's an objective personal upgrade! (Last round, between the soundtrack and combat, I ended up watching someone else's playthrough for the endgame. Different experience for sure.)  
 &emsp;Niche woes aside, I kinda regret "spoiling" myself on the endgame tracks; the playlist was autoplaying mid-art and I didn't feel like restarting it, smh. But they still work pretty dang well out of context, and I'm looking forward to the intended listening experience!
 
 <small>\*[intentional wonky grammar in the subheading](https://x.com/VGAOfficialArt/status/742016182606143488)</small>
 
-### not-<i>OFF</i> (music)
+### not-<i class="sc">Off</i> (music)
 - "[goin' crazy](https://www.youtube.com/watch?v=E7v3nYmZfxA0)," a bop from a random reblog. Not familiar with the game it's from, but it's one of those songs I did not like at first then grew on me several repeats later.
 - Also been revisiting <i>[Rossz Csillag Alatt Született](https://venetiansnares.bandcamp.com/album/rossz-csillag-alatt-sz-letett)</i>, an early introduction (to me) to break-whatever discordant tunes---but orchestral! I swear I heard "[Hajnal](https://venetiansnares.bandcamp.com/track/hajnal)" somewhere long before discovering the album, but hell if I remember where....
 - Speaking of songs I heard somewhere only to find the album some unknown disparate years later: "[The Hymn of Acxiom](https://www.youtube.com/watch?v=QF-7WiLykGM)." Good haunting synths. Will give the whole album a listen when I'm ready to turn the repeat rotation.
 
-### not <i>OFF</i> or music
-- "[<b>A Mathematician's Lament</b>](https://github.com/tpn/pdfs/blob/master/A%20Mathematician's%20Lament%20-%20Paul%20Lockhart.pdf)" is a thought-provoking read. I am still extremely not a Math Person™, but I *do* feel similar about people saying they ~can't do art (anyone can make it! skill is earned, not innate! a very human urge to create gets educated out of most people and it sucks!!!!), so I think I get where it's coming from.
+### not <i class="sc">Off</i> or music
+- “[<b>A Mathematician's Lament</b>](https://github.com/tpn/pdfs/blob/master/A%20Mathematician's%20Lament%20-%20Paul%20Lockhart%20(2008).pdf)" is a thought-provoking read. I am still extremely not a Math Person™, but I *do* feel similar about people saying they ~can't do art (anyone can make it! skill is earned, not innate! a very human urge to create gets educated out of most people and it sucks!!!!), so I think I get where it's coming from.
 	- Unintended realization, also: I feel vaguely "tricked" into reading the full thing, because the way GitHub displayed the pages made it look a lot shorter than it ended up being. Listen, I swear I still have an attention span, but I see a tiny scrollbar sometimes and I balk. Things to remember with my own text-heavy pages, lmao. (Shan't be shoehorning any breaks into this post, though! You're on a blog, you know what you signed up for.)
 - One of, if not *the* first series I was ever intenesly Into™ were the <i>Warriors</i> books by Erin&nbsp;Hunter. Born too early to be formatively influenced by insanely-well-produced cat AMVs, never too late to pop in when the whim strikes and see what the kids are up to these days.  
   &emsp;It was on one such lark that I stumbled across <i>[<b>Jumalanpelko</b>](https://jumalanpelko.thecomicseries.com/)</i>, a standalone story about a cult and its newest "god." It is a tragedy. Had me staring at my screen going "what the fuck what the fuck what the *fuck*" on more than one occasion. Really impressive for a comic that gives a major dramatic character a fuzzy moustache!  
-	&emsp;The art style is excellent, too; simple, effective, full of personality. Great use of shapes and palette blocking. Extremely relevant to what I was (theoretically) trying to do with [my last big story project](https://a-flyleaf.github.io/ygbtdm/story/colorscript/). Art styles to study. Look at the stark silhouettes and eye-catching gradations in [the artist's favorite panel from the comic's first year](https://jumalanpelko.thecomicseries.com/comics/201/#content-start). :ok_hand_but_it's_a_paw:
+	&emsp;The art style is excellent, too; simple, effective, full of personality. Great use of shapes and palette blocking. Extremely relevant to what I was (theoretically) trying to do with [my last big story project](https://a-flyleaf.github.io/ygbtdm/story/colorscript/). Art styles to study. Look at the stark silhouettes and eye-catching gradations in [one of the artist's favorite panels](https://jumalanpelko.thecomicseries.com/comics/201/#content-start). :ok_hand_but_it's_a_paw:
 
 ...and some random outlinks from the endless Discord notehoard:
 
