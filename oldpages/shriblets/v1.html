@@ -168,10 +168,10 @@ shriblets:
 				<p class="comment">&lt;--if isResponsive=false then mobileBrowsing=notIdeal; else mobileBrowsing=OK--&gt;</p>
 <!--dear god can we use data for this... also cheers for having learned about page-specific data, the layout is unnecessary too but I'll fiddle with that later-->
 <!--update 2026-08-24: ok now it's data. also a separate repo but I want a static old version here-->
-{%for s in page.shriblets%}{%assign title=s.title|remove:"."%}{%assign date=s.date|remove:"+"%}<article>
-	<figure><a href="{{site.url}}/shriblets/{{date}}-{{title}}"><img src="{{site.url}}/shriblets/img/{{date}}-{{title}}.jpg" alt=""/></a></figure>
+{%for s in page.shriblets%}{%assign title=s.title|remove:"."%}{%assign date=s.date|remove:"+"%}{%capture link%}{%if s.title=="talksprites"%}stash/{%endif%}{{date}}-{{title}}{%endcapture%}<article>
+	<figure><a href="{{site.url}}/shriblets/{{link}}"><img src="{{site.url}}/oldpages/shriblets/img/{{date}}-{%if s.title contains 'sawface'%}3d{%else%}{{title}}{%endif%}.jpg" alt=""/></a></figure>
 	<div class="info">
-		<h2><a href="{{s.url}}/shriblets/{{date}}-{{title}}">{{s.title}}</a></h2> <span class="date">{{s.date}}</span>
+		<h2><a href="{{s.url}}/shriblets/{{link}}">{{s.title}}</a></h2> <span class="date">{{s.date}}</span>
 		<p>{{s.desc}}</p>
 		<aside><ul>
 			{%if s.lang%}<li>lang = {{s.lang}};</li>{%endif%}
