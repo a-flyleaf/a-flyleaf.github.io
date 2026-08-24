@@ -7,7 +7,8 @@ layout: none
 	body{font-family:consolas,monospace; font-size:.85em; padding:1em; line-height:1.25;}
 	::selection{background:#c0c0c0;}
 	
-	#np{background:#E8E8FF;}
+	#np{background:#e8e8ff;}
+	a{color:#0000ff;}
 	
 	.em:after{content:"—";}
 	hr{background:#bfbfbf; height:2px; border:0; margin:1em 0;}
@@ -18,10 +19,22 @@ layout: none
 	#ud a{text-decoration:none;} #ud a:before{content:'<a href="' attr(href) '">'} #ud a:after{content:"</a>";}
 		#ud a:hover,#ud a:active,#ud a:focus{text-decoration:underline;}
 	
-	small:before,small:after{color:#8080FF;}
-	b:before,b:after,#ud a{color:#8000FF;}
+	small:before,small:after{color:#8080ff;}
+	b:before,b:after,#ud a{color:#8000ff;}
 	#ud a:before,#ud a:after{color:#000080;}
 	#ud span{color:#808080; font-style:italic;} #ud span:before{content:"<!--";} #ud span:after{content:"-->";}
+	
+	@media (prefers-color-scheme:dark){
+		body{background:#0c0c0c; color:#dcdccc;}
+		::selection{background:#5f5f5f;}
+		
+		#np{background:#3f3f3f;}
+		a{color:#e3ceab;}
+		hr{background:#3f3f3f;}
+		small:before,small:after{color:#c2be9e;}
+		b:before,b:after,#ud a{color:#cc9e9e;}
+		#ud a:before,#ud a:after{color:#cedf99;}
+	}
 </style></head>
 
 <body>
