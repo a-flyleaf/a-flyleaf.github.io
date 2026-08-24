@@ -43,23 +43,48 @@ pages:
   ed-dt: 2021-06-04
   ed-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/ace4012d252383c360142301353a0da701d2c32b#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6"
 - typ: projects
-  num: "0"
-  st-dt: 
-  st-url: ""
-  ed-dt: 
-  ed-url: ""
+  num: "1"
+  st-dt: 2021-06-04
+  st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/ace4012d252383c360142301353a0da701d2c32b#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6"
+  ed-dt: 2022-02-15
+  ed-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/c18622f8e0eb97b5407cefad4f2f9324e5b5ec25#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6"
 - typ: projects
+  num: "2.0"
+  st-dt: 2022-02-15
+  st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/c18622f8e0eb97b5407cefad4f2f9324e5b5ec25#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6"
+  ed-dt: 2022-08-06
+  ed-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/b9c2a484ed07ff0756a916985b7a00e213e4b0bf#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6"
+#this is the current version, we'll re-add it later
+#- typ: projects
+#  num: "2.1"
+#  st-dt: 2022-08-06
+#  st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/b9c2a484ed07ff0756a916985b7a00e213e4b0bf#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6"
+#  ed-dt: 
+#  ed-url: ""
+- typ: shriblets
   num: "0"
-  st-dt: 
-  st-url: ""
-  ed-dt: 
-  ed-url: ""
-- typ: projects
+  st-dt: 2021-03-04
+  st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/668325427f45f7215e7f54160f0b1f82d40fd42f#diff-a189e12e2536a616c55eb8e067c444a6828ad069739ebe0f0a421795b1b6e2f8"
+  ed-dt: 2021-05-13
+  ed-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/1e7722ea1c8d43442282f3b032c88f90459fd531"
+- typ: shriblets
+  num: "1"
+  st-dt: 2021-05-13
+  st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/1e7722ea1c8d43442282f3b032c88f90459fd531"
+  ed-dt: 2026-02-23
+  ed-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/c7e3a7a23a373dafa0b92649e37d2ba2fcfb492d"
+- typ: blog
   num: "0"
-  st-dt: 
-  st-url: ""
-  ed-dt: 
-  ed-url: ""
+  st-dt: 2019-01-31
+  st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/323d7bc4ee21e2bc2914167c75dd0e8c693b64a3"
+  ed-dt: 2022-03-03
+  ed-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/147c74d670992a8b736b8fecf20e3865156a2db7#diff-2e7cc76cb727cb3b4df3126f72567fb3db8d32485cdffc08eae6f65420d5c8c4"
+- typ: blog
+  num: "1"
+  st-dt: 2022-03-03
+  st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/147c74d670992a8b736b8fecf20e3865156a2db7#diff-2e7cc76cb727cb3b4df3126f72567fb3db8d32485cdffc08eae6f65420d5c8c4"
+  ed-dt: 2023-03-06
+  ed-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/4d0e864e35ee3692a44451aaab4bf192cd815386"
 ---
 <!doctype html><html lang="en">
 <head>
@@ -90,28 +115,13 @@ pages:
 	<ul id="pg">{%for t in page.pg-types%}<li><a href="{{site.url}}{%unless t=='index'%}/{{t}}{%endunless%}">{{t}}</a>
 		<ul>{%for p in page.pages%}{%if p.typ==t%}<li>{%capture st-yr%}{{p.st-dt|date:"%Y"}}{%endcapture%}{%capture ed-yr%}{{p.ed-dt|date:"%Y"}}{%endcapture%}
 			<b><a href="{{t}}/v{{p.num}}">v{{p.num}}</a></b>: <a href="{{p.st-url}}">{%if p.txt%}{{p.txt}}{%elsif st-yr==ed-yr%}{{p.st-dt|date:"%B %e"}}{%else%}{{p.st-dt|date:"%B %e, %Y"}}{%endif%}</a><span class="en">–</span>{%if st-yr!=ed-yr%}<a href="{{p.ed-url}}">{{p.ed-dt|date:"%B %e, %Y"}}</a>{%else%}<a href="{{p.ed-url}}">{{p.ed-dt|date:"%B %e"}}</a>, {{ed-yr}}{%endif%}
-		</li>{%endif%}{%endfor%}
-	</ul></li>{%endfor%}</ul>
-	
-	<hr><hr>
-	
-	<ul id="pg">
-		<li><a href="{{site.url}}/projects">projects</a>
-			<ul><li><b><a href="projects/v0">v0</a></b>: <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/6bc04a9ebbe34fc1826a36670a5dc9ab76695526#diff-9a1f1eaf9a63c7cc80669920b1a83cb06b23ee19bab816d0c73931960a226b66">January&nbsp;7</a><span class="en">–</span><a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/ace4012d252383c360142301353a0da701d2c32b#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6">June&nbsp;4</a>, 2021</li>
-			<li><b><a href="projects/v1">v1</a></b>: <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/ace4012d252383c360142301353a0da701d2c32b#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6">June&nbsp;4, 2021</a><span class="en">–</span><a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/c18622f8e0eb97b5407cefad4f2f9324e5b5ec25#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6">February&nbsp;15, 2022</a></li>
-			<li><b><a href="projects/v2.0">v2.0</a></b>: <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/c18622f8e0eb97b5407cefad4f2f9324e5b5ec25#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6">February&nbsp;15</a><span class="en">–</span><a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/b9c2a484ed07ff0756a916985b7a00e213e4b0bf#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6">August&nbsp;6</a>, 2022</li>
-			<li><b><a href="projects/v2.1">v2.1</a></b>: <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/b9c2a484ed07ff0756a916985b7a00e213e4b0bf#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6">August&nbsp;6, 2022</a><span class="en">–</span>???</li></ul></li>
-		<li><a href="{{site.url}}/shriblets">shriblets</a>
-			<ul><li><b><a href="shriblets/v0">v0</a></b>: <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/668325427f45f7215e7f54160f0b1f82d40fd42f#diff-a189e12e2536a616c55eb8e067c444a6828ad069739ebe0f0a421795b1b6e2f8">March&nbsp;4</a><span class="en">–</span><a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/1e7722ea1c8d43442282f3b032c88f90459fd531">May&nbsp;13</a>, 2021</li>
-			<li><b><a href="shriblets/v0">v1</a></b>: <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/1e7722ea1c8d43442282f3b032c88f90459fd531">May&nbsp;13, 2021</a><span class="en">–</span><a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/c7e3a7a23a373dafa0b92649e37d2ba2fcfb492d">February&nbsp;23, 2026</a></li>
-			<li><i>now its own repository</i></li></ul></li>
-		<li><a href="{{site.url}}/blog">blog</a>
-			<ul><li><b><a href="blog/v0.0">v0.0</a></b>: <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/323d7bc4ee21e2bc2914167c75dd0e8c693b64a3">January&nbsp;31, 2019</a><span class="en">–</span><a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/147c74d670992a8b736b8fecf20e3865156a2db7#diff-2e7cc76cb727cb3b4df3126f72567fb3db8d32485cdffc08eae6f65420d5c8c4">March&nbsp;3, 2022</a></li>
-			<li><b><a href="blog/v0.1">v0.1</a></b>: <a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/147c74d670992a8b736b8fecf20e3865156a2db7#diff-2e7cc76cb727cb3b4df3126f72567fb3db8d32485cdffc08eae6f65420d5c8c4">March&nbsp;3, 2022</a><span class="en">–</span><a href="https://github.com/a-flyleaf/a-flyleaf.github.io/commit/4d0e864e35ee3692a44451aaab4bf192cd815386">March&nbsp;6, 2023</a></li></ul></li>
+		</li>{%endif%}{%endfor%}{%if t=="shriblets"%}
+		<li><i>now its own repository</i></li></li>{%endif%}</ul></li>{%endfor%}
 	</ul>
+	
 	<p>Version numbers don’t align between pages because some have been updated more substantially than others.</p>
 	<hr>
-	<p>The “styleguide” pages (text dumps used to test new layouts) aren’t a Main Section, but I didn’t want them on the shriblets page either so:</p>
+	<p>The “styleguide” pages (text dumps used to test new layouts) aren’t a Main Section, but I didn’t want them on the shriblets page, either. They are here instead.</p>
 	<ul id="sg"><li><a href="styleguides/2019-04-21-default">2019 April 21: default</a></li><li><a href="styleguides/2022-04-16-plaintext">2022 April 15: plaintext</a></li><li><a href="styleguides/2023-03-06-plaintext2">2023 March 6: plaintext2</a></li></ul>
 </body>
 </html>
