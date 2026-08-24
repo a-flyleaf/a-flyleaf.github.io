@@ -15,7 +15,7 @@ Tools of the trade, and other recommendations. (Nothing's sponsored, I just like
 - coded in [Notepad++](https://notepad-plus-plus.org/)
 
 ### primordial resource amnesty
-Resources I used back in 2019, when first creating this site.
+Useful specifically for site creation, back in 2019.
 - [Glitch.com](https://glitch.com/) and its live editor was invaluable before I started using Jekyll and the localhost
 - ["Hello World": GitHub quickstart guide](https://docs.github.com/en/get-started/quickstart/hello-world)
 - [Creating and Hosting a Personal Site on GitHub](https://jmcglone.com/guides/github-pages/)
@@ -24,8 +24,8 @@ Resources I used back in 2019, when first creating this site.
 ## other stuff a-flyleaf uses
 ### for making pretty pictures
 - 2D tools: [FireAlpaca](https://firealpaca.com/) for desktop + [MediBang&nbsp;Paint](https://medibangpaint.com/en/) for iPad
-	- occasionally random other programs, good ol’ MSPaint, and even actual real-life paper
-- 3D forays: [Blender](https://blender.org/) and only ever Blender
+	- occasionally random other programs, good ol’ MSPaint, and even real-life actual paper
+- 3D forays: [Blender](https://blender.org/), and pretty much only ever Blender
 
 ### for building webbed sites
 - code-specific: [Liquid documentation](https://shopify.github.io/liquid/) + [API reference](https://shopify.dev/docs/api/liquid); [Google fonts downloader](https://gwfh.mranftl.com/fonts); [<code>strftime </code>date formatting](https://strftime.net/)
