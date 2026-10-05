@@ -1,0 +1,104 @@
+---
+layout: plaintext2
+title: "September update roundup"
+date: 2026-10-04
+slug: update-roundup
+
+css: "
+	main hr{max-width:75%; margin:1.5em auto 1em;}
+	
+	/*
+	main li{margin:.5em 0;}
+	main li ul li{margin:0 .25em; font-size:.85em;}
+	.sc{text-transform:uppercase;}
+	main h2+ul li:first-of-type{margin-top:0;}
+	blockquote p{line-height:1.5;}
+	cite{display:block; text-align:right; font-style:normal;}
+	
+	main hr:nth-of-type(2){margin:5em auto;}
+	*/
+"
+---
+Vaugely-monthly update post that is not going to pretend to be anything more than a bunch of updates.<!--more-->
+
+----
+
+I noticed recently that I repeated a handful of updates in the last few blog posts. This is mostly because GitHub distinguishes commit history by month, and also I did not look at previous posts before trucking ahead with the next. Subsequently, this one is going to cover **September only**, but this time I'm also cross-checking [last post](august) for repeats.
+
+It is not realistic for me to do this on The First Day Of The Month Always Exactly, but still. Makes things marginally easier for future-me :V
+
+## not-site things
+September simultaneously flew by and feels like two disparate months. I mean, I'm a broken record every month re:time passing too fast, but what the hell.
+
+
+https://theothin.tumblr.com/post/826291611013136384/credit-to-whoever-made-this
+
+- AI in general: fuck it! I give up!!! you win!!!!! you all win I have read more than enough trite moralizing I give in I actually did my research so now I can hold more or less the same opinion I always have but put more words on it.
+
+## random assorted not-site-update nonsense
+- watched <i>The Matrix</i>. it's weird being able to see both how this became like, The™ terminally online (right-winger edition) meme film, and also Neo is a pathetic soggy egg of a not-man. to me. The outro??
+- javascript table sorting
+- iCloud purge day
+- unrelated small that aren't tweets but read like tweets:
+	- “follow your heart” well the heart wants to fucking explode
+	- An unfortunate thing I have had to learn at molasses-slow motion is that not making a choice is, in fact, itself. a choice. I have no thesis about this at this point in time. It just *is*.
+- art style musings?
+- Bastille "Hide"
+- rigged up a figure a while ago for perspective, it's rigged Better now. you'll probably see that in the art WIP
+- WIP protag art
+- i made Dragon Money
+
+
+----
+
+## site updates
+as listed in my [GitHub contribution history](https://github.com/a-flyleaf) for the month so far (which seems to auto-sort by quantity), but backwards
+- (forgot to mention [last time](julaugust)) [/<b>shriblets</b>](https://a-flyleaf.github.io/shriblets/) index is updated, with the [blockydob process page](https://a-flyleaf.github.io/shriblets/2026-03-blockydob) as "finished" as it's going to get---by which I mean the most egregious WIP sections were unceremoniously sawed off. Besides that, there is a slightly egregious date gap between, y'know, 2022 and 2026; I've done random little pages in the interim, but they've been scattered throughout sub-sites. Think I've mentioned this before. Stuff for later-me to dig through.
+- [/<b>artFight</b>](https://a-flyleaf.github.io/artfight/): published [the 2026 gallery](https://a-flyleaf.github.io/artfight/art/2026) 🎉 Special shout-out to [the commission that got uploaded as an attack](https://a-flyleaf.github.io/artfight/art/2026#art-2), thereby giving me the perfect excuse to reupload it.
+- [/<b>toyshelf</b>](https://a-flyleaf.github.io/artfight/): uploaded some older art of those older human characters. Some personal favorites:
+	- [a 2025 redraw](https://a-flyleaf.github.io/toyshelf/art/dog2)
+	- [low-effort scribbles that are probably only funny to me](https://a-flyleaf.github.io/toyshelf/art/storybs)
+	- [a height chart](https://a-flyleaf.github.io/toyshelf/art/heighthell), mostly because the original file is huge and I don't want to have to keep opening it for color-picking purposes
+	- [Just Standing There in vaguely representative settings](https://a-flyleaf.github.io/toyshelf/art/raaeeyah)
+- [/<b>dragonotes</b>](https://a-flyleaf.github.io/dragonotes/):
+	- now has a 404 page, after years of somehow not having a 404 page
+	- made bare-bones HTML layouts, which is something I should do on all lightmode-default sites from here out
+	- cleaned up [the great wall of dragons](https://a-flyleaf.github.io/dragonotes/dragons/) to make it look more ~finished
+- [/<b>art-2026</b>](https://a-flyleaf.github.io/art-2026/) has existed since June, but has not managed to be linked at the top of a blog post until now. It is there! It has 12 entire thign on it now!! I still don't know what to do for a doodle roundup, or how I'm going to handle art from 2027 onward (new gallery repos? merge/reconfigure this one?)!! Quibbles for later-me.
+
+The art descriptions are kinda mini blog posts in their own right, with process shots and (some degree of) context for the subject included. Wasn't strictly intentional, kinda just Happens when I make an entire self-coded page for a piece & have basically no limits on what to do *with* that page. It's been fun!
+
+## random miscellany
+- Fun comment on [an <i class="sc">Off</i>game soundtrack](https://www.youtube.com/watch?v=Q8dyIMHDA7s) (bold mine):
+> in the end, japhet more or less succeeded in creating a "paradise", like he promised to hugo... but this song captures **the inherent terror of the concept of an eternal paradise.  endless safety and isolation, to the point of stagnation**... stagnation which drove everyone, even japhet himself, utterly mad
+> <cite><small>@XiaoAndyPugMan</small></cite>
+- Got slapped in the face mid-[Wikipedia trawl](https://en.wikipedia.org/wiki/Mexican_tetra) by the phrase "sonic hedgehog expression." Sonic hedgehog protein [subheading Robotnikinin](https://en.wikipedia.org/wiki/Sonic_hedgehog_protein#Robotnikinin). Humanity is amazing sometimes.
+
+## that's all?
+yeagh that's all
+
+----
+
+<div id="more" markdown="1">
+## loljk. lil bit more
+- patch notes: the [status]({{site.url}}/status) and [blog/slugs](slugs) pages will no longer blind people using dark mode
+- despite shriblets having its own repo now, I also saved [a static version of its pre-offshoot appearance]({{site.url}}/oldpages/shriblets/v1). just to Have It. (the index will get an overhaul Eventually...)
+- overhauled the backend of [the oldpages index]({{site.url}}/oldpages/); no visible change, but will be easier to edit now
+- a [sitemap]({{site.url}}/sitemap) overhaul is long overdue, but for now I have made it slightly less dated than it could have been
+
+## and uh. even more
+- [/shriblets/blockydob](https://a-flyleaf.github.io/shriblets/2026-03-blockydob#dab): replaced the ending image
+- [/deviantart](https://a-flyleaf.github.io/deviantart/):
+	- [/timeline](https://a-flyleaf.github.io/deviantart/timeline):
+		- made the hashtags (#) an actual symbol instead of a CSS decoration, to make it easier to search with CTRL+F
+		- threw in a note about uploads from 2026 onward, which are published somewhere here on my own site first
+	- also made some lil copyedits, mainly on the index
+	- i think the onsite tag search Actually died btw. <em class="sc noi">ughhhhhhh</em> i don't <em class="sc noi">feel like</em> making pages for everything scoobert
+	- also then had to un-fuck a bunch of things that were weird on the live site but not my end. help
+- [/toyshelf](https://a-flyleaf.github.io/toyshelf):
+	- did backend things (there's now a generic datacheck, only characters so far)
+	- flung a buncha thumbnails onto the homepage
+	- made [a cmyk catch-all page](https://a-flyleaf.github.io/toyshelf/cmyk) (still unpolished as of writing, but the Content is there). It will probably get split off later but tbh it's more useful to have everything on one to start *then* branch, like the misc characters have been doing. (As for the `cmyk` bit, it's just shorter than writing `disaster-crew` for everything.)
+</div>
+
+signs off on September&nbsp;2nd for real this time. whatever man
