@@ -6,10 +6,13 @@ slug: update-roundup
 
 css: "
 	main hr{max-width:75%; margin:1.5em auto 1em;}
+	main li{margin:.5em 0;}
+	#bluh{font-size:.85em;}
+	#bluh li ul li{margin:.25em 0;}
+	main li ul li{margin-top:0;}
+	h2+ul li:first-of-type{margin-top:.25em;}
 	
 	/*
-	main li{margin:.5em 0;}
-	main li ul li{margin:0 .25em; font-size:.85em;}
 	.sc{text-transform:uppercase;}
 	main h2+ul li:first-of-type{margin-top:0;}
 	blockquote p{line-height:1.5;}
@@ -23,82 +26,38 @@ Vaugely-monthly update post that is not going to pretend to be anything more tha
 
 ----
 
-I noticed recently that I repeated a handful of updates in the last few blog posts. This is mostly because GitHub distinguishes commit history by month, and also I did not look at previous posts before trucking ahead with the next. Subsequently, this one is going to cover **September only**, but this time I'm also cross-checking [last post](august) for repeats.
+I noticed recently that I repeated a handful of updates in the last few blog posts. <small>(I did not have the forethought to write these repeats down, as I found them, and so they remain unamended indefinitely.)</small> This is mostly because GitHub distinguishes commit history by calendar month, and also I did not look at previous posts before trucking ahead with the next. Subsequently, this one is being limited to **August 24--September**; my output htis month so far is just a handful of backlogged fixes, but still.
 
-It is not realistic for me to do this on The First Day Of The Month Always Exactly, but still. Makes things marginally easier for future-me :V
+It is not realistic for me to make update-posts on The First Day Of The Month Always Exactly, but still. Makes things marginally easier for future-me :V
 
 ## not-site things
 September simultaneously flew by and feels like two disparate months. I mean, I'm a broken record every month re:time passing too fast, but what the hell.
 
-
-https://theothin.tumblr.com/post/826291611013136384/credit-to-whoever-made-this
-
-- AI in general: fuck it! I give up!!! you win!!!!! you all win I have read more than enough trite moralizing I give in I actually did my research so now I can hold more or less the same opinion I always have but put more words on it.
-
-## random assorted not-site-update nonsense
-- watched <i>The Matrix</i>. it's weird being able to see both how this became like, The™ terminally online (right-winger edition) meme film, and also Neo is a pathetic soggy egg of a not-man. to me. The outro??
-- javascript table sorting
-- iCloud purge day
-- unrelated small that aren't tweets but read like tweets:
+<div id="bluh" markdown="1">
+- watched <i>The Matrix</i>, you might have heard of it. It's weird being able to see both how this became like, The™ terminally online right-winger meme film, and at the *exact* same time for not-entirely-disparate reasons Neo is a pathetic soggy egg of a not-man. To me. the outro???
+- An iCloud purge happened. I have nothing particularly relevant to report from it except that 1)&nbsp;old blogger yells at cloud, and 2)&nbsp;videos take up an actual fuckton of space and for *what*.
+	- Oh, and 3)&nbsp;I can actually draw on my iPad again...! Yes, I was memory-locked out for a few months. That was <span style="font-family:consolas,serif;">fun.</span>
+- random off-the-cuff thoughts that aren't tweets but read like tweets:
 	- “follow your heart” well the heart wants to fucking explode
 	- An unfortunate thing I have had to learn at molasses-slow motion is that not making a choice is, in fact, itself. a choice. I have no thesis about this at this point in time. It just *is*.
-- art style musings?
-- Bastille "Hide"
-- rigged up a figure a while ago for perspective, it's rigged Better now. you'll probably see that in the art WIP
-- WIP protag art
-- i made Dragon Money
-
-
-----
-
-## site updates
-as listed in my [GitHub contribution history](https://github.com/a-flyleaf) for the month so far (which seems to auto-sort by quantity), but backwards
-- (forgot to mention [last time](julaugust)) [/<b>shriblets</b>](https://a-flyleaf.github.io/shriblets/) index is updated, with the [blockydob process page](https://a-flyleaf.github.io/shriblets/2026-03-blockydob) as "finished" as it's going to get---by which I mean the most egregious WIP sections were unceremoniously sawed off. Besides that, there is a slightly egregious date gap between, y'know, 2022 and 2026; I've done random little pages in the interim, but they've been scattered throughout sub-sites. Think I've mentioned this before. Stuff for later-me to dig through.
-- [/<b>artFight</b>](https://a-flyleaf.github.io/artfight/): published [the 2026 gallery](https://a-flyleaf.github.io/artfight/art/2026) 🎉 Special shout-out to [the commission that got uploaded as an attack](https://a-flyleaf.github.io/artfight/art/2026#art-2), thereby giving me the perfect excuse to reupload it.
-- [/<b>toyshelf</b>](https://a-flyleaf.github.io/artfight/): uploaded some older art of those older human characters. Some personal favorites:
-	- [a 2025 redraw](https://a-flyleaf.github.io/toyshelf/art/dog2)
-	- [low-effort scribbles that are probably only funny to me](https://a-flyleaf.github.io/toyshelf/art/storybs)
-	- [a height chart](https://a-flyleaf.github.io/toyshelf/art/heighthell), mostly because the original file is huge and I don't want to have to keep opening it for color-picking purposes
-	- [Just Standing There in vaguely representative settings](https://a-flyleaf.github.io/toyshelf/art/raaeeyah)
-- [/<b>dragonotes</b>](https://a-flyleaf.github.io/dragonotes/):
-	- now has a 404 page, after years of somehow not having a 404 page
-	- made bare-bones HTML layouts, which is something I should do on all lightmode-default sites from here out
-	- cleaned up [the great wall of dragons](https://a-flyleaf.github.io/dragonotes/dragons/) to make it look more ~finished
-- [/<b>art-2026</b>](https://a-flyleaf.github.io/art-2026/) has existed since June, but has not managed to be linked at the top of a blog post until now. It is there! It has 12 entire thign on it now!! I still don't know what to do for a doodle roundup, or how I'm going to handle art from 2027 onward (new gallery repos? merge/reconfigure this one?)!! Quibbles for later-me.
-
-The art descriptions are kinda mini blog posts in their own right, with process shots and (some degree of) context for the subject included. Wasn't strictly intentional, kinda just Happens when I make an entire self-coded page for a piece & have basically no limits on what to do *with* that page. It's been fun!
-
-## random miscellany
-- Fun comment on [an <i class="sc">Off</i>game soundtrack](https://www.youtube.com/watch?v=Q8dyIMHDA7s) (bold mine):
-> in the end, japhet more or less succeeded in creating a "paradise", like he promised to hugo... but this song captures **the inherent terror of the concept of an eternal paradise.  endless safety and isolation, to the point of stagnation**... stagnation which drove everyone, even japhet himself, utterly mad
-> <cite><small>@XiaoAndyPugMan</small></cite>
-- Got slapped in the face mid-[Wikipedia trawl](https://en.wikipedia.org/wiki/Mexican_tetra) by the phrase "sonic hedgehog expression." Sonic hedgehog protein [subheading Robotnikinin](https://en.wikipedia.org/wiki/Sonic_hedgehog_protein#Robotnikinin). Humanity is amazing sometimes.
-
-## that's all?
-yeagh that's all
-
-----
-
-<div id="more" markdown="1">
-## loljk. lil bit more
-- patch notes: the [status]({{site.url}}/status) and [blog/slugs](slugs) pages will no longer blind people using dark mode
-- despite shriblets having its own repo now, I also saved [a static version of its pre-offshoot appearance]({{site.url}}/oldpages/shriblets/v1). just to Have It. (the index will get an overhaul Eventually...)
-- overhauled the backend of [the oldpages index]({{site.url}}/oldpages/); no visible change, but will be easier to edit now
-- a [sitemap]({{site.url}}/sitemap) overhaul is long overdue, but for now I have made it slightly less dated than it could have been
-
-## and uh. even more
-- [/shriblets/blockydob](https://a-flyleaf.github.io/shriblets/2026-03-blockydob#dab): replaced the ending image
-- [/deviantart](https://a-flyleaf.github.io/deviantart/):
-	- [/timeline](https://a-flyleaf.github.io/deviantart/timeline):
-		- made the hashtags (#) an actual symbol instead of a CSS decoration, to make it easier to search with CTRL+F
-		- threw in a note about uploads from 2026 onward, which are published somewhere here on my own site first
-	- also made some lil copyedits, mainly on the index
-	- i think the onsite tag search Actually died btw. <em class="sc noi">ughhhhhhh</em> i don't <em class="sc noi">feel like</em> making pages for everything scoobert
-	- also then had to un-fuck a bunch of things that were weird on the live site but not my end. help
-- [/toyshelf](https://a-flyleaf.github.io/toyshelf):
-	- did backend things (there's now a generic datacheck, only characters so far)
-	- flung a buncha thumbnails onto the homepage
-	- made [a cmyk catch-all page](https://a-flyleaf.github.io/toyshelf/cmyk) (still unpolished as of writing, but the Content is there). It will probably get split off later but tbh it's more useful to have everything on one to start *then* branch, like the misc characters have been doing. (As for the `cmyk` bit, it's just shorter than writing `disaster-crew` for everything.)
+- Wanted a new earworm, dove into Bastille's discography some. Did not realize they had some absolutely fucking baller [covers](https://www.youtube.com/watch?v=y9kev045__s)!! Earworm itch was scratched by "[Hangin'](https://www.youtube.com/watch?v=wanL28-jK9g)," and then again today by [a not-Bastille artist](https://www.youtube.com/watch?v=GSkY_xmkoYg) on a rec. Repeat coffers #full for the next several weeks. <span style="text-transform:lowercase;">#hellYeah</span>
 </div>
 
-signs off on September&nbsp;2nd for real this time. whatever man
+## site things
+just a couple this round:
+- /[art-2026]({{site.url}}/art-2026): "[<b>kc-ai.png; or, non-euclidean scarves</b>](https://a-flyleaf.github.io/art-2026/kc-ai)" is what happens when I draw very little for several weeks, read a bit too much AI discourse, and lose my fucking marbles. The "description" is a blogpost in its own right, moreso than previous descriptions which at least pretend to be about the art a little.  
+&emsp;I give up. I like [this image](https://theothin.tumblr.com/post/826291611013136384/credit-to-whoever-made-this) a lot. Hit post.
+- /[shriblets]({{site.url}}/shriblets):
+	- [stash/<b>tablejs.html</b>](https://a-flyleaf.github.io/shriblets/stash/2026-09-06_tablejs/index.html): In my ongoing informal attempts to make spreadsheets that aren't on Google Sheets, I have figured out how to auto-sort a table alphanumerically by column, and also search it. Both are extremely rudimentary and the former is not keynav-friendly. Anyway, data for your data.
+	- [<b>brame.html</b>](https://a-flyleaf.github.io/shriblets/2026-09-27-brame): A ??moodboard featuring a bunch of unrecognizable grayscale static, pictures of things which inspired the central, uh. whatever that is. Whole thing's fullscreen if your browser supports the relevant CSS.  
+	&emsp;I would *like* to have more to say about this, but honestly it was not terribly challenging because I already figured out the core code back in uhhh. [2022.](https://a-flyleaf.github.io/omori/doors/moodboards/uhh) <small>(link liable to break/move eventually.)</small> Never finished those, not particularly brain-possessed enough to revisit them, but hey! A basis.  
+	&emsp;Random otherwise-completely-hidden pages *not* in the /shriblets folder are what, theoretically, the ✨new and revamped✨ shriblets backend is for. It remains a "someday" thing.
+
+## future things??
+- A while ago I made & rigged up a human base model for perspective & lighting ref. It's rigged Better now. You will probably see it in an art description.
+- Every so often I get possessed to draw all my characters in one go. The more people I spawn the more time-consuming this gets.
+- Blender is really good for making picture-perfect perspective and blocking out shapes to put in perfect perspective and also spending way way way way way way way way too much time on small details that will literally not be visible in the picture at all.
+
+...I'm probably hyping up the subject in question too much. Mostly just throwing thoughts here while the actual thing sits patiently as a WIP, temporarily sidelined as it has been while I make obscene amounts of fake money.
+
+Okay post padding over you're free now ✌️
