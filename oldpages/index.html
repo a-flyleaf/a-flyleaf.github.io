@@ -54,13 +54,12 @@ pages:
   st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/c18622f8e0eb97b5407cefad4f2f9324e5b5ec25#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6"
   ed-dt: 2022-08-06
   ed-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/b9c2a484ed07ff0756a916985b7a00e213e4b0bf#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6"
-#this is the current version, we'll re-add it later
-#- typ: projects
-#  num: "2.1"
-#  st-dt: 2022-08-06
-#  st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/b9c2a484ed07ff0756a916985b7a00e213e4b0bf#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6"
-#  ed-dt: 
-#  ed-url: ""
+- typ: projects
+  num: "2.1"
+  st-dt: 2022-08-06
+  st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/b9c2a484ed07ff0756a916985b7a00e213e4b0bf#diff-75d8ab8f0f0f7f7053b0f94c35b0db0f07fa7e43d3632ddfbf96b4a544e166d6"
+  ed-dt: 2026-10-11
+  ed-url: "(TBA)"
 - typ: shriblets
   num: "0"
   st-dt: 2021-03-04
@@ -90,7 +89,7 @@ pages:
   st-dt: 2019-04-27
   st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/ec0350af750e2c8dc693ee49e295675050f0dc0d#diff-06904629de9ce5481158d05c9a0f7ae558693bb1500369a60d032d0bb0f8b2ee"
   ed-dt: 2026-10-11
-  ed-url: "(TBA)"
+  ed-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/e79468209ca6fb01e81c278c3cafdb50a77f7f89"
 ---
 <!doctype html><html lang="en">
 <head>
@@ -103,7 +102,7 @@ pages:
 		body{overflow-x:hidden; font-family:consolas,monospace; font-size:1.15em; color:#111; padding:1em; max-width:60em;}
 		::selection{background:#dfdfdf;}
 		h1{text-transform:lowercase; font-size:1.25em;}
-		a:hover,a:focus,a:active{text-decoration:none;}
+		a:hover,a:focus,a:active{text-decoration:none; color:#808080;}
 		p{margin:1em 0; line-height:1.25;}
 		ul{margin-left:1em;} #pg li{margin-bottom:.5em;} #pg li>ul li{margin-bottom:0; font-size:.85em; line-height:1.35;}
 		.en::after{content:"–";} li a{display:inline-block;}
@@ -118,7 +117,7 @@ pages:
 	<h1><a href="{{site.url}}">a-flyleaf.github.io</a>/oldPages</h1>
 	<p>Old versions of the main sections of my site, because my folder (dis)organization was getting unwieldly.</p>
 	
-	<ul id="pg">{%for t in page.pg-types%}<li><a href="{{site.url}}{%unless t=='index'%}/{{t}}{%endunless%}">{{t}}</a>
+	<ul id="pg">{%for t in page.pg-types%}<li id="{{t}}"><a href="{{site.url}}{%unless t=='index'%}/{{t}}{%endunless%}">{{t}}</a>
 		<ul>{%for p in page.pages%}{%if p.typ==t%}<li>{%capture st-yr%}{{p.st-dt|date:"%Y"}}{%endcapture%}{%capture ed-yr%}{{p.ed-dt|date:"%Y"}}{%endcapture%}
 			<b><!--SITEMAP EXCEPTION "UNLESS", REMOVE LATER--><a href="{{t}}{%unless t=='sitemap'%}/v{{p.num}}{%endunless%}">v{{p.num}}</a><!--END UNLESS--></b>: <a href="{{p.st-url}}">{%if p.txt%}{{p.txt}}{%elsif st-yr==ed-yr%}{{p.st-dt|date:"%B %e"}}{%else%}{{p.st-dt|date:"%B %e, %Y"}}{%endif%}</a><span class="en">–</span>{%if st-yr!=ed-yr%}<a href="{{p.ed-url}}">{{p.ed-dt|date:"%B %e, %Y"}}</a>{%else%}<a href="{{p.ed-url}}">{{p.ed-dt|date:"%B %e"}}</a>, {{ed-yr}}{%endif%}
 		</li>{%endif%}{%endfor%}{%if t=="shriblets"%}
@@ -126,7 +125,7 @@ pages:
 		<li><i>deprecated in favor of sitemap</i></li>{%endif%}</ul></li>{%endfor%}
 	</ul>
 	<hr>
-	<p>The “styleguide” pages (text dumps used to test new layouts) aren’t a Main Section, but I didn’t want them on the shriblets page, either. Here they are, instead.</p>
+	<p>The “styleguide” pages (text dumps used to test new layouts) aren’t a Main Section, but I didn’t want them under shriblets, either. Here they are, instead.</p>
 	<ul id="sg"><li><a href="styleguides/2019-04-21-default">2019 April 21: default</a></li><li><a href="styleguides/2022-04-16-plaintext">2022 April 15: plaintext</a></li><li><a href="styleguides/2023-03-06-plaintext2">2023 March 6: plaintext2</a></li></ul>
 </body>
 </html>
