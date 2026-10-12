@@ -1,5 +1,43 @@
 ---
 layout: none
+
+who: |-
+  <b>a-flyleaf</b> is an internet pseudonym. Its user can often be found making [digital art](SITEURL/art-2026), wrangling HTML/CSS, or picking at some kind of story. Occasionally these activities even go together.
+  
+  - bulletpoint-overuser
+  - meta-appreciator
+  - archival-enjoyer
+  - eternally warding off the mailgnant spectre of perfectionism
+
+what: |-
+  A dubiously-organized conglomeration of disparate sites in a trenchcoat.
+  - For recent shenanigans, there is **[a blog](SITEURL/blog)**, which updates irregularly and with whatever occurs to me at the time of writing. Often includes, but is not exclusive to, actual website updates. 
+  - If you are curious about Basically Everything, there is **[a sitemap](SITEURL/sitemap)**, which is not 100% comprehensive but decently close. Some sub-sites have their own navigational sprawl, which may or may not be apparent.
+  
+  It is all publicly accessible forever. [I collect fuckall about my pageviews.](SITEURL/privacy)
+
+where: |-
+  This site is the only public internet presence its builder maintains with any frequency, these days. If you'd like to reach the recluse:
+  - <b>Email</b> is <a href="mailto:a-flyleaf@pm.me" style="display:inline-block;">a-flyleaf@protonmail.net</a>, and this should be functional until either Proton implodes or its user kicks the bucket. No spambots allowed!!!1!
+  - 
+  
+  ...no, that's pretty much it :V There are other websites I use (ir)regularly, though few encourage interaction with non-users; those that do, I use sporadically. But if you are determined, you can find them. I believe in you.
+
+when: |-
+  GitHub site established in 2019. There may be older dates on certain pages, from when I dig ancient code and art up from the depths of my files and then punt it here. [GitHub's commit history](https://github.com/a-flyleaf) auto-updates every time I hit publish.
+  
+  The words you're reading were written in 2026, after the previous iteration had piled up an increasingly egregious amount of dust. Let's see how long this version lasts....
+
+why: |-
+  I think, if I am going to spend copious hours of my life staring at a screen, then at least some portion of those hours can be spent staring at a screen with contents I can shape. Social media doesn't let me do that. Also I hate algorithms and login-walls and arbitrary UI changes breaking everythign forever.
+  
+  On a less adversive note, I think everyone who knows or is willing to learn web coding should get their own website. It is your own site, a site for you! Do whatever you want with it! Have fun on the internet! Imagine!!!
+
+how: |-
+  [The colophon](SITEURL/colophon) compiles various resources I use & recommend, for sitebuilding and other digital pursuits. Specific pages of use are linked where relevant, albeit sometimes buried in code comments.
+  
+  a-flyleaf.github.io is run on the irreconcilable itch to make things and ramble about them into the void online. It is not constant. But it is, all considered, a good time.
+
 ---
 <!doctype html>
 <html lang="en">
@@ -25,7 +63,7 @@ layout: none
 			h2{font-size:3em; margin-top:-1.4em;}
 			main .box{margin-top:3em;}
 			main ul,main p{line-height:1.5;}
-			.box p+p{margin-top:.5em;} .box ul{margin:.5em 0 0 1em;} .box li{margin:.25em 0;} .who li{margin:0;}
+			.box p+p,.box ul+p{margin-top:.5em;} .box ul{margin:.5em 0 0 1em;} .box li{margin:.25em 0;} .who li{margin:0;}
 			
 			footer{font-size:.85em; color:#808080;} footer ul{margin:0 !important; list-style-type:none;}
 			
@@ -56,45 +94,32 @@ layout: none
 		<main>
 			<section class="box who">
 				<h2>who</h2>
-				<p><b>a-flyleaf</b> is a pseudonymous internet nerd. Can often be found doing digital art, banging away at HTML/CSS, or wrangling some kind of story. Sometimes these activities even go together!</p>
-				<ul><li>bullet-point-overuser</li>
-				<li>meta-appreciator</li>
-				<li>archival-enjoyer</li>
-				<li>trying to be less of a perfectionist</li></ul>
+				{{page.who|markdownify|replace:"SITEURL",site.url}}
 			</section>
 			
 			<section class="box what">
 				<h2>what</h2>
-				<p>A dubiously-organized hodge-podge of smaller sites <s>in a trenchcoat</s> on a subdomain.</p>
-				<ul><li><a href="{{site.url}}/projects">The <b>Projects</b>™ page</a> showcases some stories and websites I’ve spent some substantial amount of time on. Check ’em out if you want ;V</li>
-				<li><a href="{{site.url}}/shriblets"><b>shriblets</b></a> are one-off pages where I screw around with coding. Not as in-depth, obviously, but still fun little romps in their own right~</li>
-				<li>There is also <a href="{{site.url}}/blog">a blog</a> here, which gets updated whenever. No set topics, no schedule, no masters.</li></ul>
+				{{page.what|markdownify|replace:"SITEURL",site.url}}
 			</section class="box">
 			
 			<section class="box where" id="contact">
 				<h2>where</h2>
-				<p>(AKA obligatory contact section)</p>
-				<ul><li>if this ever fails to work assume I am dead: <b>E-mail</b> is <a href="mailto:a-flyleaf@pm.me" style="display:inline-block;">a-flyleaf@protonmail.net</a>; spambots do not interact!!!1!</li>
-				<li>also a safe bet: You can drop me an anonymous line through <a href="https://a-notebox.dreamwidth.org/2023/01/31/welcome.html?style=site">this Dreamwidth post masquerading as a <b>guestbook</b></a>. Reliant on me checking Dreamwidth, but I do that fairly often as of mid-2023.</li>
-				<li>I also use <a href="https://nightauctor.deviantart.com/">deviantArt</a> on occasion, if only because I haven’t gotten around to mirroring it here yet; you need an account there to contact anyone, so I’d only recommend it as a non-email last resort.</li></ul>
+				{{page.where|markdownify}}
 			</section>
 			
 			<section class="box when">
 				<h2>when</h2>
-				<p>Do you want a painstaking breakdown of exactly when I do what on every other page? Me too! Which is why most of my sites* have a changelog; it may or may not be visibly-linked, but slap a /changelog to the end of the base URL and you might find something. (*Main one not included, ironically. The blog’s the closest I got here.)</p>
-				<p><a href="https://github.com/a-flyleaf">My GitHub commit history</a> also auto-updates every time I hit publish. It’s a lil fluky since I often have updates sitting on my computer ready to publish whenever, but hey.</p>
+				{{page.when|markdownify}}
 			</section>
 			
 			<section class="box why">
 				<h2>why</h2>
-				<p>Social media is a data-sucking hellscape and it makes my brain break out in algorithmically-induced hives. Formatting limitations suck, arbitrary UI changes suck, being constantly subject to the whims of paywalls and CEOs and advertisers—It’s A Lot Of Suck, all the way down.</p>
-				<p>Here, meanwhile, I can do basically whatever I want ;3 And you get to look at it! For free! Without logging in or anything; <a href="{{site.url}}/privacy">data-wise, I get <em>nothing</em>!!</a> And if GitHub ever mucks that up, everything is primarily on my own machine, so I can pack up and move whenever.</p>
-				<p>Not a bad deal for the price of coding knowledge!</p>
+				{{page.why|markdownify|replace:"SITEURL",site.url}}
 			</section>
 			
 			<section class="box how">
 				<h2>how</h2>
-				<p>Behold, <a href="{{site.url}}/colophon">a colophon</a>, which lists some resources I use/recommend. Specific code screwery also usually has nifty links adjacent somewhere, even if it’s buried in the source comments.</p>
+				{{page.how|markdownify|replace:"SITEURL",site.url}}
 			</section>
 		</main>
 		<footer class="box"><ul>
