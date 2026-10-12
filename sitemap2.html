@@ -40,7 +40,7 @@ elsewhere:
     - url: art-2026
       desc: >-
         Gallery of all my art from 2026.
-      tags: [y2026,b]
+      tags: [b]
 
     - url: artFight
       desc: >-
@@ -49,12 +49,12 @@ elsewhere:
 
     - url: collections
       desc: >-
-        One-off code test.
-      tags: [y2021,smal]
+        One-off code test in sitebuilding, from 2021.
+      tags: [smal]
 
     - url: deviantArt
       desc: >-
-        Ungainly records for everything I've ever posted on deviantArt, sans the images themselves.
+        Ungainly records for everything I've ever posted on deviantArt.
       tags: [smal]
 
     - url: dragonotes
@@ -63,8 +63,10 @@ elsewhere:
 #      tags: []
 
     - url: hello-world
+      project: >-
+        <i style="font-style:normal;font-family:consolas,monospace;">404</i>
       desc: >-
-        project: <i style="font-style:normal;font-family:consolas,monospace;">404</i>.
+        Incomplete experiments in using a website for a semi-linear narrative.
       tags: [b]
 
     - url: omori
@@ -74,8 +76,8 @@ elsewhere:
 
     - url: p5jsomething
       desc: >-
-        One-off code test but it was for a class this time.
-      tags: [y2020,smal]
+        One-off code test but it was for a class this time, 2020.
+      tags: [smal]
 
     - url: shriblets
       desc: >-
@@ -83,8 +85,10 @@ elsewhere:
       tags: [b]
 
 #    - url: tfe
+#      project: >-
+#        <i>The Firebird Effect</i>
 #      desc: >-
-#        project: <i>The Firebird Effect</i>
+#        Discontinued pokémon fancomic from 2016, now with its own repository.
 #      tags: []
 
     - url: toyshelf
@@ -93,8 +97,10 @@ elsewhere:
       tags: [b]
 
     - url: ygbtdm
+      project: >-
+        <i><span style="display:inline-block;">You’re gonna be</span> <span style="display:inline-block;">the death of me</span></i>
       desc: >-
-        project: <i>You're gonna be the death of me</i>.
+        Concept art and other shenanigans relating to an episodic narrative.
       tags: [b]
 
 #    - url: wolvwiki
@@ -117,11 +123,12 @@ elsewhere:
     a:focus{outline:.125rem solid #0080ff; background:#fff;}
 		::selection{background:#0080ff; color:#fff;}
 		
+		.wrap{max-width:35em; margin:0 auto;}
 		h1{font-weight:300;}
 		header a,footer a{color:inherit; text-decoration:none;}
 		ul{list-style-type:none;}
 		
-		main{font-family:'fira mono',monospace;}
+		main{font-family:'fira mono',monospace; background:#fff;}
 		h2{font-weight:600;}
 		.desc{font-size:.75em;}
 		
@@ -129,17 +136,23 @@ elsewhere:
 		main li:before{content:"├─ ";} main li:last-of-type:before{content:"└─ ";}
 		/*cool idea but doesn't scale well:
 			.li-desc:before{content:"│ "; padding-right:.625em;} .li-desc p{display:inline;} .li-desc:after{content:"│"; display:block; height:.5em; overflow:hidden;}*/
-		.li-desc{border-left:.11em solid; margin-left:.26em; padding-left:1.455em; padding-bottom:.5em;}
+		.li-desc{border-left:.11em solid; margin-left:.26em; padding-left:1.455em; padding-bottom:.5em; font-family:'fira sans',sans-serif;}
 		li:last-child .li-desc{border-color:rgba(0,0,0,0);}
 		.li-desc p{font-size:.85em;}
 		#els .li-desc{padding-left:2.125em;}
 		
+		#sitemap{font-family:'fira sans',sans-serif; font-size:.85em;}
 		small{font-size:.85em;}
 		.smal p{color:#606060; font-size:.75em;}
+		.pj{font-family:'fira sans',sans-serif; display:inline-block; color:#606060;}
+		@media only screen and (max-width:33.15em){
+			#ygbtdm .pj{display:block; margin-left:2.85em;}
+		}
 		
-		footer{font-size:.75em; text-align:center;}
+		footer{text-align:right;} footer small{font-size:.75em;}
 		footer li{display:inline-block;}
 		footer li:nth-of-type(n+2):before{content:"| ";}
+		footer b{letter-spacing:.025em;}
     
     @media (prefers-color-scheme:dark){
       body{background:#202020; color:#efefef;}
@@ -148,14 +161,14 @@ elsewhere:
     }
 	</style>
 </head><body><div id="content">
-	<header>
+	<header><div class="wrap">
 		<h1><a href="{{site.url}}">a-flyleaf.github.io</a>/<b>{{page.title}}</b></h1>
 		{{page.desc|markdownify}}
-	</header><main>
+	</div></header><main class="wrap">
 		<section>
 			<h2><a href="{{site.url}}">a-flyleaf.github.io</a></h2>
 			<div class="desc">{{page.a-f.desc|markdownify}}</div>
-			<ul id="af">{%for a in page.a-f.pages%}<li><a href="{{site.url}}/{{a.url|downcase}}">{{a.url|downcase}}</a>{%if a.desc%} {%if a.url=="sitemap"%}{{a.desc|markdownify|remove:"<p>"|remove:"</p>"}}{%else%}<div class="li-desc">{{a.desc|markdownify}}</div>{%endif%}</li>{%endif%}{%endfor%}</ul>
+			<ul id="af">{%for a in page.a-f.pages%}<li><a href="{{site.url}}/{{a.url|downcase}}">{{a.url|downcase}}</a>{%if a.desc%} {%if a.url=="sitemap"%}{{a.desc|markdownify|replace:"<p>","<span id='sitemap'>"|replace:"</p>","</span>"}}{%else%}<div class="li-desc">{{a.desc|markdownify}}</div>{%endif%}</li>{%endif%}{%endfor%}</ul>
 			<!--skipping:
 				- /art (points to various galleries)
 				- /contact (ancient holdover)
@@ -168,12 +181,16 @@ elsewhere:
 		</section><section>
 			<h2>elsewhere on a-flyleaf.github.io</h2>
 			<div class="desc">{{page.elsewhere.desc|markdownify}}</div>
-			<ul id="els">{%for s in page.elsewhere.sites%}<li{%if s.tags%} class="{%for t in s.tags%}{{t}} {%endfor%}"{%endif%}><a href="{{site.url}}/{{s.url|downcase}}">/{%if s.tags contains "b"%}<b>{%endif%}{%if s.tags contains "smal"%}<small>{%endif%}{{s.url|downcase}}{%if s.tags contains "smal"%}</small>{%endif%}{%if s.tags contains "b"%}</b>{%endif%}</a><div class="li-desc">{{s.desc|markdownify}}</div></li>{%endfor%}</ul>
+			<ul id="els">{%for s in page.elsewhere.sites%}<li{%if s.tags%} class="{%for t in s.tags%}{{t}} {%endfor%}"{%endif%} id="{{s.url}}">
+				<a href="{{site.url}}/{{s.url|downcase}}">/{%if s.tags contains "b"%}<b>{%endif%}{%if s.tags contains "smal"%}<small>{%endif%}{{s.url|downcase}}{%if s.tags contains "smal"%}</small>{%endif%}{%if s.tags contains "b"%}</b>{%endif%}</a>{%if s.project%}
+				<small class="pj">(project: <b>{{s.project}}</b>)</small>
+				{%endif%}<div class="li-desc">{{s.desc|markdownify}}</div>
+			</li>{%endfor%}</ul>
 		</section>
 	</main>
 	<hr class="x">
-	<footer>{%capture af-size%}<b>{{page.a-f.pages.size}}</b>{%endcapture%}{%capture els-size%}<b>{{page.elsewhere.sites.size}}</b>{%endcapture%}{%capture date%}<b>{{page.date|date:"%Y %B %d"}}</b>{%endcapture%}<small>{{page.footer|markdownify
+	<footer>{%capture af-size%}<b>{{page.a-f.pages.size}}</b>{%endcapture%}{%capture els-size%}<b>{{page.elsewhere.sites.size}}</b>{%endcapture%}{%capture date%}<b>{{page.date|date:"%Y %B %d"}}</b>{%endcapture%}<div class="wrap"><small>{{page.footer|markdownify
 		|replace:"$AF_SIZE",page.a-f.pages.size
 		|replace:"$ELS_SIZE",page.elsewhere.sites.size
-		|replace:"$UPDATE",date}}</small></footer>
+		|replace:"$UPDATE",date}}</small></div></footer>
 </div></body></html>
