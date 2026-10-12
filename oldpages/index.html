@@ -1,7 +1,7 @@
 ---
 layout: none
 
-pg-types: [index,about,projects,shriblets,blog]
+pg-types: [index,about,projects,shriblets,blog,sitemap]
 # thanks to ^this it doesn't matter which order the pages are in the front matter! no need to do All Index then All Project etc (although, for my sanity, that's how I converted the initial batch)
 #- typ: 
 #  num: "0"
@@ -85,6 +85,12 @@ pages:
   st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/147c74d670992a8b736b8fecf20e3865156a2db7#diff-2e7cc76cb727cb3b4df3126f72567fb3db8d32485cdffc08eae6f65420d5c8c4"
   ed-dt: 2023-03-06
   ed-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/4d0e864e35ee3692a44451aaab4bf192cd815386"
+- typ: sitemap
+  num: "1"
+  st-dt: 2019-04-27
+  st-url: "https://github.com/a-flyleaf/a-flyleaf.github.io/commit/ec0350af750e2c8dc693ee49e295675050f0dc0d#diff-06904629de9ce5481158d05c9a0f7ae558693bb1500369a60d032d0bb0f8b2ee"
+  ed-dt: 2026-10-11
+  ed-url: "(TBA)"
 ---
 <!doctype html><html lang="en">
 <head>
@@ -114,9 +120,10 @@ pages:
 	
 	<ul id="pg">{%for t in page.pg-types%}<li><a href="{{site.url}}{%unless t=='index'%}/{{t}}{%endunless%}">{{t}}</a>
 		<ul>{%for p in page.pages%}{%if p.typ==t%}<li>{%capture st-yr%}{{p.st-dt|date:"%Y"}}{%endcapture%}{%capture ed-yr%}{{p.ed-dt|date:"%Y"}}{%endcapture%}
-			<b><a href="{{t}}/v{{p.num}}">v{{p.num}}</a></b>: <a href="{{p.st-url}}">{%if p.txt%}{{p.txt}}{%elsif st-yr==ed-yr%}{{p.st-dt|date:"%B %e"}}{%else%}{{p.st-dt|date:"%B %e, %Y"}}{%endif%}</a><span class="en">–</span>{%if st-yr!=ed-yr%}<a href="{{p.ed-url}}">{{p.ed-dt|date:"%B %e, %Y"}}</a>{%else%}<a href="{{p.ed-url}}">{{p.ed-dt|date:"%B %e"}}</a>, {{ed-yr}}{%endif%}
+			<b><!--SITEMAP EXCEPTION "UNLESS", REMOVE LATER--><a href="{{t}}{%unless t=='sitemap'%}/v{{p.num}}{%endunless%}">v{{p.num}}</a><!--END UNLESS--></b>: <a href="{{p.st-url}}">{%if p.txt%}{{p.txt}}{%elsif st-yr==ed-yr%}{{p.st-dt|date:"%B %e"}}{%else%}{{p.st-dt|date:"%B %e, %Y"}}{%endif%}</a><span class="en">–</span>{%if st-yr!=ed-yr%}<a href="{{p.ed-url}}">{{p.ed-dt|date:"%B %e, %Y"}}</a>{%else%}<a href="{{p.ed-url}}">{{p.ed-dt|date:"%B %e"}}</a>, {{ed-yr}}{%endif%}
 		</li>{%endif%}{%endfor%}{%if t=="shriblets"%}
-		<li><i>now its own repository</i></li></li>{%endif%}</ul></li>{%endfor%}
+		<li><i>now its own repository</i></li></li>{%elsif t=="projects"%}
+		<li><i>deprecated in favor of sitemap</i></li>{%endif%}</ul></li>{%endfor%}
 	</ul>
 	<hr>
 	<p>The “styleguide” pages (text dumps used to test new layouts) aren’t a Main Section, but I didn’t want them on the shriblets page, either. Here they are, instead.</p>
