@@ -5,13 +5,12 @@ title: "sitemap.html"
 #  NOT worrying about styling or dropdowns rn just want to get the thing down
 date: 2026-10-11
 footer: |-
-  - $AF_SIZE main pages
-  - $ELS_SIZE sub-sites
+  - $AF_SIZE main pages & $ELS_SIZE sub-sites
   - updated $UPDATE
 
 a-f:
-  desc: |-
-    Main website, base of operations.
+#  desc: |-
+#    Main website, base of operations.
   pages:
     - url: index
       desc: >-
@@ -25,7 +24,7 @@ a-f:
     - url: colophon
       desc: >-
         A list of links I've used.
-    - url: oldpages
+    - url: oldPages
       desc: >-
         An archive of various major pages on my main site.
     - url: privacy
@@ -35,15 +34,15 @@ a-f:
       desc: >-
         ← You are here!
 elsewhere:
-  desc: |-
-    Other websites under the a-flyleaf.github.io/ domain.
+#  desc: |-
+#    Other websites under the a-flyleaf.github.io/ domain.
   sites:
     - url: art-2026
       desc: >-
         Gallery of all my art from 2026.
       tags: [y2026,b]
 
-    - url: artfight
+    - url: artFight
       desc: >-
         Showcase for an annual art trading game, both my and others' artworks.
       tags: [b]
@@ -53,7 +52,7 @@ elsewhere:
         One-off code test.
       tags: [y2021,smal]
 
-    - url: deviantart
+    - url: deviantArt
       desc: >-
         Ungainly records for everything I've ever posted on deviantArt, sans the images themselves.
       tags: [smal]
@@ -61,7 +60,7 @@ elsewhere:
     - url: dragonotes
       desc: >-
         Record storage from virtual petsite <i>Flight Rising</i>.
-      tags: []
+#      tags: []
 
     - url: hello-world
       desc: >-
@@ -71,17 +70,22 @@ elsewhere:
     - url: omori
       desc: >-
         Fansite for the game <i style="text-transform:uppercase;">Omori</i>.
-      tags: []
+#      tags: []
 
     - url: p5jsomething
       desc: >-
         One-off code test but it was for a class this time.
-      tags: [y2020]
+      tags: [y2020,smal]
 
     - url: shriblets
       desc: >-
         Assorted standalone pages.
       tags: [b]
+
+#    - url: tfe
+#      desc: >-
+#        project: <i>The Firebird Effect</i>
+#      tags: []
 
     - url: toyshelf
       desc: >-
@@ -93,10 +97,10 @@ elsewhere:
         project: <i>You're gonna be the death of me</i>.
       tags: [b]
 
-    - url: wolvwiki
-      desc: >-
-        <i>Wolvden</i> lore dump; moved to neocities.
-      tags: [nolink,smal]
+#    - url: wolvwiki
+#      desc: >-
+#        <i>Wolvden</i> lore dump; moved to neocities.
+#      tags: [nolink,smal]
 ---
 <!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>a-flyleaf.github.io/{{page.title}}</title>
@@ -117,8 +121,21 @@ elsewhere:
 		header a,footer a{color:inherit; text-decoration:none;}
 		ul{list-style-type:none;}
 		
+		main{font-family:'fira mono',monospace;}
 		h2{font-weight:600;}
-		main li:before{font-family:'fira mono',monospace; content:"├─ ";} main li:last-of-type:before{content:"└─ ";}
+		.desc{font-size:.75em;}
+		
+		main ul:before{content:"│ "; display:block; height:.5em; overflow:hidden;}
+		main li:before{content:"├─ ";} main li:last-of-type:before{content:"└─ ";}
+		/*cool idea but doesn't scale well:
+			.li-desc:before{content:"│ "; padding-right:.625em;} .li-desc p{display:inline;} .li-desc:after{content:"│"; display:block; height:.5em; overflow:hidden;}*/
+		.li-desc{border-left:.11em solid; margin-left:.26em; padding-left:1.455em; padding-bottom:.5em;}
+		li:last-child .li-desc{border-color:rgba(0,0,0,0);}
+		.li-desc p{font-size:.85em;}
+		#els .li-desc{padding-left:2.125em;}
+		
+		small{font-size:.85em;}
+		.smal p{color:#606060; font-size:.75em;}
 		
 		footer{font-size:.75em; text-align:center;}
 		footer li{display:inline-block;}
@@ -136,9 +153,9 @@ elsewhere:
 		{{page.desc|markdownify}}
 	</header><main>
 		<section>
-			<h2>a-flyleaf.github.io</h2>
+			<h2><a href="{{site.url}}">a-flyleaf.github.io</a></h2>
 			<div class="desc">{{page.a-f.desc|markdownify}}</div>
-			<ul id="af">{%for a in page.a-f.pages%}<li><a href="{{site.url}}/{{a.url}}">{{a.url}}</a>{%if a.desc%} {%unless a.url=="sitemap"%}| {%endunless%}{{a.desc|markdownify|remove:"<p>"|remove:"</p>"}}{%endif%}</li>{%endfor%}</ul>
+			<ul id="af">{%for a in page.a-f.pages%}<li><a href="{{site.url}}/{{a.url|downcase}}">{{a.url|downcase}}</a>{%if a.desc%} {%if a.url=="sitemap"%}{{a.desc|markdownify|remove:"<p>"|remove:"</p>"}}{%else%}<div class="li-desc">{{a.desc|markdownify}}</div>{%endif%}</li>{%endif%}{%endfor%}</ul>
 			<!--skipping:
 				- /art (points to various galleries)
 				- /contact (ancient holdover)
@@ -151,12 +168,12 @@ elsewhere:
 		</section><section>
 			<h2>elsewhere on a-flyleaf.github.io</h2>
 			<div class="desc">{{page.elsewhere.desc|markdownify}}</div>
-			<ul id="els">{%for s in page.elsewhere.sites%}<li><a href="{{site.url}}/{{s.url}}">/{%if s.tags contains "b"%}<b>{%endif%}{{s.url}}{%if s.tags contains "b"%}</b>{%endif%}</a> | {{s.desc|markdownify|remove:"<p>"|remove:"</p>"}}</li>{%endfor%}</ul>
+			<ul id="els">{%for s in page.elsewhere.sites%}<li{%if s.tags%} class="{%for t in s.tags%}{{t}} {%endfor%}"{%endif%}><a href="{{site.url}}/{{s.url|downcase}}">/{%if s.tags contains "b"%}<b>{%endif%}{%if s.tags contains "smal"%}<small>{%endif%}{{s.url|downcase}}{%if s.tags contains "smal"%}</small>{%endif%}{%if s.tags contains "b"%}</b>{%endif%}</a><div class="li-desc">{{s.desc|markdownify}}</div></li>{%endfor%}</ul>
 		</section>
 	</main>
 	<hr class="x">
 	<footer>{%capture af-size%}<b>{{page.a-f.pages.size}}</b>{%endcapture%}{%capture els-size%}<b>{{page.elsewhere.sites.size}}</b>{%endcapture%}{%capture date%}<b>{{page.date|date:"%Y %B %d"}}</b>{%endcapture%}<small>{{page.footer|markdownify
-		|replace:"$AF_SIZE",af-size
-		|replace:"$ELS_SIZE",els-size
+		|replace:"$AF_SIZE",page.a-f.pages.size
+		|replace:"$ELS_SIZE",page.elsewhere.sites.size
 		|replace:"$UPDATE",date}}</small></footer>
 </div></body></html>
