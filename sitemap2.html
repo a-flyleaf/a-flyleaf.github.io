@@ -145,6 +145,7 @@ elsewhere:
 		small{font-size:.85em;}
 		.smal p{color:#606060; font-size:.75em;}
 		.pj{font-family:'fira sans',sans-serif; display:inline-block; color:#606060;}
+		#ygbtdm b{font-weight:500;}
 		@media only screen and (max-width:33.15em){
 			#ygbtdm .pj{display:block; margin-left:2.85em;}
 		}
@@ -155,9 +156,14 @@ elsewhere:
 		footer b{letter-spacing:.025em;}
     
     @media (prefers-color-scheme:dark){
-      body{background:#202020; color:#efefef;}
-			#content{background:#404040;}
+      body{background:#000; color:#efefef;}
+			#content{background:#202020; border-color:#404040;}
+			header,footer{background:#101010; color:#bfbfbf;}
+			main{background:#404040;}
       a{color:#80cfff;}
+			a:hover,a:active,a:focus{color:#fff;}
+			a:focus{color:inherit; background:#000; outline-color:#80cfff;}
+			.smal p,.pj{color:#bfbfbf;}
     }
 	</style>
 </head><body><div id="content">
