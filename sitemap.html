@@ -67,7 +67,7 @@ elsewhere:
         <i style="font-style:normal;font-family:consolas,monospace;">404</i>
       desc: >-
         Incomplete experiments in using a website for a semi-linear narrative.
-      tags: [b]
+#      tags: []
 
     - url: omori
       desc: >-
@@ -126,6 +126,7 @@ elsewhere:
 		.wrap{max-width:35em; margin:0 auto;}
 		h1{font-weight:300;}
 		header a,footer a{color:inherit; text-decoration:none;}
+		h1 a:active,h1 a:focus,h1 a:hover{color:#bfbfbf;}
 		ul{list-style-type:none;}
 		
 		main{font-family:'fira mono',monospace; background:#fff;}
@@ -174,7 +175,7 @@ elsewhere:
 		<section>
 			<h2><a href="{{site.url}}">a-flyleaf.github.io</a></h2>
 			<div class="desc">{{page.a-f.desc|markdownify}}</div>
-			<ul id="af">{%for a in page.a-f.pages%}<li><a href="{{site.url}}/{{a.url|downcase}}">{{a.url|downcase}}</a>{%if a.desc%} {%if a.url=="sitemap"%}{{a.desc|markdownify|replace:"<p>","<span id='sitemap'>"|replace:"</p>","</span>"}}{%else%}<div class="li-desc">{{a.desc|markdownify}}</div>{%endif%}</li>{%endif%}{%endfor%}</ul>
+			<ul id="af">{%for a in page.a-f.pages%}<li><a href="{{site.url}}/{%unless a.url=='index'%}{{a.url|downcase}}{%endunless%}">{{a.url|downcase}}</a>{%if a.desc%} {%if a.url=="sitemap"%}{{a.desc|markdownify|replace:"<p>","<span id='sitemap'>"|replace:"</p>","</span>"}}{%else%}<div class="li-desc">{{a.desc|markdownify}}</div>{%endif%}</li>{%endif%}{%endfor%}</ul>
 			<!--skipping:
 				- /art (points to various galleries)
 				- /contact (ancient holdover)
