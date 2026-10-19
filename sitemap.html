@@ -23,10 +23,10 @@ a-f:
         A smorgasbord of rambles and site updates.
     - url: colophon
       desc: >-
-        A list of links I've used.
+        A list of links I've found useful.
     - url: oldPages
       desc: >-
-        An archive of various major pages on my main site.
+        An archive of various major pages on the main site.
     - url: privacy
       desc: >-
         A simulacra of a privacy policy.
@@ -54,7 +54,7 @@ elsewhere:
 
     - url: deviantArt
       desc: >-
-        Ungainly records for everything I've ever posted on deviantArt.
+        Ungainly datahoard for everything I've ever posted on deviantArt.
       tags: [smal]
 
     - url: dragonotes
@@ -173,7 +173,7 @@ elsewhere:
 		{{page.desc|markdownify}}
 	</div></header><main class="wrap">
 		<section>
-			<h2><a href="{{site.url}}">a-flyleaf.github.io</a></h2>
+			<h2>a-flyleaf.github.io</h2>
 			<div class="desc">{{page.a-f.desc|markdownify}}</div>
 			<ul id="af">{%for a in page.a-f.pages%}<li><a href="{{site.url}}/{%unless a.url=='index'%}{{a.url|downcase}}{%endunless%}">{{a.url|downcase}}</a>{%if a.desc%} {%if a.url=="sitemap"%}{{a.desc|markdownify|replace:"<p>","<span id='sitemap'>"|replace:"</p>","</span>"}}{%else%}<div class="li-desc">{{a.desc|markdownify}}</div>{%endif%}</li>{%endif%}{%endfor%}</ul>
 			<!--skipping:
